@@ -1,0 +1,22 @@
+schema_version: 1
+retrieved_on: 2026-08-24
+resources:
+  - name: HyperCells
+    type: git
+    url: https://github.com/HyperCells/HyperCells.git
+    revision: 2a9181b1cec9d63684e105645d8eb9fb09638770
+    doi: null
+    license_check_required: true
+  - name: HyperBloch
+    type: git
+    url: https://github.com/HyperCells/HyperBloch.git
+    revision: b13cc279bea13dda81abdfca880abad05da2565d
+    doi: 10.5281/zenodo.10222865
+    license_check_required: true
+  - name: cell-graph-library
+    type: git
+    url: https://github.com/HyperCells/cell-graph-library.git
+    revision: 41268d4df1eb4d8e0e4866eead6c92bad4a7f5f7
+    doi: null
+    license_check_required: true
+
