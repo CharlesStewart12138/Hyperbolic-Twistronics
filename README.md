@@ -1,17 +1,5 @@
 # Hyperbolic Twistronics Computer-Assisted Validation
 
-This repository contains the compact, publication-facing release of the computer-assisted validation programme for *Curvature-Controlled Moire Scaling and a Microscopic Magic-No-Magic Dichotomy in Hyperbolic Twisted Bilayers*.
-
-The release preserves the final scientific state, source code, tests, preregistered configurations, reports, certificates, figure-ready data, and the current 18-figure publication set. Historical run trees, recovery checkpoints, local environments, dependency caches, QA previews, and superseded figure versions are intentionally excluded.
-
-## Final state
-
-- Core validation: 88/88 tasks terminal; global audit `PASS_CERTIFIED`.
-- Expected failures and inconclusive results remain explicit in `FINAL_VALIDATION_STATUS.json` and `TASK_MANIFEST.csv`.
-- Post-validation and deep-resolution extensions remain scoped; no inconclusive result is promoted to a stronger claim.
-- Publication figures: 18 current white-background figures in PNG, SVG, and PDF.
-- Figure 9(f) and Figure 16(d) are absent; the small annotation formerly in Figure 11(a) is absent.
-
 ## Repository layout
 
 ```text
