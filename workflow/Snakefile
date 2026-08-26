@@ -1,0 +1,75 @@
+import os
+
+RUN_ID = os.environ.get("RUN_ID", "SET_RUN_ID_WITH_AUDIT_DRIVER")
+RUN_DIR = f"results/{RUN_ID}"
+
+rule all:
+    input:
+        "reports/checkpoint_I.md"
+
+rule I_02_environment:
+    output:
+        f"{RUN_DIR}/environment/environment.json",
+        f"{RUN_DIR}/environment/environment.lock"
+    shell:
+        "python environment/lock_environment.py --output-dir {RUN_DIR}/environment --run-id {RUN_ID}"
+
+rule I_04_octagon_group:
+    output:
+        f"{RUN_DIR}/exact/i04_octagon_group.json"
+    shell:
+        "python src/exact/octagon_group.py --output {output} --run-id {RUN_ID}"
+
+rule I_05_commensurability:
+    output:
+        f"{RUN_DIR}/exact/i05_commensurability_238.json"
+    shell:
+        "python src/exact/commensurability_238.py --output {output} --run-id {RUN_ID}"
+
+rule I_06_covers:
+    input:
+        "configs/tower_definitions.yaml"
+    output:
+        f"{RUN_DIR}/raw/covers/cover_towers.json"
+    shell:
+        "python src/covers/generate_cover_towers.py --config {input} --output-dir {RUN_DIR}/raw/covers --run-id {RUN_ID}"
+
+rule I_07_geometry:
+    input:
+        "configs/model_base.yaml"
+    output:
+        h5=f"{RUN_DIR}/raw/orbit_frames.h5",
+        cert=f"{RUN_DIR}/certificates/i07_geometry.json"
+    shell:
+        "python src/geometry/build_orbit_and_frames.py --config {input} --output-h5 {output.h5} --certificate {output.cert} --run-id {RUN_ID}"
+
+rule I_08_model:
+    input:
+        config="configs/model_base.yaml",
+        geometry=f"{RUN_DIR}/raw/orbit_frames.h5"
+    output:
+        h5=f"{RUN_DIR}/raw/aro3b_hamiltonian.h5",
+        cert=f"{RUN_DIR}/certificates/i08_aro3b.json"
+    shell:
+        "python src/model/build_aro3b_hamiltonian.py --config {input.config} --output-h5 {output.h5} --certificate {output.cert} --run-id {RUN_ID}"
+
+rule I_09_interval_backend:
+    output:
+        f"{RUN_DIR}/certificates/i09_interval_backend.json"
+    shell:
+        "python src/exact/interval_backend.py --output {output} --run-id {RUN_ID} --bits 192"
+
+rule checkpoint_I:
+    input:
+        f"{RUN_DIR}/environment/environment.json",
+        f"{RUN_DIR}/exact/i04_octagon_group.json",
+        f"{RUN_DIR}/exact/i05_commensurability_238.json",
+        f"{RUN_DIR}/raw/covers/cover_towers.json",
+        f"{RUN_DIR}/certificates/i07_geometry.json",
+        f"{RUN_DIR}/certificates/i08_aro3b.json",
+        f"{RUN_DIR}/certificates/i09_interval_backend.json"
+    output:
+        "reports/checkpoint_I.md"
+    shell:
+        "python workflow/run_phase_i.py --project-root . --checkpoint-only --run-id {RUN_ID}"
+
