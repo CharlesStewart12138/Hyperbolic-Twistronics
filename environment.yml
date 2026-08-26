@@ -1,0 +1,24 @@
+name: hyperbolic-twistronics-validation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - gap
+  - sage
+  - snakemake-minimal
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - zarr
+  - h5py
+  - sympy
+  - networkx
+  - numba
+  - pyarrow
+  - pyyaml
+  - pytest
+  - pip
+  - pip:
+      - python-flint>=0.7,<1
+

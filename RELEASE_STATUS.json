@@ -1,0 +1,62 @@
+{
+  "figure_audit": {
+    "independent_rerender": {
+      "png_sha256_identical": "18/18",
+      "state": "PASS",
+      "svg_and_pdf_note": "rendered successfully; timestamp metadata is intentionally not hash-stable"
+    },
+    "pdf": {
+      "count": 18,
+      "total_bytes": 1158679
+    },
+    "png": {
+      "count": 18,
+      "total_bytes": 8731435
+    },
+    "requested_adjustments": {
+      "figure_09_panel_f_removed": "PASS",
+      "figure_11_small_annotation_removed": "PASS",
+      "figure_16_panel_d_removed": "PASS"
+    },
+    "svg": {
+      "count": 18,
+      "total_bytes": 1167885
+    },
+    "white_background": {
+      "figure_count": 18,
+      "pass_count": 18
+    }
+  },
+  "historical_execution_archive_included": false,
+  "python_statistics": {
+    "details": "reports/python_code_statistics.json",
+    "nonblank_lines": 24332,
+    "physical_lines": 27357,
+    "python_file_count": 229
+  },
+  "release_inventory": {
+    "file_count": 4437,
+    "path": "manifests/release_file_inventory.json",
+    "sha256": "4aeb88f255daf5384d36810ce7ea1a088738cca03aec42727f544630dcc3bb40",
+    "tree_inventory_sha256": "e8004813fcd2d3a126566a083a0ec77c8a4abbd6436b5c13d039f35235568344"
+  },
+  "schema_version": 1,
+  "scientific_source_audit": {
+    "state": "PASS",
+    "verified_unique_sources": 47
+  },
+  "source_project": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation",
+  "source_project_preserved": true,
+  "source_status_hashes": {
+    "FINAL_VALIDATION_STATUS.json": "b2a51ad77f661ec937b94a65d427c34debf0284b9afc88e24d752f4a3dd8361c",
+    "beautified_figures_white_v2/BEAUTIFIED_FIGURE_STATUS.json": "13d69f25c67876eb1a0cc03772c052fc5e6ba3cb61a521606ca0e3626944473d"
+  },
+  "state": "COMPACT_GITHUB_RELEASE_COMPLETE",
+  "structure_audit": {
+    "forbidden_directory_count": 0,
+    "forbidden_process_file_count": 0,
+    "historical_results_included": false,
+    "superseded_figure_versions_included": false
+  },
+  "test_summary": "79 passed in 37.98s"
+}

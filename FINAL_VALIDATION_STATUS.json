@@ -1,0 +1,58 @@
+{
+  "artifacts": {
+    "error_budget_parquet": "reports/error_budget.parquet",
+    "global_audit_certificate": "certificates/final_global_audit.json",
+    "publication_figure_data_index": "reports/publication_figure_data_index.csv",
+    "publication_figures": "figures/final_validation",
+    "theorem_validation_matrix_xlsx": "reports/theorem_validation_matrix.xlsx",
+    "validation_report_md": "reports/validation_report.md",
+    "validation_report_tex": "reports/validation_report.tex"
+  },
+  "blockers": [],
+  "compact_distribution": {
+    "historical_run_trees_pruned_from_copy": true,
+    "original_archive_unchanged": true
+  },
+  "completed_at_utc": "2026-08-25T18:58:27.411276+00:00",
+  "global_audit_status": "PASS_CERTIFIED",
+  "preserved_expected_failures": [
+    "S-16",
+    "S-24",
+    "B-08",
+    "NC-01",
+    "NC-02",
+    "NC-03",
+    "NC-04",
+    "NC-05",
+    "NC-06",
+    "NC-07",
+    "NC-08",
+    "NC-09"
+  ],
+  "preserved_inconclusive": [
+    "S-07",
+    "S-08",
+    "S-18",
+    "S-21",
+    "S-22",
+    "B-09",
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-12"
+  ],
+  "project_complete": true,
+  "run_id": "23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2",
+  "schema_version": 1,
+  "state": "PROJECT_COMPLETE",
+  "status_counts": {
+    "FAIL_EXPECTED": 12,
+    "INCONCLUSIVE": 10,
+    "PASS_CERTIFIED": 24,
+    "PASS_CONVERGED": 26,
+    "PASS_EXACT": 13,
+    "PASS_EXTERNAL": 3
+  },
+  "task_count": 88,
+  "terminal_task_count": 88
+}
