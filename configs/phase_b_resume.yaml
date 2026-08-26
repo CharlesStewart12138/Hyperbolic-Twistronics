@@ -1,0 +1,53 @@
+schema_version: 2
+resume_from_state: PHASE_B_BLOCKED
+preserved_failed_run: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+preserved_b01:
+  run_id: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+  status: PASS_CONVERGED
+tower_gate:
+  run_id: 4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b
+  certificate: "results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json"
+  raw_directory: "results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/raw/nonabelian_covers"
+reference_adjacency:
+  degree: 8
+  markov_spectral_radius_lower: 0.662477
+  markov_spectral_radius_upper: 0.6628153757
+  spectrum_is_interval: true
+  source_note: "standard genus-two surface-group simple random walk; adjacency spectrum is [-8*rho,8*rho]"
+bilayer_family:
+  normalized_adjacency_scale: 1.0
+  interlayer_coupling: 1.0
+  parameter_interval: [0.9, 1.1]
+numerics:
+  eigsh_edge_count: 10
+  eigsh_tolerance: 1.0e-10
+  solver_residual_tolerance: 2.0e-8
+  polynomial_grid_size: 65
+  dos_grid_size: 401
+  dos_broadening: 0.08
+  common_space_quantiles: 4096
+  random_seed: 5203
+shells:
+  decay_q: 0.20
+  maximum_materialized_shell: 4
+locality:
+  interaction_radius_word: 1
+  observation_radius_word: 0
+  cutoff_radius_word: 1
+gap_backend:
+  mode: windows_job_object
+  gap_bash: "C:/Program Files/GAP-4.16.0/runtime/bin/bash.exe"
+  gap_binary_cygwin: "/opt/gap-4.16.0/gap"
+  heartbeat_seconds: 10
+  stage_timeouts_seconds:
+    group_audit: 600
+    character_table: 1800
+    individual_irrep: 1800
+  timeout_extension_policy:
+    enabled: false
+    maximum_seconds: 7200
+    activation_requirement: "enable only after persistent logs/heartbeats demonstrate continued stage progress"
+normal_forms:
+  path: "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt"
+  maximum_length: 6
+public_projector_patterns: ["*projector*", "*projection*"]

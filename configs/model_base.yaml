@@ -1,0 +1,30 @@
+schema_version: 1
+model_level: M3
+geometry:
+  curvature_radius: 1.0
+  genus: 2
+  orbit_depth: 2
+  twist_angle: 0.0
+  layer_separation: 1.0
+orbitals:
+  labels: [s, p1, p2]
+  onsite: [0.0, 0.25, 0.25]
+intralayer:
+  distance_cutoff: 3.20
+  radial_decay_length: 0.90
+  V_ss_sigma: -1.0
+  V_sp_sigma: 0.35
+  V_pp_sigma: 0.55
+  V_pp_pi: -0.15
+interlayer:
+  lateral_cutoff: 5.0
+  lambda_perp: 0.45
+  w: 0.60
+  orbital_scales: [1.0, 0.70, 0.70]
+  orbital_mixing: 0.0
+numerics:
+  distance_tolerance: 1.0e-10
+  hermiticity_tolerance: 1.0e-11
+  covariance_tolerance: 2.0e-10
+  sparse_drop_tolerance: 1.0e-14
+

@@ -1,0 +1,70 @@
+schema_version: 1
+resume_from_state: PHASE_B_COMPLETE
+execution_scope: D-01_THROUGH_D-14_AND_NC-01_THROUGH_NC-09
+source_phase_b:
+  run_id: bc88adefcf5cde1d8c29a2742ddbc043f41f54608da2688dc37e73b8b2491e50
+  manifest_sha256: fe703e4025168bc0858a93617a6b6716ed7b1e4345a215e68ead5f2dacb085b2
+  tree_inventory_sha256: ef3c36e8722dad7f0e7eb8b6b6d8b0ec177be15d39fffeada2f81c8de09a6781
+  file_count: 64
+  validation_matrix_sha256: af0c83320d47ca2bab0df4ca3f3143a8716ef5101c7f657a49e531b17e82faeb
+source_b07:
+  run_id: 618264e7923cf816783616b6dfc40fee0f8ca17a70a511610028fb0120841d47
+  block_spectra: results/618264e7923cf816783616b6dfc40fee0f8ca17a70a511610028fb0120841d47/derived/wedderburn_block_spectra.parquet
+  block_spectra_sha256: f78954a4a284b70f7a84cfd550ec74261a8ece10321fd0d0fc7ed392e726826b
+  representation_root: results/618264e7923cf816783616b6dfc40fee0f8ca17a70a511610028fb0120841d47/raw/representation
+tower_gate:
+  certificate: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  certificate_sha256: 1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9
+  levels: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/derived/nonabelian_tower_levels.parquet
+  levels_sha256: 72150f5f1f1f455005bb1da25c04db543ed1687a11bd6cfa022afa9438965bff
+  actions: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/raw/nonabelian_covers
+arithmetic_sources:
+  g10_certificate: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g10_coincidence_index_height.json
+  g10_sha256: 3365912a69912af1002c23805f6c38cc1cc3b87c5cdf57e5e38209981ba00a33
+  g11_certificate: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g11_arithmetic_exponent.json
+  g11_sha256: 030dc26d685779f071dfeab40244404e0951c9c2bc7d7be7d907a303df05f5c3
+  growth: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/coincidence_growth.parquet
+negative_control_sources:
+  s01: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/exact/s01_square_fivestate.json
+  s01_sha256: 2c6404710fb58b1b90f0f99373ebdbd27a6bf56aa108916fa3423abaf7c922bd
+  s02: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s02_square_no_go.json
+  s02_sha256: 508593ea8f21e3356594b15bd3ec95c6f503dd572b5d4711a2623e2a44938764
+  s16: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s16_trace_root_negative_control.json
+  s16_sha256: 41034ff484b6de750baaa07558810b165434fcce9272ffa4d85fc16febee26d9
+public_data:
+  hyperbloch_revision: b13cc279bea13dda81abdfca880abad05da2565d
+  hypercells_revision: 2a9181b1cec9d63684e105645d8eb9fb09638770
+  graph_library_revision: 41268d4df1eb4d8e0e4866eead6c92bad4a7f5f7
+  hyperbloch_tree_sha256: cebe1f03b0ad4e41c1abff6cf0944d347b6e9e9dd33967b77e9ac18a50c26de0
+  hypercells_tree_sha256: a9a6a2528bdf691839b3a4babf92716af7ccc5fe1b2c7134fd9d286970a2acee
+  graph_library_tree_sha256: 92e9c0e244dae64b2791240607e5e278430025ccff3f6c5a3ce87972804a6177
+kpm:
+  moments: 64
+  random_vectors: 4
+  random_seed: 5319
+  reconstruction_grid: 801
+  moment_rms_error_limit: 0.05
+  normalization_error_limit: 0.04
+cdf_local_law:
+  cross_tower_kolmogorov_limit: 0.12
+vanishing_broadening:
+  alpha: 1.0
+  minimum_levels_per_tower: 3
+coherence_dos:
+  fixed_broadening: 0.08
+  grid_size: 801
+diffraction:
+  parseval_tolerance: 1.0e-10
+public_reproduction:
+  spectral_tolerance: 1.0e-10
+circuit:
+  gamma: 2.0
+  reference_energy: 0.0
+  spectral_tolerance: 1.0e-10
+workbook:
+  filename: phase_d_theorem_validation_matrix.xlsx
+  verification_filename: phase_d_workbook_verification.json
+acceptance:
+  blockers: [FAIL_THEORY, FAIL_IMPLEMENTATION]
+  inconclusive_is_preserved_and_nonblocking: true
+  negative_control_required_status: FAIL_EXPECTED

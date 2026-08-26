@@ -1,0 +1,72 @@
+schema_version: 1
+state: PHASE_D_OR_NC_BLOCKED
+execution_scope: D-09_PARSER_RECOVERY_THROUGH_D-15_THEN_NC-01_THROUGH_NC-09
+base_config:
+  path: configs/phase_d_nc.yaml
+  sha256: de31822630dc49c0b22b8e478a68e4d14fc65b89dc95accfac61f07f4f9c283a
+frozen_predecessor:
+  run_id: c18268c9a866f12d54496506737595d8a16eb96c2e8778053503813a789f5647
+  manifest_sha256: a372c7b5b53f583f7466f91ac727d4c0a7df130cf692580a77b539959bfb9225
+  tree_inventory_sha256: af8d5dc490a8bc39209e8759de6026ef10edf654fce162c8d73ebbf2ec327dcb
+  file_count: 30
+  execution_report: results/c18268c9a866f12d54496506737595d8a16eb96c2e8778053503813a789f5647/logs/phase_d08_theorem_contract_execution_report.json
+  execution_report_sha256: 2f61a1b1972f6c4d4292126629125f434869087a23d93251befbd8fa06de7bb5
+  frozen_d09_status: FAIL_IMPLEMENTATION
+  frozen_d09_exception: "ValueError: max() iterable argument is empty"
+  reused_tasks:
+    D-01: {status: PASS_CONVERGED, checkpoint_sha256: 822e3376e0d772c4eb93239293b4709846a8bb47e41cd66e1876b1d9f4c58145}
+    D-02: {status: PASS_CONVERGED, checkpoint_sha256: 4d9b47ec683f88a219b8c37bef86b8d85c4120c63854116941191166daa41e4f}
+    D-03: {status: INCONCLUSIVE, checkpoint_sha256: 0161eada2b7b6752b5aff6d7b29913cae0e25f074877b99a3bb0a91eeb4d9aef}
+    D-04: {status: INCONCLUSIVE, checkpoint_sha256: cc4f13eaf75962b21bc3792fa7120ee38ac5fe84fe637dea9591facd329b82dd}
+    D-05: {status: INCONCLUSIVE, checkpoint_sha256: 35fc2e63ca8ca7a981548f8751620cced830314770bbd3697b4b1064deabb5d4}
+    D-06: {status: PASS_CERTIFIED, checkpoint_sha256: 143751f74612d2e1d955cb6c9954ccc130f46ddbfbbb076e56e87818dbe3e6e3}
+    D-07: {status: PASS_CERTIFIED, checkpoint_sha256: ab5fac9fe6ce8c83fc9a29e1f18167cd29a7a143abdef0615da01068a09d7127}
+    D-08: {status: PASS_CERTIFIED, checkpoint_sha256: 7bf6f8d877c110917e5bfdfe2948e747ec7e2ef7496b37747c4b82e658bb0e50}
+parser_contract:
+  frozen_before_scientific_rerun: true
+  parser_schema_version: hypercells_tess_content_v1
+  tess_marker_policy: EXACTLY_ONE_DYNAMIC_CONTENT_MATCH
+  record_location_policy: CONTENT_GRAMMAR_NOT_ABSOLUTE_OFFSET
+  vertex_record_grammar: NONEMPTY_TOP_LEVEL_LIST_OF_UNIFORM_POSITIVE_INTEGER_TUPLES_WIDTH_2_OR_3
+  edge_record_grammar: NONEMPTY_TOP_LEVEL_LIST_OF_THREE_FIELD_RECORDS_WITH_TWO_POSITIVE_VERTEX_INDICES_AND_NESTED_METADATA
+  auxiliary_record_grammars:
+    - GROUP_WORD_OR_TRANSLATION_LIST
+    - POST_EDGE_FACE_BOUNDARY_LIST
+  unknown_record_policy: FAIL_EXPLICITLY
+  ambiguity_policy: FAIL_EXPLICITLY
+  validation:
+    require_nonempty_edge_list: true
+    require_all_edge_indices_in_vertex_range: true
+    require_exactly_one_vertex_record: true
+    require_exactly_one_edge_record: true
+    require_malformed_records_to_fail: true
+    preserve_raw_external_files: true
+    preserve_parser_diagnostics: true
+  known_fixture_edge_counts:
+    "{8,3}-tess_T2.1_3.hcm": 24
+    "{8,3}-tess_T2.1_3_sc-T5.1.hcs": 96
+  known_fixtures:
+    - filename: "{8,3}-tess_T2.1_3.hcm"
+      sha256: a4c46e7288080cf05fab8cc79ff6f9322d16a272c078a35979fbbc59587d94a6
+      expected_vertex_count: 16
+      expected_edge_count: 24
+      expected_degree: 3
+    - filename: "{8,3}-tess_T2.1_3_sc-T5.1.hcs"
+      sha256: c03c3f8ec440e0e2872191deb19d4cacf10de75a2cae9dfa93550d42fd2c7200
+      expected_vertex_count: 64
+      expected_edge_count: 96
+      expected_degree: 3
+  regression_requirements:
+    real_hcm_fixture: true
+    real_hcs_fixture: true
+    synthetic_metadata_before_edges: true
+    empty_edges_fail: true
+    invalid_indices_fail: true
+    unknown_records_fail: true
+    malformed_mixed_edges_fail: true
+  posthoc_parser_changes_permitted: false
+execution_order: [D-09, D-10, D-11, D-12, D-13, D-14, D-15, NC-01, NC-02, NC-03, NC-04, NC-05, NC-06, NC-07, NC-08, NC-09]
+d15_user_authorized_dependency_override:
+  requested_order: D-09_THROUGH_D-15_THEN_NC
+  original_plan_recorded: D-15_AFTER_G-13_G-15_AND_S-17_S-24
+  authority: current_user_request

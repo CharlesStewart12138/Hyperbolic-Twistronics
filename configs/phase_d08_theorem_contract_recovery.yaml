@@ -1,0 +1,109 @@
+schema_version: 1
+state: PHASE_D_D08_RECOVERY_INCONCLUSIVE
+execution_scope: D-08_THEOREM_CONTRACT_RECOVERY_THROUGH_D-15_THEN_NC-01_THROUGH_NC-09
+base_config:
+  path: configs/phase_d_nc.yaml
+  sha256: de31822630dc49c0b22b8e478a68e4d14fc65b89dc95accfac61f07f4f9c283a
+frozen_predecessor:
+  run_id: 43f9b7b4b5c94c4034f024b32b9c4480ec9fc3c3c42b57f9a9891f80b2df87b2
+  manifest_sha256: 1e5f1a5341ad47ebf24b9b432c1c257fe55a21242204202acb0cdd7a54bcf1cd
+  tree_inventory_sha256: b04affbe016d47dd8f838ca6dd8c149ea9b62ea3783f2f0738c5f9420eae9e6e
+  file_count: 25
+  frozen_d08_status: INCONCLUSIVE
+  d08_checkpoint_sha256: ab3f06deffb4a341b4aeaac0a9883429290abeb4c916f37c5fd3364bf8b82ac0
+  d08_certificate: results/43f9b7b4b5c94c4034f024b32b9c4480ec9fc3c3c42b57f9a9891f80b2df87b2/certificates/d08_arithmetic_complexity_recovery.json
+  d08_certificate_sha256: f95a970e8cb28e3ddbbfd863163ae1fa312042da1667aad54cf5a053ebeaf733
+  d08_preregistration_sha256: 1dc541c9163b91d81f2a9faaf11727b0aa2adfac7c178bc3c5a6dc1e24a7f4c9
+  frozen_metrics:
+    fixed_ratio_c: 2
+    fixed_ratio_extrapolation: 6.0170367374085725
+    fixed_ratio_tail_center: 6.012160883390238
+    fixed_ratio_tail_block_drift: 0.0025348567472018857
+    dyadic_upper_envelope_extrapolation: 4.038050869764985
+    dyadic_lower_envelope_extrapolation: 3.9977920184187563
+    g11_extrapolation: 4.061663815456154
+  reused_tasks:
+    D-01: {status: PASS_CONVERGED, checkpoint_sha256: 3cded0ab29f81f49ec04f5cabd76ad23587a044cd073b141588d8d7e1b3061ac}
+    D-02: {status: PASS_CONVERGED, checkpoint_sha256: c35f1fdb1bd7813e162cfd684242ab35451a649e0365c027b8163d43e229ac99}
+    D-03: {status: INCONCLUSIVE, checkpoint_sha256: 4862e18f36d4b9f9d968c6ae3d1a4f81dd7b413d7ad00802bf1287ad1ec7a049}
+    D-04: {status: INCONCLUSIVE, checkpoint_sha256: 066dd4b10e9b64ec273545dc5b8714eb93e9dcae33cee8f7a9beac73a54d8106}
+    D-05: {status: INCONCLUSIVE, checkpoint_sha256: 4f139456690ab099bc8a4926330f3fe9e45e889ea11c2003c7a58a712b955069}
+    D-06: {status: PASS_CERTIFIED, checkpoint_sha256: 3911f077d0e0b7ecb869537c404cbd57fc538b7195ba65fdcf379dc31bab36ea}
+    D-07: {status: PASS_CERTIFIED, checkpoint_sha256: f5960e2d0f86bed4aed4c5127ece72d341d0f777ad54dcba363b3e096a6934a5}
+theorem_contract:
+  frozen_before_new_outcome: true
+  branch: A_LOG_ASYMPTOTIC_EXPONENT
+  registered_claim: q_j=|theta_j|^(-4+o(1))
+  equivalent_limit: log(q_j)/log(|theta_j|^(-1))->4
+  stronger_regular_variation_claim_registered: false
+  explicitly_not_inferred: q_(c*j)/q_j->c^4 for fixed c>1
+  manuscript:
+    path: references/5203_REVISED_FINAL_ROUND2.pdf
+    sha256: 4815472e059312cf75e5b7fce0e2d2f718a5766964e888eec508cff8478f9abb
+    evidence:
+      - {page: 71, locator: "Theorem 3, equations (1108)-(1110)", role: "proves the logarithmic exponent-four claim"}
+      - {page: 202, locator: "Definition 54, equations (2673)-(2677)", role: "defines U_p(beta) by the running logarithmic exponent"}
+      - {page: 204, locator: "Theorem 149, equations (2705)-(2710)", role: "classifies the centered sequence as U_1(4)"}
+      - {page: 206, locator: "Corollary 76, equation (2721)", role: "restates the exponent-four log asymptotic"}
+  g10:
+    path: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g10_coincidence_index_height.json
+    sha256: 3365912a69912af1002c23805f6c38cc1cc3b87c5cdf57e5e38209981ba00a33
+  g11:
+    path: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g11_arithmetic_exponent.json
+    sha256: 030dc26d685779f071dfeab40244404e0951c9c2bc7d7be7d907a303df05f5c3
+d08_preregistered_theorem_matched_test:
+  frozen_before_new_outcome: true
+  estimator_version: theorem_matched_log_residual_v1
+  target_exponent: 4.0
+  theta_definition: 2*atan(sqrt(3)/j)
+  residual_definition: R_j=log(q_j)-4*log(|theta_j|^(-1))
+  normalized_residual_definition: rho_j=R_j/log(|theta_j|^(-1))
+  theorem_target: rho_j->0
+  q_column: coincidence_degree_maximal_order
+  j_min_inclusive: 64
+  j_max_exclusive: 4096
+  dyadic_block_starts: [64, 128, 256, 512, 1024, 2048]
+  fit_blocks: [64, 128, 256, 512, 1024, 2048]
+  block_center: median
+  uncertainty_quantiles: [0.10, 0.90]
+  extrapolation:
+    predictor: statistic_specific_inverse_log_theta_at_realizing_index
+    responses: [median_normalized_residual, upper_normalized_residual, lower_normalized_residual]
+    method: ordinary_least_squares
+    target_predictor: 0.0
+    leave_one_block_out: true
+  acceptance:
+    residual_identity_absolute_tolerance: 1.0e-12
+    upper_residual_extrapolation_absolute_max: 0.12
+    lower_residual_extrapolation_absolute_max: 0.12
+    residual_envelope_extrapolation_gap_max: 0.12
+    leave_one_out_intercept_absolute_max: 0.25
+    last_to_first_median_absolute_ratio_max: 1.0
+    last_to_first_maximum_absolute_ratio_max: 1.0
+    require_frozen_upper_envelope_check: true
+    require_frozen_lower_envelope_check: true
+    require_frozen_envelope_gap_check: true
+    require_g10_pass_exact: true
+    require_g11_pass_converged: true
+  contradiction:
+    same_side_residual_exclusion_margin: 0.25
+    require_envelope_extrapolation_gap_max: 0.12
+    require_all_leave_one_out_intercepts_same_side: true
+  fixed_ratio_diagnostic:
+    source: frozen_predecessor_d08
+    acceptance_role_for_theorem_A: NONE
+    interpretation: diagnostic_of_strong_regular_variation_under_doubling_only
+  nonpassing_noncontradictory_status: INCONCLUSIVE
+  adjacent_point_regression_forbidden: true
+  fixed_ratio_result_recalculation_forbidden: true
+  no_posthoc_changes: true
+g11_frozen_reference:
+  extrapolation: 4.061663815456154
+  status: PASS_CONVERGED
+  compatible_with_4: true
+  incompatible_with_1: true
+execution_order: [D-08, D-09, D-10, D-11, D-12, D-13, D-14, D-15, NC-01, NC-02, NC-03, NC-04, NC-05, NC-06, NC-07, NC-08, NC-09]
+d15_user_authorized_dependency_override:
+  requested_order: D-09_THROUGH_D-15_THEN_NC
+  original_plan_recorded: D-15_AFTER_G-13_G-15_AND_S-17_S-24
+  authority: current_user_request

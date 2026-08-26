@@ -1,0 +1,85 @@
+schema_version: 1
+state: PHASE_D_BLOCKED_AT_D08
+execution_scope: D-08_RECOVERY_THROUGH_D-15_THEN_NC-01_THROUGH_NC-09
+base_config:
+  path: configs/phase_d_nc.yaml
+  sha256: de31822630dc49c0b22b8e478a68e4d14fc65b89dc95accfac61f07f4f9c283a
+frozen_predecessor:
+  run_id: 27d1e08e091bf4f37bca005bd5553e658010e3088fa6602ac80ba4d9b9e97f2d
+  manifest_sha256: 8d011d8ceaacd286472e0254d2abc7a239df7fae8227d7a6b4af29e6f3097061
+  tree_inventory_sha256: 135666ce0ba5faecbb28863836514b06a4736f40772d98d4c1bca35ccf2777dd
+  file_count: 43
+  frozen_d08_status: FAIL_THEORY
+  root_cause: FAIL_IMPLEMENTATION
+  d08_checkpoint_sha256: 0d031eb88ec53a38d6499ea48b6a366ded4bd999c5486e75d674d98e8ea37311
+  d08_certificate_sha256: 4b86b20531b14e70fb199d577169cd20d31a54555c07c64ca5d543d2c94df9ff
+  reused_tasks:
+    D-01:
+      status: PASS_CONVERGED
+      checkpoint_sha256: cee7eb26a1de5f20741f31314301c9b511773cc9883ee62d381436c7aa1cbc70
+    D-02:
+      status: PASS_CONVERGED
+      checkpoint_sha256: a72d43e22c594426712fff78488842c072a4fbe1a9186a1d08da3302382f8dae
+    D-03:
+      status: INCONCLUSIVE
+      checkpoint_sha256: 7a9fd7bfe3870b3bd316992748fecb32c0f51d2a40fa311dd7371dafd66219d9
+    D-04:
+      status: INCONCLUSIVE
+      checkpoint_sha256: d0592041425957b0f8c095785412eaa43e426114ef792b9629251eb4758aa653
+    D-05:
+      status: INCONCLUSIVE
+      checkpoint_sha256: dcf00fc9d1dadfc21cfa1a3a258019af6027d8ce9e79efba240a201e946a225b
+    D-06:
+      status: PASS_CERTIFIED
+      checkpoint_sha256: f1441cf581f888c9c25859541fa040bed125cec5d4d5d9ca21e6a0457fd27b9f
+    D-07:
+      status: PASS_CERTIFIED
+      checkpoint_sha256: 2dcee7c6ea7a1a2a3571a187063d518d8fe20e5230a9847a64e64d90694d14fc
+d08_preregistered_estimator:
+  frozen_before_outcome: true
+  estimator_version: dyadic_scale_separated_v1
+  q_column: coincidence_degree_maximal_order
+  theta_inverse_definition: sqrt((j^2+3)/3)
+  exact_target_exponent: 4.0
+  fixed_ratio_c: 2
+  pair_j_min_inclusive: 64
+  pair_j_max_exclusive: 2048
+  pair_block_starts: [64, 128, 256, 512, 1024]
+  envelope_block_starts: [64, 128, 256, 512, 1024, 2048]
+  minimum_log_scale_separation: 0.68
+  block_center: median
+  uncertainty_quantiles: [0.10, 0.90]
+  tail_pair_blocks: [512, 1024]
+  tail_envelope_blocks: [1024, 2048]
+  extrapolation:
+    predictor: inverse_log_theta_at_block_start
+    response: block_exponent
+    method: ordinary_least_squares
+    target_predictor: 0.0
+    pair_fit_blocks: [64, 128, 256, 512, 1024]
+    envelope_fit_blocks: [64, 128, 256, 512, 1024, 2048]
+  acceptance:
+    primary_extrapolation_absolute_error_max: 0.50
+    primary_tail_center_absolute_error_max: 0.75
+    primary_tail_block_drift_max: 0.50
+    g11_comparison_absolute_difference_max: 0.75
+    upper_envelope_extrapolation_absolute_error_max: 0.50
+    lower_envelope_extrapolation_absolute_error_max: 0.50
+    envelope_extrapolation_gap_max: 0.75
+  contradiction:
+    same_side_exclusion_margin: 0.75
+    require_primary_tail_drift_max: 0.50
+    require_envelope_extrapolation_gap_max: 0.75
+  nonpassing_noncontradictory_status: INCONCLUSIVE
+  no_posthoc_changes: true
+  adjacent_point_regression_forbidden: true
+g11_frozen_reference:
+  extrapolation: 4.061663815456154
+  status: PASS_CONVERGED
+  compatible_with_4: true
+  incompatible_with_1: true
+execution_order: [D-08, D-09, D-10, D-11, D-12, D-13, D-14, D-15, NC-01, NC-02, NC-03, NC-04, NC-05, NC-06, NC-07, NC-08, NC-09]
+d15_user_authorized_dependency_override:
+  requested_order: D-09_THROUGH_D-15_THEN_NC
+  original_plan_recorded: D-15_AFTER_G-13_G-15_AND_S-17_S-24
+  authority: current_user_request

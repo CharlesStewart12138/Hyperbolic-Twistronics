@@ -1,0 +1,35 @@
+schema_version: 1
+state: FINAL_AUDIT_WORKBOOK_RENDER_BLOCKED
+execution_scope: FINAL_GLOBAL_AUDIT_ONLY
+frozen_before_recovery: true
+scientific_recomputation_permitted: false
+frozen_failed_audit_run:
+  run_id: 76922cd3a8326b6ae95ecae1660b903d2f95fb357ad5cd5f7b6540cda06e0ece
+  manifest_sha256: b0b7a0afd3aa9d077580bdf8e00165e43c0f3ac9b5df049da689b68513a3d6e7
+  tree_inventory_sha256: f0b3027082495f1f13118b44aef7afe137fa57bf4e8cd6c13979a389b932cff0
+  file_count: 14
+  failure_log: results/76922cd3a8326b6ae95ecae1660b903d2f95fb357ad5cd5f7b6540cda06e0ece/logs/final_audit_recovery_failure.log
+  failure_log_sha256: c9c0a5649117462881018e1cdf271c9472d5fcfa183f4269bd19a7718929e610
+  expected_error_signature: "Auto render too large: 3632x21352px"
+root_cause:
+  classification: FAIL_IMPLEMENTATION
+  exact_stage: FINAL_GLOBAL_AUDIT / theorem_validation_matrix.xlsx / preview rendering
+  exact_reason: >-
+    The workbook contains the complete 88-row validation matrix, but the
+    renderer attempted an uncropped full-sheet preview whose 3632x21352-pixel
+    raster exceeded the artifact-tool rendering limit.
+repair_contract:
+  workbook_rows_must_remain_complete: 88
+  workbook_formula_scan_must_remain_complete: true
+  workbook_summary_reconciliation_must_remain_complete: true
+  render_only_bounded_visual_qa_ranges: true
+  preview_ranges:
+    Summary: A1:H16
+    Validation Matrix: A1:S14
+    Error Budget: A1:R14
+    Provenance: A1:H8
+  rendered_sheet_count: 4
+  no_scientific_task_reruns: true
+  no_task_status_changes: true
+  no_acceptance_criterion_changes: true
+execution_order: [VERIFY_FROZEN_SCIENTIFIC_RUN, VERIFY_FROZEN_AUDIT_FAILURE, FINAL_GLOBAL_AUDIT]

@@ -1,0 +1,16 @@
+schema_version: 1
+amends: configs/final_remaining.yaml
+amendment_stage: BEFORE_ANY_G13_OR_LATER_SCIENTIFIC_OUTCOME
+reason: >-
+  The original finite-scale G-13 check compared dimensionful omega_j to an
+  absolute number.  The theorem requires omega_j -> 0 and omega_j scales with
+  the already frozen normalization c_nu.  Replace that dimensionally invalid
+  finite check by a scale-free ratio and retain the analytic zero-limit check.
+posthoc_outcome_inspected: false
+replacement:
+  path: g13_magic_sampling.acceptance
+  remove: {final_omega_maximum: 0.05}
+  add:
+    final_to_initial_omega_ratio_maximum: 0.05
+    analytic_limit_required: ZERO
+all_other_windows_ratios_tolerances_subsets_unchanged: true

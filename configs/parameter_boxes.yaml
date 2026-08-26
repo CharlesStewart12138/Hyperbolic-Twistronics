@@ -1,0 +1,15 @@
+schema_version: 1
+preregistered: true
+frozen_before_scans: true
+boxes:
+  curvature_radius: [0.75, 8.0]
+  theta: [0.0025, 0.35]
+  w_over_t: [0.05, 12.0]
+  lambda_perp: [0.20, 0.75]
+  physical_cutoff: [3.0, 12.0]
+target:
+  layer_parity: even
+  band_rule: continuation_from_first_shell_point_island
+  hodge_metric: canonical_genus_two
+  normalization: manuscript_equation_2403
+

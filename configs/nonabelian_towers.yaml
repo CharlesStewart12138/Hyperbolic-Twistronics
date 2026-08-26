@@ -1,0 +1,44 @@
+schema_version: 1
+construction: principal_prime_ideal_congruence_kernels
+surface_group:
+  presentation: "<g1,g2,g3,g4 | g1 g2^-1 g3 g4^-1 g1^-1 g2 g3^-1 g4 = e>"
+  relator_word: [1, -2, 3, -4, -1, 2, -3, 4]
+  algebraic_parameter: x
+  minimal_polynomial: [1, 0, -2, 0, -1]
+  coefficient_ring: "Z[x]/(x^4-2*x^2-1)"
+  faithful_representation_source: "results/f2916d3fc9ed2bf74d0864ddeb7c5d75a9d4b9cb47de21bb4467d9bed07d5585/exact/i04_octagon_group.json"
+normal_form_source:
+  run_id: b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619
+  path: "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt"
+  sha256: 6b312bcea6581fcbecfc5437bfe82e4287ab5fa459e2a3b836480594dc2b9f1c
+  maximum_word_length: 6
+  expected_count: 155577
+metric_certificate:
+  curvature_radius: 8.0
+  bolza_systole_over_R: "2*acosh(1+sqrt(2))"
+  declared_crossing_constant_CA: 8.0
+towers:
+  - tower_id: congruence_p7_r2
+    residue_prime: 7
+    residue_root: 2
+    certified_levels: [1, 2]
+    materialized_levels: [1, 2]
+  - tower_id: congruence_p23_r11
+    residue_prime: 23
+    residue_root: 11
+    certified_levels: [1, 2]
+    materialized_levels: [1]
+  - tower_id: congruence_p31_r3
+    residue_prime: 31
+    residue_root: 3
+    certified_levels: [1, 2]
+    materialized_levels: [1]
+bulk_gate:
+  minimum_inequivalent_towers: 3
+  require_nonabelian: true
+  require_strict_nesting: true
+  require_trivial_kernel_intersection: true
+  require_word_and_hyperbolic_injectivity_limit: true
+  interaction_radius_word: 1
+  materialization_order_cap: 200000
+

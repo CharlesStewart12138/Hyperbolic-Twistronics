@@ -1,0 +1,18 @@
+schema_version: 1
+execution_order:
+  - I-01:I-10
+  - G-01:G-12
+  - S-01:S-16
+  - B-01:B-15
+  - D-01:D-14
+  - G-13:G-15
+  - S-17:S-24
+  - D-15
+phase_gate:
+  current: I
+  advance_only_if: checkpoint_I_all_prerequisites_closed
+compute_plot_separation:
+  compute_roots: [src/exact, src/geometry, src/covers, src/model, src/spectral, src/hodge, src/bulk, src/representation, src/dos, src/diffraction, src/external, src/audit]
+  plot_root: src/plots
+  forbidden_in_compute: [matplotlib, seaborn, savefig, .png, .pdf]
+

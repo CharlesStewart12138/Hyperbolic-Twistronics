@@ -1,0 +1,97 @@
+schema_version: 5
+resume_from_state: PHASE_B_BLOCKED
+execution_scope: B-07_ONLY
+recovery_route: exact_character_isotypic_newton
+preserved_failed_runs:
+  - run_id: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+    manifest_sha256: a09440c5950ed84f80da0e8a4687a1039a1f1c3f3bcc1efdff29ffbb486f6ec5
+  - run_id: 190214972dbfac41046435b98a5d715c1410ba894fc2de55ff5143b6def20ecd
+    manifest_sha256: 2382a743429f7379bed93caa63eb09afc1752fbc3b975f09ee8145fbe866c41f
+  - run_id: 9545d5e6c9af186f5d0e4201774642fc1447bd24bda34dd342912b2f9b4b2a3f
+    manifest_sha256: b7029b7d58c4a3d64a4745391061a318426535a01712e0396963057da239d5c9
+  - run_id: 91f0f172029934dca9e57942b02e47bca53fccf24dc4e70ce234e59bc07462d3
+    manifest_sha256: 79c20afdc382df047debe8dec7382052fe50e2460e2560a64030f00c1fcca5e9
+  - run_id: 1fd3a02481f7d9ff6befa94b9455d5423e76e1d0c7c28270336535672b8bc4d9
+    manifest_sha256: e62971ceb62f4b8c297a4392ece17cbbffd802c458a14847852b9b28a9fcd4d9
+  - run_id: d7dabd6e092b57e0fe4762db455f7501fca9a1f5c4237e38766655edc87695d0
+    manifest_sha256: 13cd02f692545319f13f2ba87fadd2f20be0b4852a9181f29ebd463a7b0f8b57
+    tree_inventory_sha256: 63f1129def4294ea804a71967edd34c052db28f0fda32759710ee735de19c59d
+  - run_id: ab3692d6737d1c0c32bc639bd9172a3d95262623d45241f2786aecf848fccdc7
+    manifest_sha256: fe21ac3a1dd2a43d568b1039a923fc356a67d0f49bdee79318b231a42053f87e
+  - run_id: f36db6ef2417d3de9b2512b52c5c732d90d90e9063b2e3c7bae085e2d85cda72
+    manifest_sha256: 5cbce401256ba6968e56dfb23e4fb6dbddaef7a2919490d2fc52fa50504b5506
+  - run_id: cdf46cf7c3f772f0f3c85e052011c752ec74a144fef437d51e05fbb2436a14fc
+    manifest_sha256: 356f99a52f01c0828af77cee6fc0d6031cb5a2ffd2eb054f883aa4e2921d9b88
+    tree_inventory_sha256: b4e81be004ab917e19ba1fd7fd8ff4a04d8093c5b40e41c64d139f50b7c5e41e
+  - run_id: 9beed910a80b5b7fe968bdc457ebfe7fb3a7fcd7882c9a7bace284c35c9b0fdb
+    manifest_sha256: 8b223fd23659b17f096b4c4d74fbf335e2a8096bab0a8279a1ed9ceecb5c66ee
+    tree_inventory_sha256: 7d67f59487499e9f97df8557f4045a7f648e2dc749bb2bc78ff14159efcdf9a7
+preserved_b01:
+  run_id: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+  status: PASS_CONVERGED
+  certificate_sha256: 1ad3e3db9a905b652a828411c4d239431afbc9cd5afc0dd01588a416753c5187
+  derived_sha256: bbdf36f31c6b8d03cc703847002d0c5ef3bccbabba673877ec758962c135f711
+  raw_sha256:
+    congruence_p23_r11_level_1_edges.npz: 007e5bba00e8018407c5a8b27f5f7759d2a706554a389c2e0f3a5507884e3474
+    congruence_p31_r3_level_1_edges.npz: b93e507962269467a649f525dfbd2f36baf04813d4ba57b451da2c0d4b7cf126
+    congruence_p7_r2_level_1_edges.npz: a83956422b7a379deec6519155e79d2e3fafdaea80cc3e07367d0e2cd79aabbe
+    congruence_p7_r2_level_2_edges.npz: 7b9fd094fac089e041d70641797a57a062c37afa8b89c195de95d3cc2667dd93
+b07_recovery_seed:
+  source_run_id: 190214972dbfac41046435b98a5d715c1410ba894fc2de55ff5143b6def20ecd
+  group: congruence_p23_r11_level_1
+  resume_irrep: 4
+  degrees: [1, 11, 11, 12, 12, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24]
+  artifacts_sha256:
+    character_table.json: d9ced5be6fb1bd0e02db1226f71211bd1591885bdcd46932f58d9aa1a1712cf8
+    character_table.workspace: b0f85a266795746824b1035247d3db234182a4f217ba202a64528ab97ee6d1bd
+    irreps/irrep_0001.txt: 848e1c7241d77dacde1ab9fe3565ee8159813d03d1139447d9cf17d6dd9c531f
+    irreps/irrep_0002.txt: b4a7285d52e35236a2c22d6a3389155ab4155a2801fe994cfb876e44ef068389
+    irreps/irrep_0003.txt: baae06f8ff4b1a8a73037c0db088bb4f99f62d461cf8c5ad39e86c7e4129e133
+    blocks/block_0001.h5: 4a9d2d9eb285ec967697f1bb005dfbdd9300d6152dcd4e70711687af56f42b2d
+    blocks/block_0002.h5: 340a882b5997c894d5cf2c751c04235388eb14a506b923934650d346ef4db4c0
+    blocks/block_0003.h5: b225f8e0441a594dae0458305b2b090f523c795e529da7979e101fffd87502fc
+character_recovery_checkpoint:
+  source_run_id: cdf46cf7c3f772f0f3c85e052011c752ec74a144fef437d51e05fbb2436a14fc
+  manifest_sha256: 356f99a52f01c0828af77cee6fc0d6031cb5a2ffd2eb054f883aa4e2921d9b88
+  tree_inventory_sha256: b4e81be004ab917e19ba1fd7fd8ff4a04d8093c5b40e41c64d139f50b7c5e41e
+  b07_certificate_sha256: 71bb9ba81f921fc9bc7ab9e09ef4a00c7b2c495b33d5e9dcf9c76692e530d651
+  block_spectra_sha256: 63ab46e21a505842f5a1cc1ebf9fe56226304b219da24d6262d8a40027c22e67
+  completed_groups:
+    - congruence_p23_r11_level_1
+    - congruence_p31_r3_level_1
+    - congruence_p7_r2_level_1
+    - congruence_p7_r2_level_2
+  partial_group: null
+  partial_completed_files: []
+tower_gate:
+  run_id: 4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b
+  certificate: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  raw_directory: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/raw/nonabelian_covers
+reference_adjacency:
+  degree: 8
+  markov_spectral_radius_lower: 0.662477
+  markov_spectral_radius_upper: 0.6628153757
+  spectrum_is_interval: true
+  source_note: standard genus-two surface-group simple random walk; adjacency spectrum is [-8*rho,8*rho]
+gap_backend:
+  mode: windows_job_object_character_isotypic
+  gap_bash: C:/Program Files/GAP-4.16.0/runtime/bin/bash.exe
+  gap_binary_cygwin: /opt/gap-4.16.0/gap
+  heartbeat_seconds: 10
+  stage_timeouts_seconds:
+    group_audit: 1800
+    character_table: 7200
+    character_data: 7200
+    exact_newton: 1800
+    individual_irrep: 7200
+  recovery_timeout_policy:
+    soft_seconds: 7200
+    hard_seconds: 14400
+    progress_lookback_seconds: 120
+    minimum_cpu_fraction: 0.25
+    maximum_peak_memory_bytes: 4294967296
+    on_hard_timeout: exact_character_isotypic_newton
+normal_forms:
+  path: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt
+  maximum_length: 6
+public_projector_patterns: ['*projector*', '*projection*']

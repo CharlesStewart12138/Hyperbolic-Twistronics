@@ -1,0 +1,60 @@
+{
+  "checks": {
+    "all_predecessor_hashes_inventoried": true,
+    "all_recorded_paths_present_and_legacy_blank_derived_explicit": true,
+    "all_terminal": true,
+    "matrix_manifest_reconciled": true,
+    "no_blockers": true,
+    "preserved_statuses": true,
+    "task_count_88": true,
+    "unique_task_ids_88": true
+  },
+  "predecessor_hash_inventory": "results/23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2/derived/predecessor_hash_inventory.parquet",
+  "predecessor_run_count": 23,
+  "preserved_expected_failures": [
+    "S-16",
+    "S-24",
+    "B-08",
+    "NC-01",
+    "NC-02",
+    "NC-03",
+    "NC-04",
+    "NC-05",
+    "NC-06",
+    "NC-07",
+    "NC-08",
+    "NC-09"
+  ],
+  "preserved_inconclusive": [
+    "S-07",
+    "S-08",
+    "S-18",
+    "S-21",
+    "S-22",
+    "B-09",
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-12"
+  ],
+  "run_id": "23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2",
+  "status": "PASS_CERTIFIED",
+  "status_counts": {
+    "FAIL_EXPECTED": 12,
+    "INCONCLUSIVE": 10,
+    "PASS_CERTIFIED": 24,
+    "PASS_CONVERGED": 26,
+    "PASS_EXACT": 13,
+    "PASS_EXTERNAL": 3
+  },
+  "task_count": 88,
+  "terminal_task_count": 88,
+  "workbook_checks": {
+    "formula_error_count_zero": true,
+    "preview_ranges_exact": true,
+    "provenance_date_format": true,
+    "rendered_sheet_count_four": true,
+    "summary_reconciled": true,
+    "validation_rows_88": true
+  }
+}

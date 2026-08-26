@@ -1,0 +1,57 @@
+schema_version: 1
+resume_from_state: PHASE_B_B07_COMPLETE
+execution_scope: B-02_THROUGH_B-15
+source_b07:
+  run_id: 618264e7923cf816783616b6dfc40fee0f8ca17a70a511610028fb0120841d47
+  manifest_sha256: 46200cb3448b52a2b440604c499e84f5c726ab73fac5dd662907ca207a4511f9
+  tree_inventory_sha256: d4925e41f11f1397e95d082374b1d24ff534e40034807657ba3a531fa0cfadd0
+  file_count: 515
+  b01_reuse_certificate_sha256: db076b2e97ba3e3f9b12d270e25efbd1c2bac312b9287e89324caeee5067fd5a
+  b07_certificate_sha256: 2eb88046d8064cf8e3d12aedaeb16a066ef412702d5c96e3e105b557e80e3757
+  b07_seed_certificate_sha256: 022688e59f55cc1ad727915f58c8a7e1473db8ac7917179419e1984899953813
+  block_spectra_sha256: f78954a4a284b70f7a84cfd550ec74261a8ece10321fd0d0fc7ed392e726826b
+  validation_matrix_sha256: 08370fc2bd0ad11e4270fcc39bbd0b371037a1aec991cec9449e79db2ecab522
+tower_gate:
+  run_id: 4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b
+  certificate: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  certificate_sha256: 1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9
+  levels: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/derived/nonabelian_tower_levels.parquet
+  levels_sha256: 72150f5f1f1f455005bb1da25c04db543ed1687a11bd6cfa022afa9438965bff
+  raw_directory: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/raw/nonabelian_covers
+reference_adjacency:
+  degree: 8
+  markov_spectral_radius_lower: 0.662477
+  markov_spectral_radius_upper: 0.6628153757
+  spectrum_is_interval: true
+  source_note: standard genus-two surface-group simple random walk; adjacency spectrum is [-8*rho,8*rho]
+bilayer_family:
+  normalized_adjacency_scale: 1.0
+  interlayer_coupling: 1.0
+  parameter_interval: [0.9, 1.1]
+numerics:
+  eigsh_edge_count: 10
+  eigsh_tolerance: 1.0e-10
+  solver_residual_tolerance: 2.0e-8
+  polynomial_grid_size: 65
+  dos_grid_size: 401
+  dos_broadening: 0.08
+  common_space_quantiles: 4096
+  random_seed: 5203
+  cross_tower_fixed_broadening_sup_limit: 0.25
+shells:
+  decay_q: 0.20
+  maximum_materialized_shell: 4
+locality:
+  interaction_radius_word: 1
+  observation_radius_word: 0
+  cutoff_radius_word: 1
+normal_forms:
+  path: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt
+  maximum_length: 6
+public_projector_patterns: ['*projector*', '*projection*']
+acceptance:
+  no_loss_basis: certified_injectivity_limit_and_complete_retained_blocks
+  no_pollution_basis: exact_reduced_interval_membership
+  b08_required_status: FAIL_EXPECTED
+  inconclusive_is_preserved_and_nonblocking: true
+  blockers: [FAIL_THEORY, FAIL_IMPLEMENTATION]

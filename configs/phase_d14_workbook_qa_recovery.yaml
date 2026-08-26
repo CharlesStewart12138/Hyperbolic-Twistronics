@@ -1,0 +1,87 @@
+schema_version: 1
+state: PHASE_D_D15_AND_NC_COMPLETE
+execution_scope: D-14_WORKBOOK_QA_RECOVERY_ONLY
+base_config:
+  path: configs/phase_d_nc.yaml
+  sha256: de31822630dc49c0b22b8e478a68e4d14fc65b89dc95accfac61f07f4f9c283a
+frozen_predecessor:
+  run_id: ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4
+  manifest_sha256: 67aa9b171167ec24c615242f4e6ec89b711ef8b78cf48af96c2c303b5b66adf7
+  tree_inventory_sha256: 570a832204fa0c8b21ba2d82b50148efe1dc89066e91a1c753f4eafaee5cdc54
+  file_count: 116
+  execution_report: results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/logs/phase_d09_parser_recovery_execution_report.json
+  execution_report_sha256: 05ba2e45d9325cc59890d0ec359027f3b9374ba16ce64302cef3bc1467a924a7
+  expected_task_statuses:
+    D-01: PASS_CONVERGED
+    D-02: PASS_CONVERGED
+    D-03: INCONCLUSIVE
+    D-04: INCONCLUSIVE
+    D-05: INCONCLUSIVE
+    D-06: PASS_CERTIFIED
+    D-07: PASS_CERTIFIED
+    D-08: PASS_CERTIFIED
+    D-09: PASS_EXTERNAL
+    D-10: PASS_EXTERNAL
+    D-11: PASS_CONVERGED
+    D-12: INCONCLUSIVE
+    D-13: PASS_CERTIFIED
+    D-14: PASS_CERTIFIED
+    D-15: PASS_CERTIFIED
+    NC-01: FAIL_EXPECTED
+    NC-02: FAIL_EXPECTED
+    NC-03: FAIL_EXPECTED
+    NC-04: FAIL_EXPECTED
+    NC-05: FAIL_EXPECTED
+    NC-06: FAIL_EXPECTED
+    NC-07: FAIL_EXPECTED
+    NC-08: FAIL_EXPECTED
+    NC-09: FAIL_EXPECTED
+  reused_tasks:
+    D-01: {status: PASS_CONVERGED, checkpoint_sha256: 73f2963f86cb9671e096a17f1115a2e847d762e0db7a814c5f27bf9763ba06a8}
+    D-02: {status: PASS_CONVERGED, checkpoint_sha256: 16df4bebf62a95fccf6a7cae3e2df44aef37411998c7b52c8bdc1c3c5a8a2a08}
+    D-03: {status: INCONCLUSIVE, checkpoint_sha256: 311d80ef7617acce24d6229b31e71cb487b718999becf864821ecd06900aca71}
+    D-04: {status: INCONCLUSIVE, checkpoint_sha256: 308d0135713c8dd2dc19d7ce42b0552907abcd6299994d5ae77dcd22e77aac7f}
+    D-05: {status: INCONCLUSIVE, checkpoint_sha256: f793c2a039d1307e34f83521f83b73a7613bf8321d3ae332ef2767eeb35286a3}
+    D-06: {status: PASS_CERTIFIED, checkpoint_sha256: 75ac0c5d77a465f3f572f38190db802f50be29116f0b8f3b74448e129b1b5faa}
+    D-07: {status: PASS_CERTIFIED, checkpoint_sha256: b52c84690564c0fd3a807b97b20bc6526412e123e7fdf6cb1b55b273ef9b4790}
+    D-08: {status: PASS_CERTIFIED, checkpoint_sha256: bbf48b05edbb94188dc160bdac412e7aef4c37520a31edd51c1ed1a71966b531}
+    D-09: {status: PASS_EXTERNAL, checkpoint_sha256: f2f96dc4f2a7eb8c62077dfd5f6cc4e9799c7894398210b57f7893c5dfe8184d}
+    D-10: {status: PASS_EXTERNAL, checkpoint_sha256: 88254e4348ad1d19ba75a673d4deaa09d56d2faa83972a5d071b90ca3727d595}
+    D-11: {status: PASS_CONVERGED, checkpoint_sha256: 5643def3c1448552182dcc6ca3527440ebf0031c186a8fe905462a3ead1a08c4}
+    D-12: {status: INCONCLUSIVE, checkpoint_sha256: 8723f14c621686b2c17209e3a422868723be5c6881392193e625201d42bd2ef4}
+    D-13: {status: PASS_CERTIFIED, checkpoint_sha256: 288196936d896cdfe14d7b21e5aec0d9946694cc1dbb8a89c513191242d65187}
+    D-15: {status: PASS_CERTIFIED, checkpoint_sha256: a9c4afffcb6823da6e1bd0f56c372a5ed3d9ae9d6c4f2f713f23815771561796}
+    NC-01: {status: FAIL_EXPECTED, checkpoint_sha256: 0003e25270c1cad4ef984a582a5e64fdff66daebbb1a89b2a4293907736543cf}
+    NC-02: {status: FAIL_EXPECTED, checkpoint_sha256: 81a699968a5450eef2219f4ff39f80d65a51c2b6d155e015dabc30abc6960124}
+    NC-03: {status: FAIL_EXPECTED, checkpoint_sha256: d099bde816f9948d9d1859987ce68041e62e0f1cf8c18e1585594a6bb06d6561}
+    NC-04: {status: FAIL_EXPECTED, checkpoint_sha256: d5af933c88a3fd6989f788cf8befe20ec8e99426f693ea94ff4ec48520fdd883}
+    NC-05: {status: FAIL_EXPECTED, checkpoint_sha256: 23e043862a4235db439298d84874c17f0289fdd20a7881d061a663a5cf003e42}
+    NC-06: {status: FAIL_EXPECTED, checkpoint_sha256: 66ab0eb8c9ca10d4bceceeed5bfa8511753aa1e25f72c13f4787543440aff251}
+    NC-07: {status: FAIL_EXPECTED, checkpoint_sha256: fbcdf277240d6e738a58a4af3d22c34301759ff74128721f8739f57538709ca1}
+    NC-08: {status: FAIL_EXPECTED, checkpoint_sha256: b31767a4dc87326ab055e11673b549102b0fb875399ba59f23c3231e61259f5e}
+    NC-09: {status: FAIL_EXPECTED, checkpoint_sha256: 92503fb185282e1c67517ff86e4cc91848a282ce336b488a79f55a64c0461d67}
+frozen_d14_qa_defect:
+  classification: FAIL_IMPLEMENTATION
+  old_d14_certificate: results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/certificates/d14_validation_matrix.json
+  old_d14_certificate_sha256: 2f36941721dc74634da3322ebf1f5d4a53ee3a3e02c28bb182cf870cccbfc23a
+  old_verification: results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/d14_validation_matrix/phase_d_workbook_verification.json
+  old_verification_sha256: 15274ac33fd7e255c417a19bed36f5d014107dc7a7813771f77730c93f42fe57
+  observed_validation_rows: 88
+  observed_pass_count: 0
+  expected_pass_count_from_matrix: 58
+  root_cause: WILDCARD_COUNTIF_NOT_EVALUATED_BY_CURRENT_ARTIFACT_BACKEND
+  provenance_date_display: EXCEL_SERIAL_NUMBER_WITHOUT_EXPLICIT_NUMBER_FORMAT
+d14_qa_contract:
+  frozen_before_recovery_rerun: true
+  summary_pass_formula: SUM_OF_EXACT_COUNTIF_TERMS_FOR_ALL_OBSERVED_PASS_STATUSES
+  wildcard_pass_count_forbidden: true
+  summary_reconciliation_required: true
+  summary_fields: [validation_rows, passed, inconclusive, expected_failures, blockers, error_budget_observables, unknown_error_components]
+  summary_absolute_tolerance: 1.0e-9
+  formula_error_count_required: 0
+  rendered_sheet_count_required: 4
+  provenance_date_number_format: yyyy-mm-dd hh:mm:ss
+  visual_qa_required: [Summary, Validation Matrix, Error Budget, Provenance]
+  posthoc_acceptance_changes_permitted: false
+execution_order: [D-14]
+reuse_policy: ALL_TASKS_EXCEPT_D14_BY_VERIFIED_HASH

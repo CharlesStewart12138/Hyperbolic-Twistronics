@@ -1,0 +1,16 @@
+schema_version: 1
+towers:
+  - tower_id: abelian_2
+    quotient_prime: 2
+    materialized_levels: [1, 2]
+    family: kernel_of_abelianization_mod_p_power
+  - tower_id: abelian_3
+    quotient_prime: 3
+    materialized_levels: [1]
+    family: kernel_of_abelianization_mod_p_power
+  - tower_id: abelian_5
+    quotient_prime: 5
+    materialized_levels: [1]
+    family: kernel_of_abelianization_mod_p_power
+bulk_gate_note: These are exact infrastructure controls; bounded commutator systole makes them ineligible for B-phase thermodynamic claims.
+

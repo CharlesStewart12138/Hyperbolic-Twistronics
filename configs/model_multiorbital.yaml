@@ -1,0 +1,17 @@
+schema_version: 1
+base: model_base.yaml
+model_levels:
+  M3:
+    bond_anisotropy: 0.0
+    frame_perturbation: 0.0
+    orbital_splitting: 0.0
+    interlayer_orbital_mixing: 0.0
+  M4:
+    bond_anisotropy: [-0.05, 0.05]
+    frame_perturbation: [-0.02, 0.02]
+    orbital_splitting: [-0.10, 0.10]
+    interlayer_orbital_mixing: [-0.05, 0.05]
+  M5:
+    disorder_strength: [0.0, 0.03]
+    seed_policy: explicit_per_run
+

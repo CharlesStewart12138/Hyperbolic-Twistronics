@@ -1,0 +1,12 @@
+schema_version: 1
+stage: BEFORE_NEW_RUN_INITIALIZATION_AND_BEFORE_ANY_NEW_SCIENTIFIC_OUTCOME
+file: configs/final_remaining.yaml
+field: nonabelian_tower_source.levels_sha256
+incorrect_transcription: 72150f5f1f455005bb1da25c04db543ed1687a11bd6cfa022afa9438965bff
+correct_frozen_hash: 72150f5f1f1f455005bb1da25c04db543ed1687a11bd6cfa022afa9438965bff
+evidence:
+  frozen_tower_run_tree_inventory_matched: true
+  source_file_modified: false
+  new_run_created: false
+  new_scientific_outcome_inspected: false
+all_scientific_windows_thresholds_ratios_subsets_unchanged: true

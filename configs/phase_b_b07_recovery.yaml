@@ -1,0 +1,62 @@
+schema_version: 3
+resume_from_state: PHASE_B_BLOCKED
+execution_scope: B-07_ONLY
+preserved_failed_runs:
+  - run_id: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+    manifest_sha256: a09440c5950ed84f80da0e8a4687a1039a1f1c3f3bcc1efdff29ffbb486f6ec5
+  - run_id: 190214972dbfac41046435b98a5d715c1410ba894fc2de55ff5143b6def20ecd
+    manifest_sha256: 2382a743429f7379bed93caa63eb09afc1752fbc3b975f09ee8145fbe866c41f
+preserved_b01:
+  run_id: 0b4258f5846301f260d77c64f2f0dfe91223d082a5342044235db030dbb12203
+  status: PASS_CONVERGED
+  certificate_sha256: 1ad3e3db9a905b652a828411c4d239431afbc9cd5afc0dd01588a416753c5187
+  derived_sha256: bbdf36f31c6b8d03cc703847002d0c5ef3bccbabba673877ec758962c135f711
+  raw_sha256:
+    congruence_p23_r11_level_1_edges.npz: 007e5bba00e8018407c5a8b27f5f7759d2a706554a389c2e0f3a5507884e3474
+    congruence_p31_r3_level_1_edges.npz: b93e507962269467a649f525dfbd2f36baf04813d4ba57b451da2c0d4b7cf126
+    congruence_p7_r2_level_1_edges.npz: a83956422b7a379deec6519155e79d2e3fafdaea80cc3e07367d0e2cd79aabbe
+    congruence_p7_r2_level_2_edges.npz: 7b9fd094fac089e041d70641797a57a062c37afa8b89c195de95d3cc2667dd93
+b07_recovery_seed:
+  source_run_id: 190214972dbfac41046435b98a5d715c1410ba894fc2de55ff5143b6def20ecd
+  group: congruence_p23_r11_level_1
+  resume_irrep: 4
+  degrees: [1, 11, 11, 12, 12, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24]
+  artifacts_sha256:
+    character_table.json: d9ced5be6fb1bd0e02db1226f71211bd1591885bdcd46932f58d9aa1a1712cf8
+    character_table.workspace: b0f85a266795746824b1035247d3db234182a4f217ba202a64528ab97ee6d1bd
+    irreps/irrep_0001.txt: 848e1c7241d77dacde1ab9fe3565ee8159813d03d1139447d9cf17d6dd9c531f
+    irreps/irrep_0002.txt: b4a7285d52e35236a2c22d6a3389155ab4155a2801fe994cfb876e44ef068389
+    irreps/irrep_0003.txt: baae06f8ff4b1a8a73037c0db088bb4f99f62d461cf8c5ad39e86c7e4129e133
+    blocks/block_0001.h5: 4a9d2d9eb285ec967697f1bb005dfbdd9300d6152dcd4e70711687af56f42b2d
+    blocks/block_0002.h5: 340a882b5997c894d5cf2c751c04235388eb14a506b923934650d346ef4db4c0
+    blocks/block_0003.h5: b225f8e0441a594dae0458305b2b090f523c795e529da7979e101fffd87502fc
+tower_gate:
+  run_id: 4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b
+  certificate: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  raw_directory: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/raw/nonabelian_covers
+reference_adjacency:
+  degree: 8
+  markov_spectral_radius_lower: 0.662477
+  markov_spectral_radius_upper: 0.6628153757
+  spectrum_is_interval: true
+  source_note: standard genus-two surface-group simple random walk; adjacency spectrum is [-8*rho,8*rho]
+gap_backend:
+  mode: windows_job_object_recovery
+  gap_bash: C:/Program Files/GAP-4.16.0/runtime/bin/bash.exe
+  gap_binary_cygwin: /opt/gap-4.16.0/gap
+  heartbeat_seconds: 10
+  stage_timeouts_seconds:
+    group_audit: 600
+    character_table: 1800
+    individual_irrep: 7200
+  recovery_timeout_policy:
+    soft_seconds: 7200
+    hard_seconds: 14400
+    progress_lookback_seconds: 120
+    minimum_cpu_fraction: 0.25
+    maximum_peak_memory_bytes: 4294967296
+    on_hard_timeout: character_projector_isotypic_decomposition
+normal_forms:
+  path: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt
+  maximum_length: 6
+public_projector_patterns: ['*projector*', '*projection*']

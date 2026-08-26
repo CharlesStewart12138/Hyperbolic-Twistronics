@@ -1,0 +1,209 @@
+schema_version: 1
+state: PHASE_D_D15_AND_NC_COMPLETE
+next_task: G-13
+execution_scope: G-13_THROUGH_G-15_THEN_S-17_THROUGH_S-24_THEN_FINAL_GLOBAL_AUDIT
+preregistered: true
+frozen_before_new_outcomes: true
+posthoc_changes_permitted: false
+
+frozen_predecessor:
+  run_id: 1627160ede36cf9bca3d73f045a51744f68d96b5847fad67e563cb57b8fd63f1
+  manifest_sha256: 9893cf65a9e29cbf5c0eefb1868e7857cd8a5c10e0a048daa34309c4d64d25b0
+  tree_inventory_sha256: f1fe27bcc0bfd02abbd9e65e91093de919822c0933cba01626fbe59bb71eca19
+  file_count: 46
+  task_manifest_sha256: 5d815a24055f67e8c76888728513ea17bd38ec451db357a2c8e45124efa77b23
+  validation_matrix: results/1627160ede36cf9bca3d73f045a51744f68d96b5847fad67e563cb57b8fd63f1/derived/d14_validation_matrix/theorem_validation_matrix.parquet
+  validation_matrix_sha256: 08b550f17b588c0c4e0925c67dc8de394eea1501f3b30ebc64c4c42d552df125
+  expected_adjudicated_tasks: 77
+  expected_not_started_tasks: 11
+
+phase_g_source:
+  run_id: 5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3
+  manifest_sha256: bd7e6adca64e5224a6ca2bee2db530f9b3f1068b75afe68f533981cb13cb0e4d
+  tree_inventory_sha256: 2b3dc22ff2f8f38c4da75e28a15b25f07ae5c0b4337f69314e8af5b94f8d98c0
+  file_count: 137
+  g09_exact: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/exact/g09_commensurator_sequence.json
+  g09_exact_sha256: ae9d6bdd697e19ef12a4fb056ec1c79554e5afbda5245b7f281d980247aef0ed
+  growth: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/coincidence_growth.parquet
+  growth_sha256: 0773b57685189c79e976fe856ecf0261034b76bce51e2b48d555df1a6edda835
+  g10_certificate: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g10_coincidence_index_height.json
+  g10_certificate_sha256: 3365912a69912af1002c23805f6c38cc1cc3b87c5cdf57e5e38209981ba00a33
+  g11_certificate: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g11_arithmetic_exponent.json
+  g11_certificate_sha256: 030dc26d685779f071dfeab40244404e0951c9c2bc7d7be7d907a303df05f5c3
+  g12_certificate: results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/certificates/g12_radial_locking.json
+  g12_certificate_sha256: 34ac633f28c81a344e37afc403da784c85f67c70b3815fdc4955ad91f45bef86
+
+phase_s_source:
+  run_id: b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619
+  manifest_sha256: 2579d45c7fd702ac80423eca343e3c1b1b94f94b944ef721ee3bbb81bbecbbb6
+  tree_inventory_sha256: acfeb5dbd6375afc1999ab20170f81f3ea4cf49c62e8e23f73a9ffd8339f948c
+  file_count: 63
+  s04_certificate: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s04_character_root.json
+  s04_certificate_sha256: edc9fb4f1201d363b73f79c23f81a61e5b23f9dc1e236404cb5deee479d7c725
+  normal_forms: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt
+  normal_forms_sha256: 6b312bcea6581fcbecfc5437bfe82e4287ab5fa459e2a3b836480594dc2b9f1c
+  s15_table: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/multiorbital_robustness.parquet
+  s15_table_sha256: 294ae424d235678e4d3bca3e6ebfc746d72a3e1907057bc9583933028e4ba7cc
+  s15_certificate: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s15_multiorbital_robustness.json
+  s15_certificate_sha256: aa47d8faf30b5da13db2e74ffa74ea9a301c7317f6da20cac7444a9a24eb7c79
+  s14_table: results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/symmetry_breaking_scan.parquet
+  s14_table_sha256: 39f1f28ded8db3352f4f5fa0e1a24810ac7fa6a23e00ed9319dd0200e6ff8bad
+  infinite_regular_island_status: INCONCLUSIVE
+  infinite_regular_projector_status: INCONCLUSIVE
+
+nonabelian_tower_source:
+  run_id: 4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b
+  manifest_sha256: 3baeb49f7043dedba2094f5a3b679bbbc8348cfcc02549489c8376e2e26d17ef
+  tree_inventory_sha256: 9a258bf331a5c347071bc8c9a348633125bc70fd35ecbe2ffe39843da5c14954
+  file_count: 13
+  certificate: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  certificate_sha256: 1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9
+  levels: results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/derived/nonabelian_tower_levels.parquet
+  levels_sha256: 72150f5f1f1f455005bb1da25c04db543ed1687a11bd6cfa022afa9438965bff
+  required_inequivalent_towers: 3
+
+g13_magic_sampling:
+  theorem_equations: [1113, 1114, 1115, 1116, 1117, 1123, 1124]
+  microscopic_root_source: S-04
+  root_interpretation: alpha_star_in_declared_character_sector_normalization
+  lattice_spacing_rule: nearest_neighbor_octagon_distance_d1
+  dispersion_coefficient_d: 1.0
+  active_channel_count_nc: 4
+  gamma0: 1.0
+  curvature_radius: 8.0
+  j_values: [1, 2, 3, 4, 5, 8, 12, 20, 32, 50, 100, 200, 500, 1000, 2000, 5000]
+  acceptance:
+    root_status_required: PASS_CERTIFIED
+    maximum_sampling_identity_residual: 1.0e-12
+    omega_strictly_decreasing: true
+    final_omega_maximum: 0.05
+
+g14_magic_complexity:
+  theorem_equations: [1127, 1128, 1129, 1130, 1131]
+  use_maximal_order_degree: true
+  fixed_group_claim: bounded_comparison_only
+  estimator: theorem_matched_log_residual_and_fixed_tail
+  tail_count: 5
+  acceptance:
+    exact_q_formula_required: true
+    g10_status_required: PASS_EXACT
+    g11_status_required: PASS_CONVERGED
+    extrapolated_relative_error_maximum: 0.08
+    final_direct_relative_error_maximum: 0.18
+
+g15_joint_limit:
+  theorem_equation: 6018
+  use_only_certified_nonabelian_towers: true
+  target_theta: 0.03125
+  passing_delta_rule: exp(-2 L/R)
+  failing_delta_rule: exp(-0.5 L/R)
+  acceptance:
+    passing_residual_strictly_decreases_per_tower: true
+    failing_residual_strictly_increases_per_tower: true
+    analytic_limits_required: [ZERO, INFINITY]
+
+active_shell:
+  model_family: fixed_transported_finite_rank_ARO-3B_character_sector
+  bulk_claim_permitted: false
+  variation: baseline_M3
+  q_min: -0.35
+  q_max: 0.35
+  q_points_primary: 129
+  q_points_refined: 257
+  lorentzian_eta: 0.02
+  target_tracking_rule: maximum_consecutive_eigenvector_overlap_from_q_zero
+  minimum_tracking_overlap: 0.70
+  minimum_gap: 1.0e-5
+  minimum_coherence: 0.10
+  maximum_refinement_relative_change: 0.05
+
+s18_collapse:
+  reference: {curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+  matched_x: [0.80, 1.00, 1.20]
+  cases:
+    - {case_id: reference, curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+    - {case_id: radius, curvature_radius: 6.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+    - {case_id: theta, curvature_radius: 8.0, theta: 0.10, lambda_perp: 0.20, cutoff: 6}
+    - {case_id: lambda, curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.25, cutoff: 6}
+    - {case_id: cutoff, curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 4}
+  acceptance:
+    maximum_pairwise_normalized_spectrum_residual: 0.15
+    maximum_band_tracking_failure_fraction: 0.0
+    all_complete_spectra_required: true
+
+s19_factorization:
+  theta_points: [0.055, 0.065, 0.08, 0.10, 0.12]
+  log_derivative_step: 0.01
+  acceptance:
+    maximum_absolute_factorization_residual: 0.12
+    derivatives_saved_independently: true
+
+s20_landscape:
+  K_values: [0.0, -0.015625, -0.027777777777777776]
+  theta_values: [0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.11, 0.12, 0.14, 0.16]
+  w_over_t_values: [0.5, 1.0, 2.0, 3.5, 5.0, 6.0, 7.0, 8.5, 10.0, 12.0]
+  euclidean_radius_proxy: 1000000.0
+  score_definition: product_of_equation_5956_factors
+  acceptance:
+    complete_cube_required: true
+    finite_values_required: true
+    score_range: [0.0, 1.0]
+
+s21_bifurcation:
+  stationary_derivative_tolerance: 0.02
+  fold_second_derivative_tolerance: 0.02
+  certified_nonfold_second_derivative_margin: 0.05
+  cusp_third_derivative_margin: 0.05
+  posthoc_model_changes_permitted: false
+
+s22_curvature_born:
+  same_target_required: true
+  target_projector_overlap_minimum: 0.70
+  branch_match_theta_tolerance: 0.03
+  require_interior_fold_for_curvature_born: true
+
+s23_symmetry_flatness:
+  perturbations: [-0.05, -0.025, 0.0, 0.025, 0.05]
+  breaking_pattern: [-1.0, -0.3, 0.4, 0.9]
+  degeneracy_tolerance: 1.0e-12
+  separation_margin: 1.0e-4
+
+s24_reverse_falsification:
+  controls: [wrong_metric, wrong_target_transport, second_shape_variable, incorrect_normalization, incomplete_active_shell]
+  rejection_residual_minimum: 0.05
+  correct_control_residual_maximum: 1.0e-10
+  required_status: FAIL_EXPECTED
+
+final_audit:
+  expected_tasks: 88
+  expected_terminal_tasks: 88
+  terminal_statuses: [PASS_EXACT, PASS_CERTIFIED, PASS_CONVERGED, PASS_EXTERNAL, INCONCLUSIVE, FAIL_EXPECTED]
+  blockers: [FAIL_THEORY, FAIL_IMPLEMENTATION]
+  preserve_statuses:
+    D-03: INCONCLUSIVE
+    D-04: INCONCLUSIVE
+    D-05: INCONCLUSIVE
+    D-12: INCONCLUSIVE
+    NC-01: FAIL_EXPECTED
+    NC-02: FAIL_EXPECTED
+    NC-03: FAIL_EXPECTED
+    NC-04: FAIL_EXPECTED
+    NC-05: FAIL_EXPECTED
+    NC-06: FAIL_EXPECTED
+    NC-07: FAIL_EXPECTED
+    NC-08: FAIL_EXPECTED
+    NC-09: FAIL_EXPECTED
+  inherited_error_budget: results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/error_budget.parquet
+  inherited_error_budget_sha256: 832162d66ca79a77cadeed61d2cb22e3b939acbd768a31f451d1082481c4b07a
+  workbook_filename: theorem_validation_matrix.xlsx
+  error_budget_filename: error_budget.parquet
+  report_markdown: validation_report.md
+  report_latex: validation_report.tex
+  figure_index: publication_figure_data_index.csv
+  status_filename: FINAL_VALIDATION_STATUS.json
+
+execution_order: [G-13, G-14, G-15, S-17, S-18, S-19, S-20, S-21, S-22, S-23, S-24]
+acceptance:
+  inconclusive_is_terminal_and_nonblocking: true
+  fail_expected_is_terminal_and_nonblocking: true
+  blockers: [FAIL_THEORY, FAIL_IMPLEMENTATION]

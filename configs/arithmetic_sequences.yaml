@@ -1,0 +1,11 @@
+schema_version: 1
+centered_238_sequence:
+  index_symbol: j
+  j_start: 1
+  j_stop_initial: 64
+  quaternion_element: j-iota
+  theta_formula: 2*atan(sqrt(3)/j)
+  half_angle_squared_formula: 3/(j^2+3)
+  expected_exact_exponent: 4
+  forbidden_forcing_exponent: 1
+

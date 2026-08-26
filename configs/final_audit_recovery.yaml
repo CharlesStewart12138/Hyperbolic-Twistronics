@@ -1,0 +1,57 @@
+schema_version: 1
+state: FINAL_AUDIT_BLOCKED
+execution_scope: FINAL_GLOBAL_AUDIT_ONLY
+frozen_before_recovery: true
+posthoc_scientific_changes_permitted: false
+frozen_scientific_run:
+  run_id: b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad
+  manifest_sha256: cb85de0c77397395368546c0023804eb94f76ed7ca8fde703b54ad92c3674908
+  tree_inventory_sha256: 9633571fe961cb0deb1dc4e22932225b71f7377e7e31a032ae433ea1cd39f458
+  file_count: 117
+  validation_matrix: results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/validation_matrix.parquet
+  validation_matrix_sha256: e44ac191e95fb8c0d765068f48f717992ff2598defa93f73e89a209d31eb2162
+  failure_log: results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/logs/final_global_audit_failure.log
+  failure_log_sha256: 17f9283c4fe0bc103461e8907fa46624c047000b49187e9db79b1bdf2c0b9caf
+  task_manifest_sha256: 8b825b64dc0b8d43e1104bdf78b850288082e9514bce34df27c16390ad320b69
+  task_statuses:
+    G-13: PASS_CERTIFIED
+    G-14: PASS_CONVERGED
+    G-15: PASS_CERTIFIED
+    S-17: PASS_CONVERGED
+    S-18: INCONCLUSIVE
+    S-19: PASS_CONVERGED
+    S-20: PASS_CONVERGED
+    S-21: INCONCLUSIVE
+    S-22: INCONCLUSIVE
+    S-23: PASS_CERTIFIED
+    S-24: FAIL_EXPECTED
+  checkpoints:
+    G-13: 617a668f067713a32a7e64fe4c1d2b6d2660d09666af813a610a021e17c4504c
+    G-14: ef11cd23a7f2d1b6c215d07d205aafbcb055cdef45f5f040da106c1e9c5cec81
+    G-15: cab88844edbcc4095645607b5b2c6b9f655ece41c43d266100cd8e0ad6992500
+    S-17: bda691fc6f1b242337ad680e6c57398263cff32425f30d6b53f5db64fa616d62
+    S-18: 12af02b855159790ba6ffe31c21da8e0fb24eaba898b353bae729612a299d4af
+    S-19: 986dcee1631c055a2307c5fae392b558c1a239ea916984cbd4081bd96d99b1ba
+    S-20: 97dd571794b1e51d7823acadf2751cca3345cc527cf3b80c368427ab3277d38b
+    S-21: 13233348050a1e84430ae8cb9e13aa62dc71c38f6e4688466d1a38471915115a
+    S-22: 102f7624f70faec1170cfba6a86c3474c96862ba6c16036c7965c1fef5c88182
+    S-23: b25d9c6d1ff4bb6575ec94379e497d33da2474271a795cd1c8becb530d32884a
+    S-24: a172f85b671bbd6e138283aadf4aa7e7c13ab08c1947454faebe95e6b25b0d7a
+root_cause:
+  classification: FAIL_IMPLEMENTATION
+  exact_reason: >-
+    The first final audit required every historical task to have nonempty raw,
+    derived, and certificate paths.  Frozen Phase-I tasks I-01--I-10 have valid
+    raw and certificate artifacts but intentionally blank derived_output fields.
+    All 88 tasks were terminal; only this over-strict legacy-path predicate failed.
+repair_contract:
+  every_nonblank_recorded_path_must_exist: true
+  raw_and_certificate_required_for_every_task: true
+  blank_legacy_derived_output_allowed: true
+  blank_legacy_derived_output_label: NOT_APPLICABLE
+  tasks_with_blank_legacy_derived_output: [I-01, I-02, I-03, I-04, I-05, I-06, I-07, I-08, I-09, I-10]
+  no_task_status_changes: true
+  no_scientific_task_reruns: true
+  checkpoint_outputs_reverified_by_hash: true
+  final_workbook_authoring_only_after_88_88_path_audit: true
+execution_order: [VERIFY_FROZEN_SCIENTIFIC_RUN, FINAL_GLOBAL_AUDIT]

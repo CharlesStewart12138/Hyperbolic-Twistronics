@@ -1,0 +1,39 @@
+schema_version: 1
+preregistered: true
+frozen_before_scans: true
+natural_surface_model:
+  genus: 2
+  m: 4
+  t: 1.0
+  q1_rational: "25003/300000"
+  curvature_radius: 8.0
+  lambda_perp: 0.20
+  normal_form_cutoff: 6
+  packing_CA: 8.0
+  root_scan_points: 161
+  hodge_finite_difference_step: 0.002
+gap_backend:
+  gap_bash: "C:/Program Files/GAP-4.16.0/runtime/bin/bash.exe"
+  gap_binary_cygwin: "/opt/gap-4.16.0/gap"
+  expected_version: "4.16.0"
+multiorbital_scan:
+  w_min: 0.05
+  w_max: 12.0
+  root_bracket_points: 49
+  variations:
+    - {name: baseline_M3, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: sp_low, V_sp_sigma: 0.30, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: sp_high, V_sp_sigma: 0.40, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: pp_sigma_low, V_sp_sigma: 0.35, V_pp_sigma: 0.50, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: pp_sigma_high, V_sp_sigma: 0.35, V_pp_sigma: 0.60, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: pp_pi_low, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.20, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: pp_pi_high, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.10, orbital_splitting: 0.0, orbital_mixing: 0.0}
+    - {name: split_low, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: -0.05, orbital_mixing: 0.0}
+    - {name: split_high, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.05, orbital_mixing: 0.0}
+    - {name: mixing_low, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: -0.03}
+    - {name: mixing_high, V_sp_sigma: 0.35, V_pp_sigma: 0.55, V_pp_pi: -0.15, orbital_splitting: 0.0, orbital_mixing: 0.03}
+certification:
+  arb_bits: 192
+  exact_residual_tolerance: 1.0e-10
+  hodge_residual_tolerance: 0.25
+
