@@ -7,15 +7,15 @@
 ├── .github/workflows/                 GitHub Actions checks
 ├── certificates/                      final compact certificates
 ├── configs/                           frozen validation configurations
-├── data/figure_sources/               minimal frozen inputs used
+├── data/figure_sources/               minimal frozen inputs (Unavailable due to size limit)
 ├── deep_resolution/                   second research extension, without historical runs
 ├── environment/                       environment provenance
 ├── figures/{png,svg,pdf}/             current publication figures only
 ├── manifests/figure_release           figure hashes, source registry, and QA records
 ├── postvalidation_resolution/         first research extension, without historical runs
 ├── public_data/                       public external baselines
-├── references/                        immutable manuscript/reference inputs
-├── reports/                           final reports and release documentation
+├── references/                        immutable manuscript/reference inputs (Unavailable due to privacy)
+├── reports/                           final reports and release documentation (Unavailable due to privacy)
 ├── src/                               scientific implementation
 ├── tests/                             regression and contract tests
 ├── tools/                             release and figure utilities
