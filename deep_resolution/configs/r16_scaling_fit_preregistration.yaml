@@ -1,0 +1,22 @@
+schema_version: 1
+frozen_before_holdout_outcomes: true
+curvature_residual:
+  response: C0_operator_norm_after_X_only_projection
+  coordinate: abs((a/R)^2-(a/R_ref)^2)
+  training_R: [4.5, 6.0, 10.0, 14.0]
+  holdout_R: [5.0, 7.0, 9.0, 12.0]
+  estimators:
+    - global_log_linear_power_fit
+    - adjacent_local_log_slopes_sorted_by_coordinate
+    - inner_three_point_power_fit
+    - bootstrap_pairs
+  bootstrap: {seed: 1618033, resamples: 1000}
+  holdout_relative_prediction_error_max: 0.50
+angular_residual:
+  coordinate: abs(theta^2-theta_ref^2)
+  training_theta: [0.05, 0.07, 0.10, 0.13]
+  holdout_theta: [0.06, 0.075, 0.09, 0.11]
+  leading_power_from_exact_even_twist_symmetry: 2
+  remainder_test: log_linear_power_of_corrected_residual
+no_posthoc_window_or_power_selection: true
+

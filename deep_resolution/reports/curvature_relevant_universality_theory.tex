@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,booktabs,geometry}
+\geometry{margin=1in}
+\title{Curvature-Relevant Universality: A Conditional Operator Theory and Its Certified Scope}
+\author{Computer-assisted deep-resolution extension}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Assumptions and comparison contract}
+We fix the target fiber, energy origin, energy scale, momentum path, orbital
+basis, shell convention, and normalized tunnelling observable.  The manuscript
+identity
+\[
+  \frac{a}{R}=2\operatorname{arcosh}\!\left[
+  \frac{\cos(\pi/p)}{\sin(\pi/q)}\right]
+\]
+implies that changing $R$ at fixed $(p,q)$ does not vary dimensionless
+curvature.  A pure curvature diagnostic must instead keep $a$ fixed while
+varying $g=(a/R)^2$, or change tessellation data with the coordination effect
+tracked separately.  The global fixed-octagon family and the local fixed-$a$
+fiber are therefore distinct comparison classes.
+
+\section{Microscopic normalized operator}
+For the registered fixed-$a$, coordination-eight local geodesic-star fiber,
+the normalized operator has the explicit structure
+\[
+ \widehat H(q;X,g,\vartheta,S_\parallel,S_\perp)
+ =\frac{H_\parallel(q;g,S_\parallel)-E_0 I}{E_M(g,\vartheta)}
+ +X\,\tau(q;S_\perp) V,
+\]
+where $\vartheta=\theta^2$, $S_\parallel=a/\lambda_\parallel$,
+$S_\perp=\lambda_\perp/a$, and $E_M=(a/\xi_M)^2$.  The exact local moir\'e
+length is
+\[
+ \xi_M=R\operatorname{arsinh}\!\left[
+ \frac{\sinh(a/2R)}{\sin(\theta/2)}\right].
+\]
+The Slater--Koster blocks are obtained by parallel transport on the hyperboloid,
+and $\tau$ is a finite positive geodesic-shell kernel normalized by $\tau(0)=1$.
+
+Around a fixed comparison point the preregistered expansion is
+\[
+ \widehat H=\widehat H_\star(X)+\delta g\,\Phi_g
+ +\delta\vartheta\,\Phi_\vartheta
+ +\delta g\,\delta\vartheta\,\Phi_{g\vartheta}
+ +\delta S_\parallel\Phi_{S_\parallel}
+ +\delta S_\perp\Phi_{S_\perp}+\mathcal R.
+\]
+Each $\Phi$ is the centered five-point derivative of the displayed
+microscopic operator; no correction direction was invented from holdout
+residuals.  The derivatives were checked at a half step.
+
+\section{Operator rank lemma}
+Use the discrete $C^2$ Hodge--Hilbert--Schmidt metric
+\[
+ \langle A,B\rangle_{C^2}=\frac1{3|Q|}\sum_{q\in Q}
+ \operatorname{ReTr}\bigl(A_0^\dagger B_0+A_1^\dagger B_1+A_2^\dagger B_2\bigr).
+\]
+After unit normalization, the registered local fiber gives a stable
+$\{\Phi_X,\Phi_g\}$ rank-two direction on every one of nine momentum blocks.
+The three-field Gram calculation has $s_2/s_1=0.27144$.  This proves local
+operator sensitivity to fixed-$a$ curvature in that fiber.  It does not prove
+global bulk curvature relevance: the registered scalar-observable Jacobian has
+no stable second singular-value gap.
+
+\section{Conditional two-parameter theorem}
+Let $\lambda_n$ remain in one fixed global comparison package and suppose
+\[
+ \|\mathcal R(\lambda_n)\|_{C^k}\to0,\qquad k\in\{0,1,2\}.
+\]
+Then
+\[
+ \widehat H(\lambda_n)=\widehat H_\star(X_n,g_n)
+ +Y_{\theta,n}\Psi_\theta(X_n,g_n)+o_{C^k}(1)
+\]
+implies convergence of every licensed homogeneous spectral observable.  Weyl
+gives eigenvalue and bandwidth errors bounded by the $C^0$ remainder; a fixed
+gap gives Riesz-projector error $O(\|\mathcal R\|/\mathrm{gap})$; $C^1$ and
+$C^2$ remainders control velocity and Hodge-Hessian observables separately.
+This is a conditional theorem.  The present holdout does not satisfy its
+remainder premise uniformly and therefore does not certify the global
+two-parameter conclusion.
+
+\section{Angular and shape corrections}
+Even twist symmetry selects $\vartheta=\theta^2$ as the leading angular field.
+The angular Taylor direction reduces the one-parameter residual locally, but
+the joint holdout remains outside the preregistered absolute $C^0/C^1/C^2$
+gates.  In the fixed regular-octagon radius path, $g$ is constant and the
+derived profile coordinate is $S_\perp=\lambda_\perp/a$.  A quadratic Taylor
+expansion in this coordinate reduces the median old-radius $C^0$ residual by
+$99.9936\%$ and passes its isolated holdout.  This identifies the old radius
+effect as a microscopic shape correction, not as a pure curvature theorem.
+
+\section{Certified conclusion and limitations}
+The final classification is \texttt{PASS\_RESTRICTED\_CLASS}.  There is local
+operator-level evidence for an independent fixed-$a$ curvature tangent, but no
+stable scalar identifiability rank and no successful global H3/H4 holdout.
+Neither \texttt{PASS\_TWO\_PARAMETER\_CURVATURE} nor
+\texttt{PASS\_THREE\_FIELD} is claimed.  No registered manuscript theorem is
+contradicted, because the manuscript already fixes $a/R$ in a regular
+tessellation and states one-parameter collapse conditionally with explicit
+correction fields.
+\end{document}

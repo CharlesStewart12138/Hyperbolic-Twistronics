@@ -1,0 +1,13 @@
+{
+  "figure": 16,
+  "figure_data": {
+    "figure_16_channel_summary.parquet": "acb555f71c090699572473e488f5a1c183c632a038075daa0547e1b0ab5c728e",
+    "figure_16_hypothesis_holdout.parquet": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2",
+    "figure_16_old_radius_shape_field.parquet": "df43d0d181b3e96e7fcc174ac47d55ab8e87026e6c65e7f6433d85436dca8e59"
+  },
+  "files": {
+    "figure16_curvature_relevant_universality.png": "050b266b4ac6321c923951efac093114617ae2923ff981cbb0cacb2a9eaf6092",
+    "figure16_curvature_relevant_universality.svg": "8218cdb0901d0ef93552026963240cf7321619f01e111b1c27de98526f70da50"
+  },
+  "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+}

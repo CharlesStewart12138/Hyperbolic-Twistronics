@@ -1,0 +1,28 @@
+schema_version: 1
+frozen_before_final_derivation_and_figures: true
+source_runs:
+  R16_design:
+    run_id: 4eb54e464c4cc42fde938eb00bb681506620b3d844802664088eabf61ebea933
+    freeze_certificate_sha256: c8f7c29b5286e400dce3dc947a94a98e1e8ba10abfd41ea8b6d50d13afdf4da7
+  R8_R9:
+    run_id: 48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0
+    freeze_certificate_sha256: cb05d3f940fba64e34acb8a4c24ac8291a3e2daf6c8cfb96de33928f4556bf8d
+  R10:
+    run_id: 767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b
+    freeze_certificate_sha256: 85db0b114385e275b5a3d562c7972997676e6643e90ff210a42ea574c8564983
+  R16_holdout:
+    run_id: f2ccba925cc047a43224920fbf7aee26fd6f96ac37d49095a14a39e86cc261fb
+    freeze_certificate_sha256: 99deaf305a4c63bcec11700fbd9e690b7b3c85b793f8f3c3176b82900dba04b5
+    certificate_sha256: 6b511845de9eb997a1cbbe2bd99f14185df35b6890e9aaa12049542d0a07d4ed
+  R10_failed_memmap:
+    run_id: 0cc290395df3e21d557d7a5dc6f315673b053f0b8b8d08aac7b86fe3c3efb23f
+    freeze_certificate_sha256: f7aeadf3b14a3104807a143e9449d044e98eb88659aa0093c189a2d1c3c39572
+    expected_status: FAIL_IMPLEMENTATION
+final_synthesis_rules:
+  Figure_8: PASS_WEAK_BULK_only_if_R10_weak_CDF_pass_and_R8_strong_no_pollution_remains_open
+  Figure_9: INCONCLUSIVE_if_balanced_diagonal_exists_but_any_C0_C1_C2_certified_tail_does_not_close
+  Figure_10: INCONCLUSIVE_if_vanishing_schedule_passes_but_uniform_piecewise_regularity_is_not_certified
+  Figure_16: use_frozen_R16_holdout_classification
+  curvature_independent_coordinate: LOCAL_OPERATOR_EVIDENCE_NOT_GLOBAL_CERTIFICATION_if_operator_rank_pass_but_observable_rank_or_global_holdout_fails
+  fail_theory: false_unless_an_exact_registered_manuscript_hypothesis_is_contradicted
+

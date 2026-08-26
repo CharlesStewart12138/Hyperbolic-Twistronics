@@ -1,0 +1,51 @@
+schema_version: 1
+phase: DEEP_RESOLUTION
+created_from_frozen_records: true
+parent_project:
+  state: PROJECT_COMPLETE
+  final_run_id: 23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2
+  final_status: ../FINAL_VALIDATION_STATUS.json
+  final_status_sha256: b2a51ad77f661ec937b94a65d427c34debf0284b9afc88e24d752f4a3dd8361c
+  immutable: true
+parent_extension:
+  state: POSTVALIDATION_RESOLUTION_COMPLETE_WITH_EXPLICIT_INCONCLUSIVE_CLAIMS
+  final_run_id: f84e758e4a5ca4d0239a2e3518e2141874067525e1a8993afffbd24e779955a8
+  final_status: ../postvalidation_resolution/POSTVALIDATION_RESOLUTION_STATUS.json
+  final_status_sha256: 370b33754c4badfcc509c34b55547c5139af990558c027604ed3f836cea42b4d
+  immutable: true
+frozen_anchors:
+  manuscript_pdf: C:/Users/charl/chatGPTwork/5203/05_FINAL/5203_REVISED_FINAL_ROUND2.pdf
+  manuscript_pdf_sha256: 4815472e059312cf75e5b7fce0e2d2f718a5766964e888eec508cff8478f9abb
+  manuscript_tex: C:/Users/charl/chatGPTwork/5203/05_FINAL/5203_REVISED_FINAL_ROUND2.tex
+  manuscript_tex_sha256: dae4a481aff88f242eb3ec8a83504f1100b49004aa00907f1ab08216ae40872b
+  nonabelian_config: ../configs/nonabelian_towers.yaml
+  nonabelian_config_sha256: 64de027ee73eb5c1285ee8a029aa764a452e1687d3ee15c5023f0854c5af816f
+  nonabelian_source: ../src/covers/nonabelian_congruence_towers.py
+  nonabelian_source_sha256: d796e9c2a50ea9dafa375cc6960d735862f080a64952e70ba221a27409042c14
+  group_exact: ../results/f2916d3fc9ed2bf74d0864ddeb7c5d75a9d4b9cb47de21bb4467d9bed07d5585/exact/i04_octagon_group.json
+  group_exact_sha256: cdf4fc3a820cde66bebadbf4208770d6740fea5456ce629e4cd0c9eee7cf780b
+  old_tower_gate: ../results/4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b/certificates/nonabelian_tower_gate.json
+  old_tower_gate_sha256: 1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9
+  old_b15: ../results/bc88adefcf5cde1d8c29a2742ddbc043f41f54608da2688dc37e73b8b2491e50/certificates/b15_injectivity_radius_audit.json
+  old_b15_sha256: 832c0b848b3898cae09f8766509ff32f80c529350f069f897d3943064702d0a2
+  active_shell_source: ../src/spectral/magic_active_shell.py
+  active_shell_source_sha256: ea4a906fab687833dacaf8e8dea0514df2f01ab3453493d041af7a9247f1cd3e
+  old_r16_source: ../postvalidation_resolution/src/r16_master.py
+  old_r16_source_sha256: 78a3f79786525d42d61ff9ed9c2f1d1a517379565cf8ba3fbf1e796c97e33ecf
+  old_r16_preregistration: ../postvalidation_resolution/configs/r16_theorem_contract_preregistration.yaml
+  old_r16_preregistration_sha256: b988c0c2059af4a14b11edc6a4a225add50b72ef72195ac26fd501448a81e5c2
+  old_r16_raw: ../postvalidation_resolution/results/fd8c15495c5990037ef93b299f0a6006de93746a4f11f54bd383a8b769cb8bf4/raw/r16_operator_families.npz
+  old_r16_raw_sha256: 3820287fdaec2dc17a36021e02f70545877a876769a2564fe8c23f7a46352555
+  old_r16_certificate: ../postvalidation_resolution/results/fd8c15495c5990037ef93b299f0a6006de93746a4f11f54bd383a8b769cb8bf4/certificates/r16_master_certificate.json
+  old_r16_certificate_sha256: e0b59cb06766de2296e870f7d2b14bebb69eeb5c61871bf629b4ec71a8644015
+architecture:
+  immutable_run_directories: true
+  raw_derived_certificate_separation: true
+  scientific_plotting_separation: true
+  failed_and_inconclusive_preserved: true
+execution_order: [R16_DESIGN, R8, R9, R10, R16_HOLDOUT, FINAL_AUDIT]
+terminal_scientific_classifications:
+  R8: [PASS_STRONG_BULK, PASS_WEAK_BULK, INCONCLUSIVE, FAIL_THEORY]
+  R10: [PASS_LOCAL_DOS, PASS_PIECEWISE_DOS, INCONCLUSIVE, FAIL_THEORY]
+  R16: [PASS_RESTRICTED_CLASS, PASS_TWO_PARAMETER_CURVATURE, PASS_THREE_FIELD, INCONCLUSIVE, FAIL_THEORY]
+

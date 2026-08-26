@@ -1,0 +1,101 @@
+{
+  "claims": [
+    {
+      "certificate": "r10_dos_certificate.json",
+      "claim_id": "F8-WEAK",
+      "figure": 8,
+      "figure_data_sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+      "run_id": "767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b",
+      "scope": "retained projective-sector local spectral measures only",
+      "source_data": "figure_10_vanishing_schedule.parquet",
+      "source_data_sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+      "status": "PASS_WEAK_BULK",
+      "task_id": "R8-E/R10-B"
+    },
+    {
+      "certificate": "r8_deep_cover_certificate.json",
+      "claim_id": "F8-STRONG",
+      "figure": 8,
+      "figure_data_sha256": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee",
+      "run_id": "48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0",
+      "scope": "full regular spectrum edge/gap no-pollution",
+      "source_data": "figure_8_deep_cover_levels.parquet",
+      "source_data_sha256": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee",
+      "status": "INCONCLUSIVE",
+      "task_id": "R8-C"
+    },
+    {
+      "certificate": "r9_balanced_certificate.json",
+      "claim_id": "F9-BALANCED",
+      "figure": 9,
+      "figure_data_sha256": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9",
+      "run_id": "48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0",
+      "scope": "L=1..5 and analytic balanced-law limits",
+      "source_data": "figure_9_balanced_diagonal.parquet",
+      "source_data_sha256": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9",
+      "status": "PASS_CERTIFIED",
+      "task_id": "R9-A"
+    },
+    {
+      "certificate": "r9_balanced_certificate.json",
+      "claim_id": "F9-CLOSURE",
+      "figure": 9,
+      "figure_data_sha256": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9",
+      "run_id": "48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0",
+      "scope": "C0/C1/C2 physical-tail closure",
+      "source_data": "figure_9_balanced_diagonal.parquet",
+      "source_data_sha256": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9",
+      "status": "INCONCLUSIVE",
+      "task_id": "R9-D/R9-E"
+    },
+    {
+      "certificate": "r10_dos_certificate.json",
+      "claim_id": "F10-WEAK",
+      "figure": 10,
+      "figure_data_sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+      "run_id": "767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b",
+      "scope": "weak CDF plus finite holdout eta=sqrt(kappa) schedule",
+      "source_data": "figure_10_vanishing_schedule.parquet",
+      "source_data_sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+      "status": "PASS_CONVERGED",
+      "task_id": "R10-B/R10-D"
+    },
+    {
+      "certificate": "r10_dos_certificate.json",
+      "claim_id": "F10-LOCAL",
+      "figure": 10,
+      "figure_data_sha256": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943",
+      "run_id": "767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b",
+      "scope": "tower-uniform local/unsmoothed/coherence DOS",
+      "source_data": "figure_10_holdout_coherence_density.parquet",
+      "source_data_sha256": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943",
+      "status": "INCONCLUSIVE",
+      "task_id": "R10-C/R10-E"
+    },
+    {
+      "certificate": "r16_holdout_certificate.json",
+      "claim_id": "F16-CLASS",
+      "figure": 16,
+      "figure_data_sha256": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2",
+      "run_id": "f2ccba925cc047a43224920fbf7aee26fd6f96ac37d49095a14a39e86cc261fb",
+      "scope": "fixed comparison class",
+      "source_data": "figure_16_hypothesis_holdout.parquet",
+      "source_data_sha256": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2",
+      "status": "PASS_RESTRICTED_CLASS",
+      "task_id": "R16-V08"
+    },
+    {
+      "certificate": "r16_holdout_certificate.json",
+      "claim_id": "F18-CURVATURE",
+      "figure": 18,
+      "figure_data_sha256": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573",
+      "run_id": "f2ccba925cc047a43224920fbf7aee26fd6f96ac37d49095a14a39e86cc261fb",
+      "scope": "local operator rank-2 evidence but no global observable identifiability/holdout",
+      "source_data": "figure_18_singular_values.parquet",
+      "source_data_sha256": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573",
+      "status": "INCONCLUSIVE",
+      "task_id": "R16-V02/R16-V03/R16-V04"
+    }
+  ],
+  "schema_version": 1
+}

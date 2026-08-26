@@ -1,0 +1,11 @@
+{
+  "figure": 9,
+  "figure_data": {
+    "figure_9_balanced_diagonal.parquet": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9"
+  },
+  "files": {
+    "figure09_balanced_full_shell.png": "c365066a76098da989395e12b4f777a78096ef6b5e17ef02a5c675056fac784d",
+    "figure09_balanced_full_shell.svg": "c957c7581db542c257f0dcde1125f9d4d0b057aa6a66d6d61a0019e3445b4873"
+  },
+  "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+}

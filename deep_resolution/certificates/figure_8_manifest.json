@@ -1,0 +1,13 @@
+{
+  "figure": 8,
+  "figure_data": {
+    "figure_10_vanishing_schedule.parquet": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+    "figure_8_deep_cover_levels.parquet": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee",
+    "figure_8_matched_levels.parquet": "08d8c9211a0daf2764755037146369a960ba323fbfe380ef76865d57d8a77f1e"
+  },
+  "files": {
+    "figure08_deep_finite_cover_closure.png": "2134cddbc3bf74244a8f9309a4e9bea37585d63301239db4cd3bf3945cc20696",
+    "figure08_deep_finite_cover_closure.svg": "9ea7c8f689906594115dbe3013798b43edc55378e09ad3b15bf4c4679230d4ea"
+  },
+  "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+}

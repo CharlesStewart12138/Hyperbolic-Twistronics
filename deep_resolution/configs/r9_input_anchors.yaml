@@ -1,0 +1,23 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+source_run_id: b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619
+full_kernel_shells:
+  path: ../results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/derived/full_kernel_shells.parquet
+  sha256: 26ce60a2b19ee27f1c6a496d7ab86820ff9559461fac62f971f9563bedd92c7f
+normal_forms:
+  path: ../results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/surface_group_normal_forms.txt
+  sha256: 6b312bcea6581fcbecfc5437bfe82e4287ab5fa459e2a3b836480594dc2b9f1c
+full_kernel_hodge:
+  path: ../results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/full_kernel_hodge.npz
+  sha256: 5afb97b216a41640a3427b30c3e1f20c3547db56617434be7521b699510c5025
+packing_tail_certificate:
+  path: ../results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/schur_tail_certificate.json
+  sha256: 25c0dddc8d2681e50b66e8f46692c7d15a2de7ecde9069b94465a1e6627e2674
+scientific_use:
+  finite_shell_values: exact_reuse_by_hash
+  physical_tail_upper: conservative_entire_later_shell_packing_bound
+  warning: >-
+    The frozen packing certificate does not provide a word-length-dependent
+    decreasing complement bound.  It may therefore keep R9 C0/C1/C2
+    inconclusive even though the new cover diagonal has L=1,2,3,4,5.
+

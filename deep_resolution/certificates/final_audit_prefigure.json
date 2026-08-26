@@ -1,0 +1,151 @@
+{
+  "anchor_checks": {
+    "active_shell_source": {
+      "actual": "ea4a906fab687833dacaf8e8dea0514df2f01ab3453493d041af7a9247f1cd3e",
+      "expected": "ea4a906fab687833dacaf8e8dea0514df2f01ab3453493d041af7a9247f1cd3e",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\src\\spectral\\magic_active_shell.py"
+    },
+    "group_exact": {
+      "actual": "cdf4fc3a820cde66bebadbf4208770d6740fea5456ce629e4cd0c9eee7cf780b",
+      "expected": "cdf4fc3a820cde66bebadbf4208770d6740fea5456ce629e4cd0c9eee7cf780b",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\results\\f2916d3fc9ed2bf74d0864ddeb7c5d75a9d4b9cb47de21bb4467d9bed07d5585\\exact\\i04_octagon_group.json"
+    },
+    "manuscript_pdf": {
+      "actual": "4815472e059312cf75e5b7fce0e2d2f718a5766964e888eec508cff8478f9abb",
+      "expected": "4815472e059312cf75e5b7fce0e2d2f718a5766964e888eec508cff8478f9abb",
+      "pass": true,
+      "path": "C:\\Users\\charl\\chatGPTwork\\5203\\05_FINAL\\5203_REVISED_FINAL_ROUND2.pdf"
+    },
+    "manuscript_tex": {
+      "actual": "dae4a481aff88f242eb3ec8a83504f1100b49004aa00907f1ab08216ae40872b",
+      "expected": "dae4a481aff88f242eb3ec8a83504f1100b49004aa00907f1ab08216ae40872b",
+      "pass": true,
+      "path": "C:\\Users\\charl\\chatGPTwork\\5203\\05_FINAL\\5203_REVISED_FINAL_ROUND2.tex"
+    },
+    "nonabelian_config": {
+      "actual": "64de027ee73eb5c1285ee8a029aa764a452e1687d3ee15c5023f0854c5af816f",
+      "expected": "64de027ee73eb5c1285ee8a029aa764a452e1687d3ee15c5023f0854c5af816f",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\configs\\nonabelian_towers.yaml"
+    },
+    "nonabelian_source": {
+      "actual": "d796e9c2a50ea9dafa375cc6960d735862f080a64952e70ba221a27409042c14",
+      "expected": "d796e9c2a50ea9dafa375cc6960d735862f080a64952e70ba221a27409042c14",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\src\\covers\\nonabelian_congruence_towers.py"
+    },
+    "old_b15": {
+      "actual": "832c0b848b3898cae09f8766509ff32f80c529350f069f897d3943064702d0a2",
+      "expected": "832c0b848b3898cae09f8766509ff32f80c529350f069f897d3943064702d0a2",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\results\\bc88adefcf5cde1d8c29a2742ddbc043f41f54608da2688dc37e73b8b2491e50\\certificates\\b15_injectivity_radius_audit.json"
+    },
+    "old_r16_certificate": {
+      "actual": "e0b59cb06766de2296e870f7d2b14bebb69eeb5c61871bf629b4ec71a8644015",
+      "expected": "e0b59cb06766de2296e870f7d2b14bebb69eeb5c61871bf629b4ec71a8644015",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\postvalidation_resolution\\results\\fd8c15495c5990037ef93b299f0a6006de93746a4f11f54bd383a8b769cb8bf4\\certificates\\r16_master_certificate.json"
+    },
+    "old_r16_preregistration": {
+      "actual": "b988c0c2059af4a14b11edc6a4a225add50b72ef72195ac26fd501448a81e5c2",
+      "expected": "b988c0c2059af4a14b11edc6a4a225add50b72ef72195ac26fd501448a81e5c2",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\postvalidation_resolution\\configs\\r16_theorem_contract_preregistration.yaml"
+    },
+    "old_r16_raw": {
+      "actual": "3820287fdaec2dc17a36021e02f70545877a876769a2564fe8c23f7a46352555",
+      "expected": "3820287fdaec2dc17a36021e02f70545877a876769a2564fe8c23f7a46352555",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\postvalidation_resolution\\results\\fd8c15495c5990037ef93b299f0a6006de93746a4f11f54bd383a8b769cb8bf4\\raw\\r16_operator_families.npz"
+    },
+    "old_r16_source": {
+      "actual": "78a3f79786525d42d61ff9ed9c2f1d1a517379565cf8ba3fbf1e796c97e33ecf",
+      "expected": "78a3f79786525d42d61ff9ed9c2f1d1a517379565cf8ba3fbf1e796c97e33ecf",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\postvalidation_resolution\\src\\r16_master.py"
+    },
+    "old_tower_gate": {
+      "actual": "1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9",
+      "expected": "1882628cf1b8ba1c71e72dd4989f764a5fa22cbec3378c4ac550c46a74bcf3f9",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\results\\4ec0db7d25aee624613ca32337c115d02fc9adf4092cc455bea3dbc40464778b\\certificates\\nonabelian_tower_gate.json"
+    },
+    "parent_extension": {
+      "actual": "370b33754c4badfcc509c34b55547c5139af990558c027604ed3f836cea42b4d",
+      "expected": "370b33754c4badfcc509c34b55547c5139af990558c027604ed3f836cea42b4d",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\postvalidation_resolution\\POSTVALIDATION_RESOLUTION_STATUS.json",
+      "state": "POSTVALIDATION_RESOLUTION_COMPLETE_WITH_EXPLICIT_INCONCLUSIVE_CLAIMS"
+    },
+    "parent_project": {
+      "actual": "b2a51ad77f661ec937b94a65d427c34debf0284b9afc88e24d752f4a3dd8361c",
+      "expected": "b2a51ad77f661ec937b94a65d427c34debf0284b9afc88e24d752f4a3dd8361c",
+      "pass": true,
+      "path": "C:\\Users\\charl\\Documents\\Codex\\2026-08-24\\new-chat\\outputs\\validation\\FINAL_VALIDATION_STATUS.json",
+      "state": "PROJECT_COMPLETE"
+    }
+  },
+  "claim_count": 8,
+  "error_budget_rows": 791,
+  "figure_data_hashes": {
+    "figure_10_KPM_SLQ_CDF.parquet": "35d7cb7e9dfddf2f63410c5d3f1479909e115c2dd968f93159541541c4be934a",
+    "figure_10_holdout_coherence_density.parquet": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943",
+    "figure_10_vanishing_schedule.parquet": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+    "figure_16_channel_summary.parquet": "acb555f71c090699572473e488f5a1c183c632a038075daa0547e1b0ab5c728e",
+    "figure_16_hypothesis_holdout.parquet": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2",
+    "figure_16_old_radius_shape_field.parquet": "df43d0d181b3e96e7fcc174ac47d55ab8e87026e6c65e7f6433d85436dca8e59",
+    "figure_18_curvature_scaling.parquet": "183250eebf2c67942bfa30a18bf424fc83132748d89975c3818da462a6b266e3",
+    "figure_18_hypothesis_summary.parquet": "c252f74ec02d494c85d5e9766944a56918ce24f91179b1b05a6769c7c38c9e1d",
+    "figure_18_singular_values.parquet": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573",
+    "figure_8_deep_cover_levels.parquet": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee",
+    "figure_8_matched_levels.parquet": "08d8c9211a0daf2764755037146369a960ba323fbfe380ef76865d57d8a77f1e",
+    "figure_9_balanced_diagonal.parquet": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9",
+    "r16_block_rank.parquet": "be4958506fc117d33c2a4b405932b4d8b01283ed79c1ab91fc43ae3a81bb57b6",
+    "r16_observable_jacobian.parquet": "7131f1f9ae02b930f0c169d22db76d15547b25742f2082f860b4f8a37599c77d",
+    "r16_tangent_gram.parquet": "715482e21cea5acdcbde1c4018dc37963822c6171be22a0b88a139536cb7af10"
+  },
+  "final_scientific_conclusions": {
+    "Figure_10": "PASS_WEAK_CDF_AND_SCHEDULE_LOCAL_DOS_INCONCLUSIVE",
+    "Figure_16": "PASS_RESTRICTED_CLASS",
+    "Figure_8": "PASS_WEAK_BULK_RETAINED_PROJECTIVE_SECTOR_STRONG_INCONCLUSIVE",
+    "Figure_9": "INCONCLUSIVE_TAIL_CLOSURE_WITH_TRUE_BALANCED_DIAGONAL",
+    "curvature_independent_relevant_coordinate": "LOCAL_OPERATOR_EVIDENCE_NOT_GLOBAL_CERTIFICATION",
+    "genuine_FAIL_THEORY": false
+  },
+  "run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+  "source_checks": {
+    "R10": {
+      "actual": "85db0b114385e275b5a3d562c7972997676e6643e90ff210a42ea574c8564983",
+      "expected": "85db0b114385e275b5a3d562c7972997676e6643e90ff210a42ea574c8564983",
+      "pass": true,
+      "run_id": "767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b"
+    },
+    "R10_failed_memmap": {
+      "actual": "f7aeadf3b14a3104807a143e9449d044e98eb88659aa0093c189a2d1c3c39572",
+      "expected": "f7aeadf3b14a3104807a143e9449d044e98eb88659aa0093c189a2d1c3c39572",
+      "pass": true,
+      "run_id": "0cc290395df3e21d557d7a5dc6f315673b053f0b8b8d08aac7b86fe3c3efb23f"
+    },
+    "R16_design": {
+      "actual": "c8f7c29b5286e400dce3dc947a94a98e1e8ba10abfd41ea8b6d50d13afdf4da7",
+      "expected": "c8f7c29b5286e400dce3dc947a94a98e1e8ba10abfd41ea8b6d50d13afdf4da7",
+      "pass": true,
+      "run_id": "4eb54e464c4cc42fde938eb00bb681506620b3d844802664088eabf61ebea933"
+    },
+    "R16_holdout": {
+      "actual": "99deaf305a4c63bcec11700fbd9e690b7b3c85b793f8f3c3176b82900dba04b5",
+      "expected": "99deaf305a4c63bcec11700fbd9e690b7b3c85b793f8f3c3176b82900dba04b5",
+      "pass": true,
+      "run_id": "f2ccba925cc047a43224920fbf7aee26fd6f96ac37d49095a14a39e86cc261fb"
+    },
+    "R8_R9": {
+      "actual": "cb05d3f940fba64e34acb8a4c24ac8291a3e2daf6c8cfb96de33928f4556bf8d",
+      "expected": "cb05d3f940fba64e34acb8a4c24ac8291a3e2daf6c8cfb96de33928f4556bf8d",
+      "pass": true,
+      "run_id": "48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0"
+    }
+  },
+  "source_preregistration_sha256": "3a6240e1470251bbf596d94eb16eabdeb3a850f2e7b7aa66e5ed0e9d61b9fc80"
+}

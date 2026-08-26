@@ -1,0 +1,9 @@
+schema_version: 1
+frozen_before_recovery_outcomes: true
+failed_run_id: 0cc290395df3e21d557d7a5dc6f315673b053f0b8b8d08aac7b86fe3c3efb23f
+failure_stage: SLQ_temporary_basis_cleanup_after_first_projective_action
+failure_classification: FAIL_IMPLEMENTATION
+repair: explicitly_flush_close_and_delete_numpy_memmap_before_removing_temporary_directory
+scientific_algorithm_changed: false
+acceptance_criteria_changed: false
+

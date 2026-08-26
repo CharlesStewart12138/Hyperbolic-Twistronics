@@ -1,0 +1,10 @@
+schema_version: 1
+frozen_before_recovery_render: true
+failed_final_run_id: 3a0e47ccc778218246dd644e4f855249ac2729a337a3926644d7370f73143d04
+failure_stage: Figure_10_mathtext_label_render
+failure_classification: FAIL_IMPLEMENTATION
+root_cause: Python interpreted backslash-r in rho as a carriage return
+repair: sanitize carriage-return-rho and tab-to sequences before Matplotlib text parsing
+scientific_data_changed: false
+acceptance_criteria_changed: false
+

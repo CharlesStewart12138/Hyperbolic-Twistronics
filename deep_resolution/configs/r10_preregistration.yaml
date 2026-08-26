@@ -1,0 +1,50 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+task_family: R10
+sector:
+  name: transitive_projective_line_sector
+  warning: retained_sector_not_full_regular_spectrum
+  towers:
+    congruence_p7_r2: {levels: [2, 3, 4, 5, 6]}
+    congruence_p23_r11: {levels: [1, 2, 3, 4]}
+    congruence_p31_r3: {levels: [1, 2, 3, 4]}
+operator:
+  type: normalized_symmetric_eight_generator_Cayley_Hecke_operator
+  spectral_interval: [-1.0, 1.0]
+KPM:
+  polynomial_order: 96
+  kernel: Jackson
+  vector: deterministic_delta_at_projective_basepoint
+  energy_grid_points: 1601
+SLQ:
+  lanczos_depth: 72
+  vector: deterministic_delta_at_same_projective_basepoint
+  reorthogonalization: full_two_pass
+  breakdown_tolerance: 1.0e-13
+CDF:
+  reference: deepest_level_within_each_tower_then_equal_weight_cross_tower_holdout
+  metric: supremum_on_frozen_energy_grid
+  method_disagreement_in_error_budget: true
+regularity:
+  theorem_target: piecewise_local_measure_regularity_on_compact_intervals_away_from_certified_atoms_and_critical_edges
+  global_holder_not_assumed: true
+  singular_energy_exclusion_radius_rule: 2*maximum_method_resolution
+  if_no_uniform_modulus_is_certified: INCONCLUSIVE
+broadening:
+  pilot_levels: all_but_deepest_level_of_each_tower
+  holdout_levels: deepest_level_of_each_tower
+  eta_rule: eta_N=sqrt(kappa_pilot_envelope_N)
+  analytic_beta: 0.5
+  floor_for_zero_numerical_kappa: 1.0e-8
+  pass_requires_kappa_over_eta_to_zero_and_piecewise_bias_to_zero: true
+coherence:
+  positive_observable: rank_one_projector_onto_projective_basepoint
+  same_observable_all_levels: true
+  regular_intervals: exclude_registered_singular_neighborhoods
+acceptance:
+  KPM_SLQ_CDF_disagreement_max: 0.08
+  holdout_kappa_over_eta_max: 0.25
+  holdout_eta_max: 0.20
+  at_least_two_towers_must_pass: true
+  full_local_DOS_pass_requires_analytic_regularity_certificate: true
+

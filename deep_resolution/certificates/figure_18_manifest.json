@@ -1,0 +1,14 @@
+{
+  "figure": 18,
+  "figure_data": {
+    "figure_18_curvature_scaling.parquet": "183250eebf2c67942bfa30a18bf424fc83132748d89975c3818da462a6b266e3",
+    "figure_18_hypothesis_summary.parquet": "c252f74ec02d494c85d5e9766944a56918ce24f91179b1b05a6769c7c38c9e1d",
+    "figure_18_singular_values.parquet": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573",
+    "r16_block_rank.parquet": "be4958506fc117d33c2a4b405932b4d8b01283ed79c1ab91fc43ae3a81bb57b6"
+  },
+  "files": {
+    "figure18_curvature_coordinate_rank.png": "e40590694896ca51b378500ba68e280483518a0795b47375ae9495211bbe9ee1",
+    "figure18_curvature_coordinate_rank.svg": "ab219d863f3207deff87f35591ad15550c7f58fd70fa08f00e51472bb827e619"
+  },
+  "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+}

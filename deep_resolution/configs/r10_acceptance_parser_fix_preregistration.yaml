@@ -1,0 +1,7 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+parent: configs/r10_preregistration.yaml
+bug: YAML field at_least_two_towers_must_pass is boolean prose but must be evaluated as integer threshold 2
+frozen_interpretation: 2
+scientific_criterion_changed: false
+

@@ -1,0 +1,13 @@
+{
+  "figure": 10,
+  "figure_data": {
+    "figure_10_KPM_SLQ_CDF.parquet": "35d7cb7e9dfddf2f63410c5d3f1479909e115c2dd968f93159541541c4be934a",
+    "figure_10_holdout_coherence_density.parquet": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943",
+    "figure_10_vanishing_schedule.parquet": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412"
+  },
+  "files": {
+    "figure10_vanishing_broadening_DOS.png": "5a851e2ea55a3ab824186117380d3019b9e3b5963fbfcd2b251b484647ffb142",
+    "figure10_vanishing_broadening_DOS.svg": "22f9a6b44933b8f3cb0c416c122940880bea99e75e3442f1fe556e9bbd5c2637"
+  },
+  "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+}

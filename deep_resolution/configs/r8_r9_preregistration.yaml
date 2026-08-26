@@ -1,0 +1,57 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+task_families: [R8, R9]
+towers:
+  - {tower_id: congruence_p7_r2, p: 7, root: 2}
+  - {tower_id: congruence_p23_r11, p: 23, root: 11}
+  - {tower_id: congruence_p31_r3, p: 31, root: 3}
+exact_height_certificate:
+  number_field_polynomial: x^4-2*x^2-1
+  prime_ideal_residue_degree: 1
+  norm_lower: nonzero_a_in_P^n_implies_abs_Norm_a_at_least_p^n
+  archimedean_upper: product_over_embeddings_of_max_letter_row_sum_to_word_length_times_16
+  certified_kernel_word_lower: (n*log(p)-log(16))/log(C_product)
+  injectivity_radius_lower: one_half_of_certified_kernel_word_lower
+  safety_rounding: lower_bound_rounded_down_by_1e-12
+level_selection:
+  rule: smallest_level_n_whose_certified_injectivity_lower_reaches_each_threshold
+  injectivity_thresholds: [1.0, 4.0, 9.0, 16.0, 25.0]
+  search_levels: [1, 240]
+  no_posthoc_level_changes: true
+quotient:
+  exact_order: p^(3*(n-1))*p*(p^2-1)
+  genus: 1+quotient_order
+  projective_sector_dimension: p^n+p^(n-1)
+  generator_count: 8
+  action_backend: matrix_free_P1_Zmod_pn
+R8:
+  target: retained_projective_sector_and_local_spectral_measure
+  strong_full_regular_spectrum_not_silently_replaced: true
+  no_loss:
+    licensed_local_statement: degree_L_polynomial_spectral_moments_are_exact_when_L_is_below_injectivity_radius
+  no_pollution:
+    licensed_strong_statement: full_regular_spectrum_upper_inclusion
+    pass_requires_bound_to_zero: true
+  cross_tower_match: nearest_certified_injectivity_radius_with_monotone_indices
+  conclusion_precedence: [FAIL_THEORY, PASS_STRONG_BULK, PASS_WEAK_BULK, INCONCLUSIVE]
+R9:
+  shell_law: L_j=floor(sqrt(r_inj_lower_j))
+  alpha: 0.5
+  requirements: [L_j_to_infinity, r_inj_to_infinity, L_j_over_r_inj_to_zero]
+  common_hilbert_space: universal_rooted_word_ball_of_radius_L_j
+  transport: rooted_label_preserving_local_isometry
+  errors:
+    epsilon_core: 0_exact_on_transported_ball
+    epsilon_physical_tail: packing_integral_from_geodesic_cutoff
+    epsilon_master_tail: independent_C2_weighted_packing_integral
+    epsilon_cover: 0_when_2L_j_less_than_kernel_word_lower
+    epsilon_transport: 0_for_rooted_label_preserving_local_isometry
+    epsilon_solver: interval_roundoff_bound
+    epsilon_representation: 0_exact_modular_action
+  tiers:
+    C0: scalar_kernel_tail
+    C1: first_weighted_kernel_tail
+    C2: second_weighted_kernel_tail
+  estimators: [direct_bound, log_envelope, ratio_test, leave_one_level_out]
+  pass_requires_all_estimators_and_C0_C1_C2_to_close: true
+

@@ -1,0 +1,182 @@
+{
+  "claims_may_be_strengthened": [
+    "three non-Abelian congruence towers possess quantitative certified growing injectivity lower bounds",
+    "a genuine balanced cover diagonal realizes L=1,2,3,4,5 and extends analytically",
+    "retained projective-sector KPM/SLQ weak CDF and frozen eta=sqrt(kappa) finite holdout pass",
+    "the old fixed-octagon radius residual is a lambda_perp/a microscopic shape effect on its isolated holdout"
+  ],
+  "claims_must_remain_restricted": [
+    "one-parameter universality is confined to the fixed comparison class",
+    "local fixed-a curvature tangent rank is not a global bulk curvature theorem",
+    "weak projective-sector convergence is not full regular-spectrum no-pollution"
+  ],
+  "deep_resolution_complete": true,
+  "error_budget": "reports/deep_error_budget.parquet",
+  "family_conclusions": {
+    "Figure_10": {
+      "local_unsmoothed_coherence_DOS": "INCONCLUSIVE",
+      "vanishing_schedule_finite_holdout": "PASS_CONVERGED",
+      "weak_CDF": "PASS_CONVERGED"
+    },
+    "Figure_16": "PASS_RESTRICTED_CLASS",
+    "Figure_8": {
+      "strong_full_regular_spectrum": "INCONCLUSIVE",
+      "weak_retained_projective_sector": "PASS_WEAK_BULK"
+    },
+    "Figure_9": {
+      "C0_C1_C2_tail_closure": "INCONCLUSIVE",
+      "balanced_diagonal": "PASS_CERTIFIED"
+    },
+    "curvature_independent_relevant_coordinate": "LOCAL_OPERATOR_RANK2_EVIDENCE_NOT_GLOBAL_CERTIFICATION"
+  },
+  "figure_manifests": {
+    "10": {
+      "figure": 10,
+      "figure_data": {
+        "figure_10_KPM_SLQ_CDF.parquet": "35d7cb7e9dfddf2f63410c5d3f1479909e115c2dd968f93159541541c4be934a",
+        "figure_10_holdout_coherence_density.parquet": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943",
+        "figure_10_vanishing_schedule.parquet": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412"
+      },
+      "files": {
+        "figure10_vanishing_broadening_DOS.png": "5a851e2ea55a3ab824186117380d3019b9e3b5963fbfcd2b251b484647ffb142",
+        "figure10_vanishing_broadening_DOS.svg": "22f9a6b44933b8f3cb0c416c122940880bea99e75e3442f1fe556e9bbd5c2637"
+      },
+      "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+    },
+    "16": {
+      "figure": 16,
+      "figure_data": {
+        "figure_16_channel_summary.parquet": "acb555f71c090699572473e488f5a1c183c632a038075daa0547e1b0ab5c728e",
+        "figure_16_hypothesis_holdout.parquet": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2",
+        "figure_16_old_radius_shape_field.parquet": "df43d0d181b3e96e7fcc174ac47d55ab8e87026e6c65e7f6433d85436dca8e59"
+      },
+      "files": {
+        "figure16_curvature_relevant_universality.png": "050b266b4ac6321c923951efac093114617ae2923ff981cbb0cacb2a9eaf6092",
+        "figure16_curvature_relevant_universality.svg": "8218cdb0901d0ef93552026963240cf7321619f01e111b1c27de98526f70da50"
+      },
+      "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+    },
+    "18": {
+      "figure": 18,
+      "figure_data": {
+        "figure_18_curvature_scaling.parquet": "183250eebf2c67942bfa30a18bf424fc83132748d89975c3818da462a6b266e3",
+        "figure_18_hypothesis_summary.parquet": "c252f74ec02d494c85d5e9766944a56918ce24f91179b1b05a6769c7c38c9e1d",
+        "figure_18_singular_values.parquet": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573",
+        "r16_block_rank.parquet": "be4958506fc117d33c2a4b405932b4d8b01283ed79c1ab91fc43ae3a81bb57b6"
+      },
+      "files": {
+        "figure18_curvature_coordinate_rank.png": "e40590694896ca51b378500ba68e280483518a0795b47375ae9495211bbe9ee1",
+        "figure18_curvature_coordinate_rank.svg": "ab219d863f3207deff87f35591ad15550c7f58fd70fa08f00e51472bb827e619"
+      },
+      "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+    },
+    "8": {
+      "figure": 8,
+      "figure_data": {
+        "figure_10_vanishing_schedule.parquet": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412",
+        "figure_8_deep_cover_levels.parquet": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee",
+        "figure_8_matched_levels.parquet": "08d8c9211a0daf2764755037146369a960ba323fbfe380ef76865d57d8a77f1e"
+      },
+      "files": {
+        "figure08_deep_finite_cover_closure.png": "2134cddbc3bf74244a8f9309a4e9bea37585d63301239db4cd3bf3945cc20696",
+        "figure08_deep_finite_cover_closure.svg": "9ea7c8f689906594115dbe3013798b43edc55378e09ad3b15bf4c4679230d4ea"
+      },
+      "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+    },
+    "9": {
+      "figure": 9,
+      "figure_data": {
+        "figure_9_balanced_diagonal.parquet": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9"
+      },
+      "files": {
+        "figure09_balanced_full_shell.png": "c365066a76098da989395e12b4f777a78096ef6b5e17ef02a5c675056fac784d",
+        "figure09_balanced_full_shell.svg": "c957c7581db542c257f0dcde1125f9d4d0b057aa6a66d6d61a0019e3445b4873"
+      },
+      "plot_source_sha256": "daf01d5a3174dbc5753b4aa5b944cba14ea32486046f15e25bc3c5a51a5d4a3b"
+    }
+  },
+  "final_run_freeze_certificate_sha256": "5513b96ee6031267d5016ef05935cc9ad5de3644c6adcc96f5bdd5379be3ba51",
+  "final_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+  "final_run_tree_inventory_sha256": "3a8f8f959fb69d77b18b24510d28341ecb718bfb1c4d49bdafcfbbd802a6baa2",
+  "final_task_statuses": {
+    "AUDIT-01": "PASS_CERTIFIED",
+    "AUDIT-02": "PASS_CERTIFIED",
+    "AUDIT-03": "PASS_CERTIFIED",
+    "AUDIT-04": "PASS_CERTIFIED",
+    "AUDIT-05": "PASS_CERTIFIED",
+    "AUDIT-06": "PASS_CERTIFIED"
+  },
+  "genuine_FAIL_THEORY_found": false,
+  "inconclusive_claims": [
+    "strong edge/gap/projector no-pollution",
+    "C0/C1/C2 physical-tail closure on the balanced diagonal",
+    "tower-uniform regularity and local unsmoothed/coherence DOS",
+    "globally identifiable two-parameter curvature master"
+  ],
+  "parent_extension_preserved": true,
+  "parent_project_preserved": true,
+  "preserved_failed_runs": {
+    "R10_memmap_cleanup": {
+      "run_id": "0cc290395df3e21d557d7a5dc6f315673b053f0b8b8d08aac7b86fe3c3efb23f",
+      "status": "FAIL_IMPLEMENTATION"
+    }
+  },
+  "publication_claim_ledger": "reports/publication_claim_ledger.json",
+  "published_report_hashes": {
+    "curvature_relevant_universality_theory.tex": "e93635de48ee1dcc363488bed8ad35c492bc4e451ee01a60b511e8dcbe5fb9b3",
+    "deep_error_budget.parquet": "4c3dd0c9b95db307254632d32a4984f286624e54d8bf19075683d79da79b2383",
+    "deep_resolution_report.md": "0075a8edbb576b2b8b0a50886021134d05eccd00ad03084797b2b17abb10e281",
+    "deep_resolution_report.tex": "12cefb38a04fb06fd25db86c15bc14fd151194b45d972233355f8a265638ca80",
+    "manuscript_revision_proposal.tex": "b7e68ceff8813980dc7da5b3db249aa10601ba4630a574c58d70f5c25d78d194",
+    "publication_claim_ledger.json": "9c075237f47166e22cdcc95f348f1b28f54d60603bdb14065a3e187f373f6fa9",
+    "theorem_to_computation_matrix.csv": "d137b7bfb452a679dba96843e7e6971f17299140e2dfb44fd0d6e00bc78e3336",
+    "theorem_to_computation_matrix.parquet": "bcf18d44336d03af82ccca805fa36096786a1de6cf29422220cc4f5e33633b56"
+  },
+  "schema_version": 1,
+  "source_runs": {
+    "R10": "767dc8dcc8db4178bf9fc3eea98c8d59acd3b9ee6bfa31a9c25ae0365951407b",
+    "R10_failed_memmap": "0cc290395df3e21d557d7a5dc6f315673b053f0b8b8d08aac7b86fe3c3efb23f",
+    "R16_design": "4eb54e464c4cc42fde938eb00bb681506620b3d844802664088eabf61ebea933",
+    "R16_holdout": "f2ccba925cc047a43224920fbf7aee26fd6f96ac37d49095a14a39e86cc261fb",
+    "R8_R9": "48d46d5c0709c73c3980d00bd260a201e0dd4411322ad1e9135d53e12e834aa0"
+  },
+  "source_task_statuses": {
+    "R10:R10-A": "PASS_CERTIFIED",
+    "R10:R10-B": "PASS_CONVERGED",
+    "R10:R10-C": "INCONCLUSIVE",
+    "R10:R10-D": "PASS_CONVERGED",
+    "R10:R10-E": "INCONCLUSIVE",
+    "R10:R10-F": "INCONCLUSIVE",
+    "R10_failed_memmap:R10-A": "FAIL_IMPLEMENTATION",
+    "R10_failed_memmap:R10-B": "FAIL_IMPLEMENTATION",
+    "R10_failed_memmap:R10-C": "FAIL_IMPLEMENTATION",
+    "R10_failed_memmap:R10-D": "FAIL_IMPLEMENTATION",
+    "R10_failed_memmap:R10-E": "FAIL_IMPLEMENTATION",
+    "R10_failed_memmap:R10-F": "FAIL_IMPLEMENTATION",
+    "R16_design:R16-D01": "PASS_EXACT",
+    "R16_design:R16-D02": "PASS_CERTIFIED",
+    "R16_design:R16-D03": "PASS_CERTIFIED",
+    "R16_design:R16-D04": "PASS_CERTIFIED",
+    "R16_holdout:R16-V01": "PASS_CERTIFIED",
+    "R16_holdout:R16-V02": "PASS_CERTIFIED",
+    "R16_holdout:R16-V03": "INCONCLUSIVE",
+    "R16_holdout:R16-V04": "INCONCLUSIVE",
+    "R16_holdout:R16-V05": "INCONCLUSIVE",
+    "R16_holdout:R16-V06": "PASS_CERTIFIED",
+    "R16_holdout:R16-V07": "INCONCLUSIVE",
+    "R16_holdout:R16-V08": "PASS_RESTRICTED_CLASS",
+    "R8_R9:R8-A": "PASS_CERTIFIED",
+    "R8_R9:R8-B": "PASS_CERTIFIED",
+    "R8_R9:R8-C": "INCONCLUSIVE",
+    "R8_R9:R8-D": "INCONCLUSIVE",
+    "R8_R9:R8-E": "INCONCLUSIVE",
+    "R8_R9:R9-A": "PASS_CERTIFIED",
+    "R8_R9:R9-B": "PASS_CERTIFIED",
+    "R8_R9:R9-C": "PASS_EXACT",
+    "R8_R9:R9-D": "INCONCLUSIVE",
+    "R8_R9:R9-E": "INCONCLUSIVE",
+    "R8_R9:R9-F": "PASS_CERTIFIED"
+  },
+  "state": "DEEP_RESOLUTION_COMPLETE_WITH_SCOPED_PASS_AND_EXPLICIT_INCONCLUSIVE_CLAIMS",
+  "theorem_to_computation_matrix": "reports/theorem_to_computation_matrix.parquet"
+}

@@ -1,0 +1,10 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+parent: configs/r10_preregistration.yaml
+reason: memory-bounded_full_reorthogonalization_design_fixed_before_any_action_or_spectrum_is_built
+KPM_polynomial_order: 80
+SLQ_lanczos_depth: 56
+SLQ_basis_storage: float32_memory_map_with_float64_dot_products
+SLQ_smoothing: {kernel: Gaussian, sigma: 0.035}
+scientific_criteria_unchanged: true
+

@@ -1,0 +1,91 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+task_family: R16
+contract_audit:
+  manuscript_statement: >-
+    Theorem 160 is conditional on convergence of the normalized Hamiltonian;
+    Theorem 163 explicitly registers lattice and normalized-profile fields;
+    Theorem 168 requires symmetry-compatible unitary equivalence for strong
+    cross-model universality.
+  fixed_regular_tessellation_fact: >-
+    Equation GDC_pq_a_over_R states that a/R is fixed when p and q are fixed.
+    Changing R alone rescales all geometric lengths and is not a new
+    dimensionless lattice geometry.
+  consequence_for_old_radius_path: >-
+    The old regular-octagon radius scan held physical hopping decay lengths
+    fixed while a scaled with R.  Its residual is therefore a microscopic
+    shape direction, not an identified pure K=-1/R^2 direction.
+  curvature_coordinate: kappa=a/R
+  crossover_coordinate: g_K=(a/R)^2/theta^2
+  dimensional_K_alone_is_not_identifiable: true
+microscopic_expansion:
+  formula: Hhat=Hstar(X)+delta_g*Phi_g+delta_theta*Phi_theta+delta_g_delta_theta*Phi_gtheta+delta_S*Phi_S+R
+  fields:
+    X: normalized_active_hybridization
+    g: (a/R)^2
+    Y_theta: theta^2-theta_ref^2
+    gtheta: ((a/R)^2-(a/R)_ref^2)*(theta^2-theta_ref^2)
+    S_parallel: a/lambda_parallel
+    S_perp: lambda_perp/a
+  tangent_rule: centered_five_point_finite_difference_on_operator_bundle
+  finite_difference_relative_step: 0.005
+  derivative_check_step_ratio: 0.5
+canonical_gram_metric:
+  name: discrete_C2_Hodge_Hilbert_Schmidt_metric
+  formula: mean_q ReTr(Phi0^*Psi0 + Phi1^*Psi1 + Phi2^*Psi2)/fiber_dimension
+  q_grid: {minimum: -0.35, maximum: 0.35, points: 129}
+  tangent_normalization: unit_metric_norm_before_rank_test
+rank_acceptance:
+  stable_rank2_minimum_s2_over_s1: 0.05
+  half_step_relative_singular_value_change_max: 0.20
+  bootstrap_blocks: 9
+  bootstrap_minimum_s2_over_s1: 0.03
+model_families:
+  frozen_regular_octagon:
+    reference: {R: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6, lambda_parallel: 0.90}
+    radius_training: [5.5, 7.0, 9.0, 12.0]
+    radius_holdout: [6.0, 7.5, 8.5, 10.0]
+    theta_training: [0.05, 0.07, 0.09, 0.12]
+    theta_holdout: [0.06, 0.075, 0.085, 0.10]
+    lambda_perp_training: [0.12, 0.18, 0.22, 0.28]
+    lambda_perp_holdout: [0.16, 0.19, 0.21, 0.24]
+    cutoff_training: [3, 5, 6]
+    cutoff_holdout: [2, 4]
+  local_fixed_a_curvature_fiber:
+    scope: local_q8_geodesic_star_not_global_hyperbolic_Bloch_fiber
+    reference: {a: 1.0, R: 8.0, theta: 0.08, lambda_perp: 0.20, lambda_parallel: 0.90, cutoff: 5}
+    curvature_training_R: [4.5, 6.0, 10.0, 14.0]
+    curvature_holdout_R: [5.0, 7.0, 9.0, 12.0]
+    theta_training: [0.05, 0.07, 0.10, 0.13]
+    theta_holdout: [0.06, 0.075, 0.09, 0.11]
+    lambda_perp_training: [0.14, 0.18, 0.24, 0.30]
+    lambda_perp_holdout: [0.16, 0.19, 0.22, 0.27]
+    X_training: [0.70, 0.90, 1.10, 1.30]
+    X_holdout: [0.80, 1.00, 1.20]
+    shell_count: 5
+    coordination: 8
+holdout_models:
+  H0: [X]
+  H1: [X, fixed_comparison_class_only]
+  H2: [X, Y_theta]
+  H3: [X, g, Y_theta, gtheta]
+  H4: [X, g, Y_theta, gtheta, S_parallel, S_perp]
+  fitting: linear_operator_tangent_basis_with_pairwise_interactions_only_as_registered
+  no_black_box_surface: true
+acceptance:
+  maximum_normalized_C0_holdout: 0.20
+  maximum_normalized_C1_holdout: 0.30
+  maximum_normalized_C2_holdout: 0.45
+  minimum_median_C0_reduction_vs_H0: 0.60
+  negative_control_minimum_error_ratio: 1.25
+  pass_two_parameter_requires_global_fixed_a_curvature_family: true
+  pass_three_field_requires_shape_tangent_independent_and_H4_holdout_pass: true
+  local_fiber_cannot_by_itself_certify_global_bulk_curvature_theorem: true
+negative_controls:
+  - X_only_across_K
+  - omit_Y_theta
+  - use_dimensional_K_without_a2
+  - scalar_observable_metric_instead_of_operator_Hodge_metric
+  - mix_fixed_octagon_shape_path_with_fixed_a_curvature_path
+  - duplicate_Phi_X_as_redundant_field
+
