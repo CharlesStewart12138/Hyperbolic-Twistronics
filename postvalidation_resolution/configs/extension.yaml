@@ -1,0 +1,44 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+parent_project:
+  state: PROJECT_COMPLETE
+  final_run_id: 23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2
+  final_status: FINAL_VALIDATION_STATUS.json
+  final_status_sha256: b2a51ad77f661ec937b94a65d427c34debf0284b9afc88e24d752f4a3dd8361c
+  task_manifest: TASK_MANIFEST.csv
+  task_manifest_sha256: 8b825b64dc0b8d43e1104bdf78b850288082e9514bce34df27c16390ad320b69
+  final_run_manifest_sha256: f1fa3023dadc901cffd7b5ecd8d209ac6684fe4c33d7695c8c0b3ed1c0efada0
+  final_run_tree_inventory_sha256: 012dd9f25bc9ad7e238ad76917fe5679c4c88dce16a48d33b6f1c37b9c82b1c3
+  final_run_file_count: 33
+  frozen_manuscript: C:/Users/charl/chatGPTwork/5203/05_FINAL/5203_REVISED_FINAL_ROUND2.pdf
+  immutable: true
+architecture:
+  run_identity: sha256_of_extension_configs_source_parent_anchors_and_software
+  immutable_run_directories: true
+  raw_derived_certificate_separation: true
+  original_adjudications_mutable: false
+gap_backend:
+  gap_bash: "C:/Program Files/GAP-4.16.0/runtime/bin/bash.exe"
+  gap_binary_cygwin: "/opt/gap-4.16.0/gap"
+terminal_statuses:
+  - PASS_EXACT
+  - PASS_CERTIFIED
+  - PASS_CONVERGED
+  - FAIL_THEORY
+  - FAIL_IMPLEMENTATION
+  - INCONCLUSIVE
+task_families:
+  R8:
+    tasks: [R8-01, R8-02, R8-03, R8-04, R8-05, R8-06, R8-07, R8-08]
+    completion: R8-07 is the provenance/error audit and R8-08 freezes the family report and figure.
+  R9:
+    tasks: [R9-01, R9-02, R9-03, R9-04, R9-05, R9-06, R9-07]
+    completion: R9-07 freezes the balanced-diagonal family and its provenance audit.
+  R10:
+    tasks: [R10-01, R10-02, R10-03, R10-04, R10-05, R10-06, R10-07, R10-08, R10-09, R10-10]
+    completion: R10-08 is the two-tower holdout audit, R10-09 is the complete error audit, and R10-10 freezes the report and figure.
+  R16:
+    tasks: [R16-01, R16-02, R16-03, R16-04, R16-05, R16-06, R16-07, R16-08, R16-09, R16-10, R16-11, R16-12]
+    completion: R16-10 is the holdout audit, R16-11 is the scope/ledger task, and R16-12 freezes the report and figure.
+execution_order: [R8, R9, R10, R16, INTEGRATED_AUDIT]
+stop_on: [FAIL_THEORY, FAIL_IMPLEMENTATION, RESOURCE_BLOCKER, MISSING_MATHEMATICAL_PREREQUISITE]

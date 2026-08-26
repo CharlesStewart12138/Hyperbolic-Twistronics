@@ -1,0 +1,1005 @@
+{
+  "figure_count": 18,
+  "figures": {
+    "1": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "829364c629875e78d9743c61df99692b02f865e8c70c2fa45bf3083a6ceacd4d",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "829364c629875e78d9743c61df99692b02f865e8c70c2fa45bf3083a6ceacd4d",
+          "run_exists": true,
+          "run_sha256": "829364c629875e78d9743c61df99692b02f865e8c70c2fa45bf3083a6ceacd4d"
+        },
+        "png": {
+          "expected_sha256": "a2079e7b5622800ffd9b350af674a39f829d8d4846c97829b2b8fb16357e9cac",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "a2079e7b5622800ffd9b350af674a39f829d8d4846c97829b2b8fb16357e9cac",
+          "run_exists": true,
+          "run_sha256": "a2079e7b5622800ffd9b350af674a39f829d8d4846c97829b2b8fb16357e9cac"
+        },
+        "svg": {
+          "expected_sha256": "8301b9c2a13a85faa92e31df33d7fe279e5c672fcc40b578ca5c308970d923d9",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "8301b9c2a13a85faa92e31df33d7fe279e5c672fcc40b578ca5c308970d923d9",
+          "run_exists": true,
+          "run_sha256": "8301b9c2a13a85faa92e31df33d7fe279e5c672fcc40b578ca5c308970d923d9"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "CXEWNO+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT",
+          "DCLFKJ+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "769.305 x 319.879 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1992,
+        "high_resolution": true,
+        "width_px": 4797
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "10": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "2999067b21812cdd12b1d7423db7b70afa6a6f7e98e406eb950c0bcd94fea5cc",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "2999067b21812cdd12b1d7423db7b70afa6a6f7e98e406eb950c0bcd94fea5cc",
+          "run_exists": true,
+          "run_sha256": "2999067b21812cdd12b1d7423db7b70afa6a6f7e98e406eb950c0bcd94fea5cc"
+        },
+        "png": {
+          "expected_sha256": "60a27c6fb9b3da9f6b49dbb0f1024e0ad417a05025c242b9d227e10b5824395d",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "60a27c6fb9b3da9f6b49dbb0f1024e0ad417a05025c242b9d227e10b5824395d",
+          "run_exists": true,
+          "run_sha256": "60a27c6fb9b3da9f6b49dbb0f1024e0ad417a05025c242b9d227e10b5824395d"
+        },
+        "svg": {
+          "expected_sha256": "dd5b128460e07cd600b5cada825bb47c2cb397e60bb6ddf044355bc9027c6ce6",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "dd5b128460e07cd600b5cada825bb47c2cb397e60bb6ddf044355bc9027c6ce6",
+          "run_exists": true,
+          "run_sha256": "dd5b128460e07cd600b5cada825bb47c2cb397e60bb6ddf044355bc9027c6ce6"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "mathematical radical extension glyphs only",
+        "font_names": [
+          "CNWRJO+Cmex10",
+          "FMSJKF+TimesNewRomanPSMT",
+          "EHDSJJ+TimesNewRomanPS-BoldMT",
+          "FBHTKC+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "Cmex10 supplies radical extension glyphs; STIXGeneral-Regular supplies only the perpendicular symbol in Figure 16. English text and numbers remain Times New Roman.",
+        "mathematical_symbol_fallbacks": [
+          "CNWRJO+Cmex10"
+        ],
+        "page_size": "546.98 x 419.989 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2621,
+        "high_resolution": true,
+        "width_px": 3413
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "11": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "d02fb9e3e7d36e163847b1364e97c3b64f7fdc0eb5e8e15e569a3fb385f876b9",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "d02fb9e3e7d36e163847b1364e97c3b64f7fdc0eb5e8e15e569a3fb385f876b9",
+          "run_exists": true,
+          "run_sha256": "d02fb9e3e7d36e163847b1364e97c3b64f7fdc0eb5e8e15e569a3fb385f876b9"
+        },
+        "png": {
+          "expected_sha256": "e82de5fa94f3ee5299e5a779b0e8a5e042bbeb4100d730005ce4679960d6f24d",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "e82de5fa94f3ee5299e5a779b0e8a5e042bbeb4100d730005ce4679960d6f24d",
+          "run_exists": true,
+          "run_sha256": "e82de5fa94f3ee5299e5a779b0e8a5e042bbeb4100d730005ce4679960d6f24d"
+        },
+        "svg": {
+          "expected_sha256": "7274c55b1aa59793074c602f9d72eaa3339aac656e31976a72ba52b9f58eddba",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "7274c55b1aa59793074c602f9d72eaa3339aac656e31976a72ba52b9f58eddba",
+          "run_exists": true,
+          "run_sha256": "7274c55b1aa59793074c602f9d72eaa3339aac656e31976a72ba52b9f58eddba"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "YPZQSK+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "765.391 x 317.791 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1986,
+        "high_resolution": true,
+        "width_px": 4784
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "12": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "1650cc65a0d404e4998067510d09449c62dcfe6e63e0a358389d072e7afd60e7",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "1650cc65a0d404e4998067510d09449c62dcfe6e63e0a358389d072e7afd60e7",
+          "run_exists": true,
+          "run_sha256": "1650cc65a0d404e4998067510d09449c62dcfe6e63e0a358389d072e7afd60e7"
+        },
+        "png": {
+          "expected_sha256": "46b9bd70ae5ebb2f922b057436fe91fa7debf8b85a4e2b2fedc88e8dcc544066",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "46b9bd70ae5ebb2f922b057436fe91fa7debf8b85a4e2b2fedc88e8dcc544066",
+          "run_exists": true,
+          "run_sha256": "46b9bd70ae5ebb2f922b057436fe91fa7debf8b85a4e2b2fedc88e8dcc544066"
+        },
+        "svg": {
+          "expected_sha256": "9f42976a24df34d50ed41374a2f558dda9ffa36fb6986563f076614a4e4b1251",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "9f42976a24df34d50ed41374a2f558dda9ffa36fb6986563f076614a4e4b1251",
+          "run_exists": true,
+          "run_sha256": "9f42976a24df34d50ed41374a2f558dda9ffa36fb6986563f076614a4e4b1251"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "EFLEBM+TimesNewRomanPSMT",
+          "EHDSJJ+TimesNewRomanPS-BoldMT",
+          "BJNSWY+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "779.304 x 519.924 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 3241,
+        "high_resolution": true,
+        "width_px": 4866
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "13": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "728ee4ca92488311e253a448a33a214aa7f766f822730191b05fdae1b131fa86",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "728ee4ca92488311e253a448a33a214aa7f766f822730191b05fdae1b131fa86",
+          "run_exists": true,
+          "run_sha256": "728ee4ca92488311e253a448a33a214aa7f766f822730191b05fdae1b131fa86"
+        },
+        "png": {
+          "expected_sha256": "5ef95dc851ae77ee79f8f340ce8aa45ee9460a1e058ce119969d911e4efa2d2f",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "5ef95dc851ae77ee79f8f340ce8aa45ee9460a1e058ce119969d911e4efa2d2f",
+          "run_exists": true,
+          "run_sha256": "5ef95dc851ae77ee79f8f340ce8aa45ee9460a1e058ce119969d911e4efa2d2f"
+        },
+        "svg": {
+          "expected_sha256": "5fe2b9172ddd539f3ce6cb8026bbc3fe080796f4ecf3b0b8037d675fc96ad3ae",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "5fe2b9172ddd539f3ce6cb8026bbc3fe080796f4ecf3b0b8037d675fc96ad3ae",
+          "run_exists": true,
+          "run_sha256": "5fe2b9172ddd539f3ce6cb8026bbc3fe080796f4ecf3b0b8037d675fc96ad3ae"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "mathematical radical extension glyphs only",
+        "font_names": [
+          "CNWRJO+Cmex10",
+          "DTINDT+TimesNewRomanPSMT",
+          "UPBQTP+TimesNewRomanPS-BoldMT",
+          "EEVTXF+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "Cmex10 supplies radical extension glyphs; STIXGeneral-Regular supplies only the perpendicular symbol in Figure 16. English text and numbers remain Times New Roman.",
+        "mathematical_symbol_fallbacks": [
+          "CNWRJO+Cmex10"
+        ],
+        "page_size": "554.62 x 338.613 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2111,
+        "high_resolution": true,
+        "width_px": 3461
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "14": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "1acb9dc5ed745707fa54daf8d6069f86f8b126752f269fde3caa8fcdf64251a2",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "1acb9dc5ed745707fa54daf8d6069f86f8b126752f269fde3caa8fcdf64251a2",
+          "run_exists": true,
+          "run_sha256": "1acb9dc5ed745707fa54daf8d6069f86f8b126752f269fde3caa8fcdf64251a2"
+        },
+        "png": {
+          "expected_sha256": "2e512a8fbdd0a3317e6e905c92bb58d7e73777fc9c04dc3fc0ef9eada6f4fc70",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "2e512a8fbdd0a3317e6e905c92bb58d7e73777fc9c04dc3fc0ef9eada6f4fc70",
+          "run_exists": true,
+          "run_sha256": "2e512a8fbdd0a3317e6e905c92bb58d7e73777fc9c04dc3fc0ef9eada6f4fc70"
+        },
+        "svg": {
+          "expected_sha256": "826a2bc10165f3dfc479bdede4cd7d0a6dce114a84ca3ee3219d49b920007ec0",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "826a2bc10165f3dfc479bdede4cd7d0a6dce114a84ca3ee3219d49b920007ec0",
+          "run_exists": true,
+          "run_sha256": "826a2bc10165f3dfc479bdede4cd7d0a6dce114a84ca3ee3219d49b920007ec0"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "OZBNFI+TimesNewRomanPSMT",
+          "UPBQTP+TimesNewRomanPS-BoldMT",
+          "DHDCGA+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "558.984 x 336.599 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2099,
+        "high_resolution": true,
+        "width_px": 3489
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "15": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "0b6668b0e3277e83f48cffd21cd96cf8d714f18f1bc2b24f2f37dce5afe255eb",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "0b6668b0e3277e83f48cffd21cd96cf8d714f18f1bc2b24f2f37dce5afe255eb",
+          "run_exists": true,
+          "run_sha256": "0b6668b0e3277e83f48cffd21cd96cf8d714f18f1bc2b24f2f37dce5afe255eb"
+        },
+        "png": {
+          "expected_sha256": "7923c355ff2924861a12c2cb7792189785eff1a5bda032c9c04e636d898f0f80",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "7923c355ff2924861a12c2cb7792189785eff1a5bda032c9c04e636d898f0f80",
+          "run_exists": true,
+          "run_sha256": "7923c355ff2924861a12c2cb7792189785eff1a5bda032c9c04e636d898f0f80"
+        },
+        "svg": {
+          "expected_sha256": "dd083952c3c5d04e4fd885330ada9d7ee39bf35303feed5690f09289ae125d4b",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "dd083952c3c5d04e4fd885330ada9d7ee39bf35303feed5690f09289ae125d4b",
+          "run_exists": true,
+          "run_sha256": "dd083952c3c5d04e4fd885330ada9d7ee39bf35303feed5690f09289ae125d4b"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "LGMUBO+TimesNewRomanPSMT",
+          "UPBQTP+TimesNewRomanPS-BoldMT",
+          "OVPQID+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "548.62 x 336.613 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2100,
+        "high_resolution": true,
+        "width_px": 3425
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "16": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "b5242a52a982b27b64e530ccba6688c9058c69ecc78f6ca400b324c9f79be92b",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "b5242a52a982b27b64e530ccba6688c9058c69ecc78f6ca400b324c9f79be92b",
+          "run_exists": true,
+          "run_sha256": "b5242a52a982b27b64e530ccba6688c9058c69ecc78f6ca400b324c9f79be92b"
+        },
+        "png": {
+          "expected_sha256": "b29e1b5093cdce9f266155ce5e8a554f0bfc740db683e2c52ea37567df9419e2",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "b29e1b5093cdce9f266155ce5e8a554f0bfc740db683e2c52ea37567df9419e2",
+          "run_exists": true,
+          "run_sha256": "b29e1b5093cdce9f266155ce5e8a554f0bfc740db683e2c52ea37567df9419e2"
+        },
+        "svg": {
+          "expected_sha256": "40a502cd908274257fa7543ab75215a6e2abc83cfc9951d86cbafdcc29ff0c5b",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "40a502cd908274257fa7543ab75215a6e2abc83cfc9951d86cbafdcc29ff0c5b",
+          "run_exists": true,
+          "run_sha256": "40a502cd908274257fa7543ab75215a6e2abc83cfc9951d86cbafdcc29ff0c5b"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "CIIXCR+STIXGeneral-Regular",
+          "HHESOM+TimesNewRomanPSMT",
+          "BZWZEN+TimesNewRomanPS-BoldMT",
+          "EZVORA+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "Cmex10 supplies radical extension glyphs; STIXGeneral-Regular supplies only the perpendicular symbol in Figure 16. English text and numbers remain Times New Roman.",
+        "mathematical_symbol_fallbacks": [
+          "CIIXCR+STIXGeneral-Regular"
+        ],
+        "page_size": "564.71 x 426.444 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2665,
+        "high_resolution": true,
+        "width_px": 3519
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "17": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "851823feb697ef56bcebd845e9350b4190b5968ffdfc28212a9db8c661e9314e",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "851823feb697ef56bcebd845e9350b4190b5968ffdfc28212a9db8c661e9314e",
+          "run_exists": true,
+          "run_sha256": "851823feb697ef56bcebd845e9350b4190b5968ffdfc28212a9db8c661e9314e"
+        },
+        "png": {
+          "expected_sha256": "b63805dc48694c65c9f49d70cb9c9c826585501288f1a62d76cf0ecea5a3caa8",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "b63805dc48694c65c9f49d70cb9c9c826585501288f1a62d76cf0ecea5a3caa8",
+          "run_exists": true,
+          "run_sha256": "b63805dc48694c65c9f49d70cb9c9c826585501288f1a62d76cf0ecea5a3caa8"
+        },
+        "svg": {
+          "expected_sha256": "2c551455fbabcf4f2c4cd0ae6678d8fdf3ab79ec27556944733c7154b29391b0",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "2c551455fbabcf4f2c4cd0ae6678d8fdf3ab79ec27556944733c7154b29391b0",
+          "run_exists": true,
+          "run_sha256": "2c551455fbabcf4f2c4cd0ae6678d8fdf3ab79ec27556944733c7154b29391b0"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "DUZOYV+TimesNewRomanPSMT",
+          "BZWZEN+TimesNewRomanPS-BoldMT",
+          "NLQTIF+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "997.316 x 315.381 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1967,
+        "high_resolution": true,
+        "width_px": 6227
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "18": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "17c70b418e4ae5e11dfd153a14076e96540c49b5a199ee066643a47207998fac",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "17c70b418e4ae5e11dfd153a14076e96540c49b5a199ee066643a47207998fac",
+          "run_exists": true,
+          "run_sha256": "17c70b418e4ae5e11dfd153a14076e96540c49b5a199ee066643a47207998fac"
+        },
+        "png": {
+          "expected_sha256": "093780303b6e4c0b55a0362d257e89fa4561ded7c9dec583cdf9b69b1b795393",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "093780303b6e4c0b55a0362d257e89fa4561ded7c9dec583cdf9b69b1b795393",
+          "run_exists": true,
+          "run_sha256": "093780303b6e4c0b55a0362d257e89fa4561ded7c9dec583cdf9b69b1b795393"
+        },
+        "svg": {
+          "expected_sha256": "2706ce9f3fe831335beba13218ed5b67764609740d8f0982467ea92b6f5de4a9",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "2706ce9f3fe831335beba13218ed5b67764609740d8f0982467ea92b6f5de4a9",
+          "run_exists": true,
+          "run_sha256": "2706ce9f3fe831335beba13218ed5b67764609740d8f0982467ea92b6f5de4a9"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "DSAXSL+TimesNewRomanPSMT",
+          "EHDSJJ+TimesNewRomanPS-BoldMT",
+          "GRWLKU+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "559.08 x 421.543 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2627,
+        "high_resolution": true,
+        "width_px": 3489
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "2": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "70e52098ed5ab6b43c0ce50cd56753c11552215a32a42ae43f421a1d739d39dd",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "70e52098ed5ab6b43c0ce50cd56753c11552215a32a42ae43f421a1d739d39dd",
+          "run_exists": true,
+          "run_sha256": "70e52098ed5ab6b43c0ce50cd56753c11552215a32a42ae43f421a1d739d39dd"
+        },
+        "png": {
+          "expected_sha256": "b019be74e8ae95d2cb9b7422882c320e084dbf3b192bc4e4a4851bb69e9585e8",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "b019be74e8ae95d2cb9b7422882c320e084dbf3b192bc4e4a4851bb69e9585e8",
+          "run_exists": true,
+          "run_sha256": "b019be74e8ae95d2cb9b7422882c320e084dbf3b192bc4e4a4851bb69e9585e8"
+        },
+        "svg": {
+          "expected_sha256": "24202a390cad090fe5d82cbb199a1c215bc04e5715fbc608f4c51d27ddcabe7b",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "24202a390cad090fe5d82cbb199a1c215bc04e5715fbc608f4c51d27ddcabe7b",
+          "run_exists": true,
+          "run_sha256": "24202a390cad090fe5d82cbb199a1c215bc04e5715fbc608f4c51d27ddcabe7b"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "HCQBZI+TimesNewRomanPSMT",
+          "BZWZEN+TimesNewRomanPS-BoldMT",
+          "CFQLRW+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "968.704 x 316.948 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1973,
+        "high_resolution": true,
+        "width_px": 6055
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "3": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "e6803759772c813d4b55010e92953faae2ed3e7744cc29ff95fd8316e7dde568",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "e6803759772c813d4b55010e92953faae2ed3e7744cc29ff95fd8316e7dde568",
+          "run_exists": true,
+          "run_sha256": "e6803759772c813d4b55010e92953faae2ed3e7744cc29ff95fd8316e7dde568"
+        },
+        "png": {
+          "expected_sha256": "2ddf9cd68ac8a36740b9d6c60eeab7f34efe831e01910f1e1594cc5851d66aad",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "2ddf9cd68ac8a36740b9d6c60eeab7f34efe831e01910f1e1594cc5851d66aad",
+          "run_exists": true,
+          "run_sha256": "2ddf9cd68ac8a36740b9d6c60eeab7f34efe831e01910f1e1594cc5851d66aad"
+        },
+        "svg": {
+          "expected_sha256": "d2bb80cd0a6542f2a9c967358fe7ae2f37a17e8b7636ffa7c9baf79bfabf641c",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "d2bb80cd0a6542f2a9c967358fe7ae2f37a17e8b7636ffa7c9baf79bfabf641c",
+          "run_exists": true,
+          "run_sha256": "d2bb80cd0a6542f2a9c967358fe7ae2f37a17e8b7636ffa7c9baf79bfabf641c"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "VCAVNL+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT",
+          "CPTRYH+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "763.98 x 319.879 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1992,
+        "high_resolution": true,
+        "width_px": 4768
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "4": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "6de44ced80856e583cbeae80829fc13ecf31770c7c58b2f0ec3d466e6738bc82",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "6de44ced80856e583cbeae80829fc13ecf31770c7c58b2f0ec3d466e6738bc82",
+          "run_exists": true,
+          "run_sha256": "6de44ced80856e583cbeae80829fc13ecf31770c7c58b2f0ec3d466e6738bc82"
+        },
+        "png": {
+          "expected_sha256": "06a87a20c838cb998c2256179b992e04eb1fc6475abda14989548f6f5be28c32",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "06a87a20c838cb998c2256179b992e04eb1fc6475abda14989548f6f5be28c32",
+          "run_exists": true,
+          "run_sha256": "06a87a20c838cb998c2256179b992e04eb1fc6475abda14989548f6f5be28c32"
+        },
+        "svg": {
+          "expected_sha256": "0150e50c3dbc1b82b2bffd37888867aa3f3fbbae929cc3a7bee7aa021fdad12d",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "0150e50c3dbc1b82b2bffd37888867aa3f3fbbae929cc3a7bee7aa021fdad12d",
+          "run_exists": true,
+          "run_sha256": "0150e50c3dbc1b82b2bffd37888867aa3f3fbbae929cc3a7bee7aa021fdad12d"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "HGKJXI+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT",
+          "CNNIZK+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "765.344 x 318.426 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 1986,
+        "high_resolution": true,
+        "width_px": 4783
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "5": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "a5f5e4fdbbcd90debfdf102332a61bec75ea31bde5e05544b45d5d9d2a9721fb",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "a5f5e4fdbbcd90debfdf102332a61bec75ea31bde5e05544b45d5d9d2a9721fb",
+          "run_exists": true,
+          "run_sha256": "a5f5e4fdbbcd90debfdf102332a61bec75ea31bde5e05544b45d5d9d2a9721fb"
+        },
+        "png": {
+          "expected_sha256": "c226d9e3bdbe8fd12ab08d6914150a413fd297f7c5a2cecfc1aa8d430654eb5c",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "c226d9e3bdbe8fd12ab08d6914150a413fd297f7c5a2cecfc1aa8d430654eb5c",
+          "run_exists": true,
+          "run_sha256": "c226d9e3bdbe8fd12ab08d6914150a413fd297f7c5a2cecfc1aa8d430654eb5c"
+        },
+        "svg": {
+          "expected_sha256": "218547ee6c88acf3eed5f1be6d6e5f8b8910cec973d1fb2547ca2e1bc6ecf45d",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "218547ee6c88acf3eed5f1be6d6e5f8b8910cec973d1fb2547ca2e1bc6ecf45d",
+          "run_exists": true,
+          "run_sha256": "218547ee6c88acf3eed5f1be6d6e5f8b8910cec973d1fb2547ca2e1bc6ecf45d"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "HAEQZB+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "761.344 x 328.203 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2051,
+        "high_resolution": true,
+        "width_px": 4759
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "6": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "0a47bb53b582d8f87390b463eee8b59a45789ea7b3402e979461d7b7b73e14c0",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "0a47bb53b582d8f87390b463eee8b59a45789ea7b3402e979461d7b7b73e14c0",
+          "run_exists": true,
+          "run_sha256": "0a47bb53b582d8f87390b463eee8b59a45789ea7b3402e979461d7b7b73e14c0"
+        },
+        "png": {
+          "expected_sha256": "baef16a72d77ad62681efc2e47180f3c8ade48abd9328dcccdf32dfcab86d2d1",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "baef16a72d77ad62681efc2e47180f3c8ade48abd9328dcccdf32dfcab86d2d1",
+          "run_exists": true,
+          "run_sha256": "baef16a72d77ad62681efc2e47180f3c8ade48abd9328dcccdf32dfcab86d2d1"
+        },
+        "svg": {
+          "expected_sha256": "1564c2f4c93649ffc3a36e22e8fe86e8eb1573fe33bc65532ca33141733879de",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "1564c2f4c93649ffc3a36e22e8fe86e8eb1573fe33bc65532ca33141733879de",
+          "run_exists": true,
+          "run_sha256": "1564c2f4c93649ffc3a36e22e8fe86e8eb1573fe33bc65532ca33141733879de"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "FZRZTD+TimesNewRomanPSMT",
+          "CJTTVH+TimesNewRomanPS-BoldMT",
+          "LKPHZA+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "770.016 x 321.926 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2012,
+        "high_resolution": true,
+        "width_px": 4813
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "7": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "b559d2235fb64742281882566935c59dc7a43c8350b2f74170896aca949978eb",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "b559d2235fb64742281882566935c59dc7a43c8350b2f74170896aca949978eb",
+          "run_exists": true,
+          "run_sha256": "b559d2235fb64742281882566935c59dc7a43c8350b2f74170896aca949978eb"
+        },
+        "png": {
+          "expected_sha256": "af11033cd0d3fde8f0d9b917043defd8a701223b66bc337e5788a5572a6149a2",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "af11033cd0d3fde8f0d9b917043defd8a701223b66bc337e5788a5572a6149a2",
+          "run_exists": true,
+          "run_sha256": "af11033cd0d3fde8f0d9b917043defd8a701223b66bc337e5788a5572a6149a2"
+        },
+        "svg": {
+          "expected_sha256": "914ecdad5f2e6ba66efb0fa75768c082bf3fc787a9dd996a65bbb148d4c43145",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "914ecdad5f2e6ba66efb0fa75768c082bf3fc787a9dd996a65bbb148d4c43145",
+          "run_exists": true,
+          "run_sha256": "914ecdad5f2e6ba66efb0fa75768c082bf3fc787a9dd996a65bbb148d4c43145"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "EPTBQA+TimesNewRomanPSMT",
+          "BZWZEN+TimesNewRomanPS-BoldMT",
+          "FAMVSW+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "984.704 x 341.472 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2132,
+        "high_resolution": true,
+        "width_px": 6155
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "8": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "35651bffb2461658fa0b79185d0da5ecd4db8ebec2830876179711d2311792c6",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "35651bffb2461658fa0b79185d0da5ecd4db8ebec2830876179711d2311792c6",
+          "run_exists": true,
+          "run_sha256": "35651bffb2461658fa0b79185d0da5ecd4db8ebec2830876179711d2311792c6"
+        },
+        "png": {
+          "expected_sha256": "eace103784083db6935b7b9129ae66f1d9a8855afb6a5e0e607fb46dc55d8cca",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "eace103784083db6935b7b9129ae66f1d9a8855afb6a5e0e607fb46dc55d8cca",
+          "run_exists": true,
+          "run_sha256": "eace103784083db6935b7b9129ae66f1d9a8855afb6a5e0e607fb46dc55d8cca"
+        },
+        "svg": {
+          "expected_sha256": "73b40b84a3bf8781b2fc5d689beadc2a26975d551723300d0bb0ea9938277447",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "73b40b84a3bf8781b2fc5d689beadc2a26975d551723300d0bb0ea9938277447",
+          "run_exists": true,
+          "run_sha256": "73b40b84a3bf8781b2fc5d689beadc2a26975d551723300d0bb0ea9938277447"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "mathematical radical extension glyphs only",
+        "font_names": [
+          "CNWRJO+Cmex10",
+          "DIJZPY+TimesNewRomanPSMT",
+          "EHDSJJ+TimesNewRomanPS-BoldMT",
+          "CINDHL+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "Cmex10 supplies radical extension glyphs; STIXGeneral-Regular supplies only the perpendicular symbol in Figure 16. English text and numbers remain Times New Roman.",
+        "mathematical_symbol_fallbacks": [
+          "CNWRJO+Cmex10"
+        ],
+        "page_size": "550.344 x 414.653 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2586,
+        "high_resolution": true,
+        "width_px": 3435
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    },
+    "9": {
+      "outputs": {
+        "pdf": {
+          "expected_sha256": "8510560c3a969d13a5f4f2a13ee20c5714ae51cff9ec147e24d12a71bc62530c",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "8510560c3a969d13a5f4f2a13ee20c5714ae51cff9ec147e24d12a71bc62530c",
+          "run_exists": true,
+          "run_sha256": "8510560c3a969d13a5f4f2a13ee20c5714ae51cff9ec147e24d12a71bc62530c"
+        },
+        "png": {
+          "expected_sha256": "e40ecccb868fd314562bc8a0c7f5e3e212a2fc538aaddaa725587240caf8342f",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "e40ecccb868fd314562bc8a0c7f5e3e212a2fc538aaddaa725587240caf8342f",
+          "run_exists": true,
+          "run_sha256": "e40ecccb868fd314562bc8a0c7f5e3e212a2fc538aaddaa725587240caf8342f"
+        },
+        "svg": {
+          "expected_sha256": "9a436a1e175644b70cc246a81e1ff84f170132e2ea2861639d8ea995e384aa48",
+          "hashes_match": true,
+          "public_exists": true,
+          "public_sha256": "9a436a1e175644b70cc246a81e1ff84f170132e2ea2861639d8ea995e384aa48",
+          "run_exists": true,
+          "run_sha256": "9a436a1e175644b70cc246a81e1ff84f170132e2ea2861639d8ea995e384aa48"
+        }
+      },
+      "pdf": {
+        "cmex10_scope": "not used",
+        "font_names": [
+          "DHFWPZ+TimesNewRomanPSMT",
+          "DMXPZC+TimesNewRomanPS-BoldMT",
+          "CAQNUG+TimesNewRomanPS-ItalicMT"
+        ],
+        "font_policy_pass": true,
+        "fonts_embedded": true,
+        "mathematical_symbol_fallback_scope": "not used",
+        "mathematical_symbol_fallbacks": [],
+        "page_size": "722.015 x 420.989 pts",
+        "pages": 1
+      },
+      "pdf_visual_review": "PASS - latest PDF rasterization inspected; no clipping, overlap, broken formulas, or missing subplot frames",
+      "png": {
+        "height_px": 2625,
+        "high_resolution": true,
+        "width_px": 4512
+      },
+      "svg": {
+        "circle_element_absent": true,
+        "figure_prefix_absent_from_visible_text": true,
+        "forbidden_font_absent": true,
+        "question_title_style_absent": true,
+        "times_new_roman_present": true
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "conclusion": "finite inequalities retained; stronger genuine within/cross-tower asymptotic upgrade unresolved",
+      "extension": {
+        "R8-05": "INCONCLUSIVE"
+      },
+      "figure": 8,
+      "original": {
+        "B-04": "PASS_CERTIFIED",
+        "B-06": "PASS_CONVERGED",
+        "B-15": "PASS_CERTIFIED"
+      }
+    },
+    {
+      "conclusion": "available radii do not realize a balanced diagonal",
+      "extension": {
+        "R9-01": "INCONCLUSIVE",
+        "R9-05": "INCONCLUSIVE"
+      },
+      "figure": 9,
+      "original": {
+        "B-11": "PASS_CERTIFIED",
+        "B-12": "PASS_CERTIFIED"
+      }
+    },
+    {
+      "conclusion": "weak CDF result retained; unsmoothed/coherence limit unresolved",
+      "extension": {
+        "R10-02": "PASS_CERTIFIED",
+        "R10-06": "INCONCLUSIVE"
+      },
+      "figure": 10,
+      "original": {
+        "D-02": "PASS_CONVERGED",
+        "D-05": "INCONCLUSIVE",
+        "D-15": "PASS_CERTIFIED"
+      }
+    },
+    {
+      "conclusion": "conditional fixed-class theorem survives; unrestricted H0 fails; corrected radius master unresolved",
+      "extension": {
+        "R16-05": "INCONCLUSIVE",
+        "classification": "PASS_RESTRICTED_CLASS"
+      },
+      "figure": 16,
+      "original": {
+        "NC-08": "FAIL_EXPECTED",
+        "S-18": "INCONCLUSIVE",
+        "S-19": "PASS_CONVERGED"
+      }
+    },
+    {
+      "extension_interpretation": "superseded by FAIL_IMPLEMENTATION mapping audit; frozen record not relabelled",
+      "historical_extension_record": "preserved",
+      "run_id": "21b8f68592ae722b0f112754974e09cea7c38caa8b12bf75f9afc1a9276316ac"
+    }
+  ],
+  "genuine_FAIL_THEORY_found": false,
+  "original_project_mutated": false,
+  "schema_version": 1
+}

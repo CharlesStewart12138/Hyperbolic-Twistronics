@@ -1,0 +1,17 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+parent_preregistration: configs/r16_theorem_contract_preregistration.yaml
+parent_role: theorem_contract_and_parameter_family_freeze
+clarifications:
+  tunneling_profile_fit_fields: [Y_profile]
+  local_envelope:
+    algorithm: sort_by_absolute_theory_field_ascending_then_cumulative_upper_envelope
+    pass_rule: innermost_upper_envelope_is_at_most_0.75_times_outermost_upper_envelope
+    minimum_distinct_nonzero_scales: 3
+  cutoff_envelope:
+    algorithm: sort_cutoff_ascending_then_reverse_cumulative_maximum
+    pass_rule: final_C0_at_cutoff_6_at_most_0.15_and_final_tail_below_initial_tail
+  corrected_master_scope: radius_and_angle_holdouts_only
+  reason: >-
+    These algorithms make the already frozen qualitative envelope rules
+    executable. They are registered before any new R16 outcome is computed.

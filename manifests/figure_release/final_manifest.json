@@ -1,0 +1,36 @@
+{
+  "beautified_run_id": "0886c2b7a00df82c2860d45ff0cbb9f28c96e6b7e28a2194d7baaf225f479f9b",
+  "final_visual_qa": "PASS_18_OF_18",
+  "freeze_scope": "all run files except manifests/final_freeze.json",
+  "old_new_mapping_sha256": "e01413a9910f6dd031c991170d23ee3793e29dfd9da661f44923e21d901898a7",
+  "output_counts": {
+    "pdf": 18,
+    "png": 18,
+    "svg": 18
+  },
+  "parent_beautified_run_id": "8cab5c5deac8622b1b8ce276c02f62e17dce857a06979d93d6849e7d175c440d",
+  "parent_beautified_status_sha256": "b2af2685023247db98365bd60157e4ad5d0391411401e4a2a505fb6e7d38ecfa",
+  "predecessor_figures_overwritten": false,
+  "qa_manifest_sha256": "53f9c691a50fa49cf540cd2d8fa4ed9c41424d3eef9dcefc7831ff7bfb2ce241",
+  "render_manifest_sha256": "b410d47b20e3ab37918eca06279486b9ca8e0b444925e0a80beea51a5d0e31c0",
+  "report_hashes": {
+    "beautified_figure_notes.md": "efb66d89191382db5a78461613c27ba9bcabaf22803eb3586acfb6dcebaadce3",
+    "old_new_figure_mapping.md": "87ed29c0466580e9c64067848119aebaa542304dec72bead8a6e25c503dd3c7d",
+    "style_audit.md": "1322aeefcdc321290ddfe28969d8ec33f65fc1bf051bcbf7557ae056a5745ad3",
+    "valid_figure_registry.md": "34230589781a325e0f92e328b938f3b9c94f2ff303790ce64ec7a2c4f5447db1"
+  },
+  "requested_micro_adjustments": {
+    "figure_09_panel_f_removed": "PASS",
+    "figure_11_panel_a_small_text_removed": "PASS",
+    "figure_16_panel_d_removed": "PASS",
+    "pure_white_background_18_of_18": "PASS"
+  },
+  "revision": "WHITE_BACKGROUND_V2",
+  "schema_version": 1,
+  "scientific_data_modified": false,
+  "scientific_results_computed": false,
+  "source_hashes_verified": true,
+  "state": "BEAUTIFIED_FIGURES_COMPLETE",
+  "tree_file_count": 98,
+  "tree_inventory_sha256": "248d4e5c35132691130d6bde124424ae543ebdc61799c507c9792a5754639329"
+}

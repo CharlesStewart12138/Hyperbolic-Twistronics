@@ -1,0 +1,14 @@
+LoadPackage("kbmag");;
+F := FreeGroup("a","b","c","d");;
+a := F.1;; b := F.2;; c := F.3;; d := F.4;;
+G := F / [a*b^-1*c*d^-1*a^-1*b*c^-1*d];;
+R := KBMAGRewritingSystem(G);;
+ok := AutomaticStructure(R);;
+if not ok then Error("KBMAG automatic structure failed"); fi;
+Print("ALPHABET=",R!.alphabet,"\n");
+if IsBound(R!.inverses) then Print("INVERSES=",R!.inverses,"\n"); fi;
+if IsBound(R!.generatorOrder) then Print("GENERATOR_ORDER=",R!.generatorOrder,"\n"); fi;
+if IsBound(R!.ordering) then Print("ORDERING=",R!.ordering,"\n"); fi;
+if IsBound(R!.isConfluent) then Print("IS_CONFLUENT=",R!.isConfluent,"\n"); fi;
+if IsBound(R!.generatorNames) then Print("GENERATOR_NAMES=",R!.generatorNames,"\n"); fi;
+QUIT;

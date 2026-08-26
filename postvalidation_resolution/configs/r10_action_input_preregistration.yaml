@@ -1,0 +1,7 @@
+schema_version: 1
+scope: R10_exact_action_input
+frozen_before_R10_outcomes: true
+cover_run_id: 3fea2901f7ae29d44dc1517294dee678fac2b9e2fa7a8bf3bccff2bd6528fac5
+cover_level_table: derived/r8_01_certified_levels.parquet
+cover_level_table_sha256: 41a95c3783ca79a8e5a8fe020e18e3a4e3489f856fe1258fc51479daf41cd54b
+action_hash_rule: verify_each_action_against_action_sha256_column

@@ -1,0 +1,199 @@
+schema_version: 1
+preregistered: true
+frozen_before_new_scientific_outcomes: true
+created_utc: 2026-08-25T20:05:00Z
+
+mathematical_model:
+  surface_group_presentation: "<g1,g2,g3,g4 | g1 g2^-1 g3 g4^-1 g1^-1 g2 g3^-1 g4 = e>"
+  coefficient_ring: "Z[x]/(x^4-2*x^2-1)"
+  dyadic_uniformizer: "y=x-1"
+  eisenstein_identity: "(y+1)^4-2(y+1)^2-1 = y^4+4y^3+4y^2-2"
+  prime_ideal: "P=(2,x-1)=(y)"
+  residue_norm: 2
+  representation_source: results/f2916d3fc9ed2bf74d0864ddeb7c5d75a9d4b9cb47de21bb4467d9bed07d5585/exact/i04_octagon_group.json
+  representation_source_sha256: cdf4fc3a820cde66bebadbf4208770d6740fea5456ce629e4cd0c9eee7cf780b
+  generator_polynomials: "the same four marked matrices used by the frozen non-Abelian congruence towers"
+  normalized_operator: "A_N/8 on the new-at-level subspace ker(E_{N->N-1})"
+  bilayer_hamiltonian: "diag(A_N/8-1, A_N/8+1)"
+  energy_origin: 0.0
+  interlayer_coupling: 1.0
+  reference_markov_spectral_radius_interval: [0.662477, 0.6628153757]
+
+cover_sequences:
+  - tower_id: dyadic_ramified
+    construction: "ker(Gamma_2 -> SL(2,O/P^n))"
+    dyadic_depths: [2, 3, 4, 5, 6]
+    fixed_auxiliary_quotient: null
+    required_minimum_levels: 5
+    retained_sector: "orthogonal complement of functions lifted from depth n-1"
+  - tower_id: dyadic_x_p7
+    construction: "ker(Gamma_2 -> image in SL(2,O/P^n) x SL(2,F_7))"
+    dyadic_depths: [2, 3, 4]
+    fixed_auxiliary_quotient:
+      residue_prime: 7
+      residue_root: 2
+      level: 1
+      expected_order: 336
+    required_minimum_levels: 3
+    retained_sector: "orthogonal complement of functions lifted from depth n-1 with the p=7 label fixed"
+cover_certification:
+  nesting_rule: "reduction P^(n+1) -> P^n; the auxiliary quotient is unchanged"
+  strictness_rule: "successive quotient order must grow and the exact reduction map must be surjective"
+  trivial_intersection_rule: "faithfulness plus intersection_n P^n={0}; intersecting a fixed auxiliary kernel cannot enlarge the intersection"
+  nonabelian_rule: "exact commutator witness and generated-image order > 6"
+  normal_cover_required: true
+  exact_word_systole:
+    method: "breadth-first product of the frozen KBMAG shortlex word acceptor and the exact finite quotient action"
+    empty_word_excluded: true
+    first accepted nonempty identity-image word: "exact shortest nontrivial normal-form kernel word"
+    injectivity_radius_integer: "floor((word_systole-1)/2)"
+    no_posthoc_word_cutoff: true
+
+resources:
+  physical_memory_bytes_observed_before_run: 68112736256
+  disk_free_bytes_observed_before_run: 138989998080
+  maximum_materialized_group_order: 2000000
+  maximum_saved_action_bytes: 536870912
+  maximum_peak_working_memory_bytes: 25769803776
+  eigensolver_timeout_seconds_per_level: 3600
+  kpm_slq_timeout_seconds_per_level: 3600
+  terminate_on_limit_without_downscaling: true
+
+R8:
+  target:
+    representation_sector: new_at_level
+    normalized_adjacency: true
+    bilayer_branches: [-1.0, 1.0]
+    heat_trace_times: [0.5, 1.0, 2.0]
+    fixed_dos_broadening: 0.08
+  eigensolver:
+    method: projected_matrix_free_Lanczos_eigsh
+    extremal_count: 12
+    tolerance: 1.0e-10
+    maximum_iterations: 6000
+    deterministic_seed: 520308
+  errors:
+    u_N: "maximum directed distance of the two retained normalized adjacency edges to the midpoint reference edges, plus half the frozen reference interval width"
+    b_N: "maximum excess of either retained normalized adjacency edge outside [-rho_upper,rho_upper]"
+    truncation_N: 0.0
+    solver_N: "maximum saved Ritz residual"
+    eta_N: "u_N+b_N+truncation_N+solver_N"
+    edge_error: "maximum distance of retained lower/upper edge to the frozen reference intervals"
+    bandwidth_error: "distance to [2*rho_lower,2*rho_upper]"
+    gap_error: "distance to [2*(1-rho_upper),2*(1-rho_lower)]"
+  bound_tests:
+    edge_error_le_eta: true
+    bandwidth_error_le_2eta: true
+    gap_error_le_2eta: true
+  within_tower:
+    asymptotic_variable: injectivity_radius_integer
+    envelope: cumulative_minimum_from_the_tail
+    minimum_nontrivial_refinement_steps: 3
+  cross_tower_matching:
+    rule: "match equal dyadic depth n between dyadic_ramified and dyadic_x_p7"
+    no_reuse: true
+    metrics: [lower_edge, upper_edge, bandwidth, external_gap, heat_trace_t05, heat_trace_t10, heat_trace_t20, fixed_broadening_dos]
+    acceptance: "each residual <= combined eta_N and the tail envelope decreases with depth"
+  acceptance:
+    no_pollution_tolerance: 2.0e-6
+    solver_residual_tolerance: 2.0e-8
+    require_all_bound_tests: true
+    require_all_levels_sector_dimension_positive: true
+    require_matched_cross_tower_envelope_decrease: true
+    statuses: [PASS_CONVERGED, INCONCLUSIVE, FAIL_THEORY, FAIL_IMPLEMENTATION]
+
+R9:
+  balanced_diagonal:
+    level_order: "increasing dyadic depth within each tower; never concatenate towers"
+    shell_cutoff_rule: "L_j=max(1,floor(sqrt(r_inj_integer_j)))"
+    theoretical_limit: "L_j -> infinity and L_j/r_inj_integer_j -> 0 as r_inj -> infinity"
+    hopping_decay_q: 0.20
+    active_shell_convention: radial_Chebyshev_shells
+  error_components:
+    epsilon_core: "R8 u_N+b_N"
+    epsilon_physical_tail: "q^(L+1)/(1-q)"
+    epsilon_master_tail: "(q*rho_upper)^(L+1)/(1-q*rho_upper)"
+    epsilon_cover: "R8 edge_error"
+    epsilon_solver: "R8 solver_N"
+    epsilon_transport: "operator norm difference of moment-Jacobi common-space surrogates at the same L"
+    epsilon_total: "sum of the six separately stored components"
+  common_space:
+    construction: "orthonormal polynomial Krylov/Jacobi representation from moments through order 2L+2"
+    reference: "deepest preregistered level of the same tower"
+    implicit_zero_padding: false
+    exact_infinite_reference_claimed: false
+    licensed_surrogate_label: moment_Jacobi_common_space
+  spectral_tests:
+    fixed_multiple: 4.0
+    projector_licensed_if: "epsilon_total < frozen_gap_lower/4"
+    C1_tail: "sum_{l>L} l q^l"
+    C2_tail: "sum_{l>L} l^2 q^l"
+  acceptance:
+    require_epsilon_total_tail_envelope_to_decrease: true
+    require_operator_surrogate_and_licensed_spectral_errors_to_converge: true
+    strict_pointwise_monotonicity_required: false
+
+R10:
+  levels: "all R8 materialized levels"
+  KPM:
+    polynomial_order: 96
+    random_vectors: 6
+    base_seed: 521001
+    jackson_kernel: true
+    reconstruction_grid_size: 1201
+    spectral_rescaling: [-1.0, 1.0]
+  SLQ:
+    lanczos_steps: 64
+    random_vectors: 6
+    base_seed: 521601
+    reorthogonalization: full
+  reference:
+    rule: "equal-weight barycenter of the KPM/SLQ averaged CDFs at dyadic_ramified depth 6 and dyadic_x_p7 depth 4"
+    uncertainty: "half KPM-SLQ disagreement plus the two stochastic standard errors"
+    selected_before_outcomes: true
+  cdf_error:
+    kappa_N: "supremum distance between the KPM/SLQ averaged retained-sector CDF and the preregistered reference"
+  regularity:
+    alpha: 0.5
+    route: "analytic local-limit/square-root edge regularity for symmetric finite-range random walk on a non-elementary cocompact hyperbolic surface group"
+    must_be_independently_cited_and_hypotheses_audited: true
+    failure_to_close_status: INCONCLUSIVE
+  vanishing_broadening:
+    eta_N: "(r_inj_integer_N+1)^(-1/3)"
+    selected_before_outcomes: true
+    terms: [kappa_N_over_eta_N, eta_N_to_alpha]
+    pilot_levels:
+      dyadic_ramified: [2, 3, 4]
+      dyadic_x_p7: [2]
+    holdout_levels:
+      dyadic_ramified: [5, 6]
+      dyadic_x_p7: [3, 4]
+    pilot_cannot_change_formula: true
+  coherence_observable:
+    name: layer_even_bilayer_projector
+    positive: true
+    plus_branch_weight: 1.0
+    minus_branch_weight: 0.0
+    fixed_before_outcomes: true
+  separate_errors:
+    - spectral_measure_error
+    - riesz_projector_error
+    - coherence_operator_error
+    - stochastic_KPM_SLQ_error
+    - broadening_bias
+  acceptance:
+    require_kappa_tail_envelope_to_zero: true
+    require_eta_to_zero: true
+    require_combined_term_tail_envelope_to_zero: true
+    require_projector_and_coherence_error_tail_envelopes_to_zero: true
+    require_KPM_SLQ_agreement_within_combined_budget: true
+    minimum_holdout_towers: 2
+    strict_pointwise_monotonicity_required: false
+
+output_style:
+  font_family: Times New Roman
+  palette: ["#A64B2A", "#8F2D1C", "#D97706", "#E9A23B", "#B8860B", "#6B3E26"]
+  line_width_points: 1.15
+  frame_width_points: 0.8
+  four_sided_frames: true
+  formats: [SVG, PNG]

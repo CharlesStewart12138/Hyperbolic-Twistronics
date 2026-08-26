@@ -1,0 +1,62 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+recovery_scope: R8-01_cover_construction_only
+created_utc: 2026-08-26T00:00:00Z
+frozen_before:
+  - mixed_tower_group_order_outcomes
+  - exact_word_systoles
+  - injectivity_radii
+  - all_R8_spectral_outcomes
+  - all_R9_outcomes
+  - all_R10_outcomes
+immutable_predecessor:
+  path: configs/r8_r9_r10_preregistration.yaml
+  sha256: 83b544f3da4ede3a563ebe796d383a1280c4173b13022dc343940a48866955f6
+  unchanged_sections: [mathematical_model, resources, R8, R9, R10, output_style]
+failed_structural_assumption_preserved:
+  original_candidate_depths: [2, 3, 4, 5, 6]
+  exact_pure_dyadic_image_orders_depth_1_through_6: [2, 2, 4, 8, 32, 32]
+  reason_for_recovery: >-
+    The original candidates contain identical kernels at depths 1->2 and
+    5->6. They cannot provide four nontrivial refinement steps. The old
+    candidate sequence remains frozen and is not relabeled.
+  classification: FAIL_IMPLEMENTATION_ASSUMPTION_NOT_THEORY
+recovery_cover_rule:
+  candidate_dyadic_depths: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+  inspect_every_candidate_in_order: true
+  endpoint_selected_from_spectral_outcomes: false
+  admissible_level_if_all:
+    - exact_generated_image_enumeration_closes_below_resource_cap
+    - reduction_to_immediate_predecessor_is_surjective
+    - reduction_fibers_are_uniform
+    - generated_image_order_is_strictly_larger_than_immediate_predecessor
+    - retained_new_at_level_sector_has_positive_dimension
+    - exact_word_systole_is_certified_by_KBMAG_product_automaton
+  duplicate_kernel_rule: record_candidate_but_exclude_from_refinement_sequence
+  resource_cap_group_order: 2000000
+  resource_cap_product_automaton_states: 24000000
+  cap_behavior: stop_that_tower_and_record_RESOURCE_LIMIT_without_downscaling
+  tower_definitions:
+    - tower_id: dyadic_ramified
+      quotient_map: marked_image_in_SL2_O_mod_Pn
+      fixed_auxiliary_quotient: null
+    - tower_id: dyadic_x_p7
+      quotient_map: marked_image_in_SL2_O_mod_Pn_times_SL2_F7
+      fixed_auxiliary_quotient:
+        prime: 7
+        root: 2
+        exact_marked_image_order_target: 336
+  minimum_target:
+    one_tower_admissible_levels: 4
+    preferred_two_towers_levels_each: 3
+  no_posthoc_depth_subsets: true
+retained_sector:
+  definition: kernel_of_conditional_expectation_to_immediate_depth
+  parent_is_immediate_candidate_depth_even_if_parent_kernel_is_duplicate: true
+  matrices_materialized: false
+  group_actions_materialized: true
+estimator_and_acceptance_inheritance:
+  rule: inherit_only_by_verified_predecessor_hash
+  no_changed_tolerances: true
+  no_changed_normalization: true
+  no_changed_R8_R9_R10_acceptance_criteria: true

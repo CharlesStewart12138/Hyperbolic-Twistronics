@@ -1,0 +1,147 @@
+schema_version: 1
+frozen_before_new_outcomes: true
+task_family: R16
+contract_audit:
+  manuscript_sha256: 4815472e059312cf75e5b7fce0e2d2f718a5766964e888eec508cff8478f9abb
+  manuscript_pages:
+    theorem_21_fixed_comparison_class: 89
+    reverse_certificate_comparison_package: [173, 177]
+    theorem_160_conditional_one_parameter_collapse: 424
+    theorem_163_controlled_correction_fields: 426
+    theorem_167_error_certified_collapse: 428
+    theorem_168_strong_universality_class: [428, 430]
+  exact_interpretation: conditional_fixed_class_one_parameter_operator_collapse_with_explicit_correction_fields
+  not_registered: unrestricted_cross_control_collapse_with_shape_curvature_and_numerical_cutoff_left_active
+  conditional_statement: >-
+    Theorem 160 states consequences if the normalized Hamiltonian converges to
+    a one-parameter family; it does not independently prove that arbitrary
+    radius, angle, tunneling-profile, or cutoff variations satisfy that premise.
+  correction_statement: >-
+    Theorem 163 registers y_lat=E_M_eff/t and normalized scattering-profile
+    deviations as additional dimensionless fields. Theorem 168 requires
+    unitary equivalence of normalized active Hamiltonians for strong
+    cross-model universality.
+  fixed_comparison_data:
+    target_projector: q_zero_eigenstate_with_maximum_s_orbital_coherence_continuously_tracked
+    representation_sector: finite_ARO_3B_transported_character_sector
+    canonical_metric: Euclidean_operator_norm_on_declared_three_orbital_active_fiber
+    normalization: (H-E0_I)/E_M_eff
+    energy_origin: tracked_target_eigenvalue_at_q_zero
+    energy_scale: E_M_eff=(a/xi_M)^2_with_t_equal_1
+    active_shell_convention: finite_three_orbital_active_fiber_and_KBMAG_normal_forms
+    symmetry_transport: identity_in_frozen_transported_orbital_basis
+    shape_labels: [lambda_perp, normalized_profile, normal_form_cutoff]
+    curvature_class: regular_octagon_family_with_a_over_R_fixed
+    derivative_coordinate: normalized_path_q
+    derivative_orders: [0, 1, 2]
+  prior_anchors:
+    final_remaining_yaml_sha256: c00a908fcbadc75898d31f90797bc09f1c1756137f2ea1ca64be6c1aababcf5a
+    old_s18_code_sha256: f3b42169290be1782d6267428664ed43d3ee3e195e0256d44ccaee52abd3820d
+    active_shell_code_sha256: ea4a906fab687833dacaf8e8dea0514df2f01ab3453493d041af7a9247f1cd3e
+    old_s18_certificate_sha256: c195c7fad40e45aab9df7c9dc723397e054229c8bb3b3d690a811b9e79173865
+    old_s19_certificate_sha256: ff764a85bb5dd35fccbd0b4740ceb6b7cdf877e6f5812bc57582b37be06e2b70
+    old_nc08_certificate_sha256: 95ceb990840d43166b4d330e55971a53f828de97590dcbdb5785329298419bda
+
+experiment:
+  matched_X: [0.8, 1.0, 1.2]
+  q_grid: {minimum: -0.35, maximum: 0.35, points: 129}
+  reference: {curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+  paths:
+    curvature_radius:
+      training: [5.5, 7.0, 9.0, 12.0]
+      holdout: [6.0, 7.5, 8.5, 10.0]
+      fixed: {theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+    twist_angle:
+      training: [0.05, 0.07, 0.09, 0.12]
+      holdout: [0.06, 0.075, 0.085, 0.10]
+      fixed: {curvature_radius: 8.0, lambda_perp: 0.20, cutoff: 6}
+    tunneling_decay:
+      training: [0.12, 0.18, 0.22, 0.28]
+      holdout: [0.16, 0.19, 0.21, 0.24]
+      fixed: {curvature_radius: 8.0, theta: 0.08, cutoff: 6}
+    shell_cutoff:
+      levels: [2, 3, 4, 5, 6]
+      fixed: {curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20}
+    interlayer_coupling:
+      interpretation: horizontal_master_coordinate_not_an_independent_equal_X_field
+      X_values: [0.6, 0.8, 1.0, 1.2, 1.4]
+      fixed: {curvature_radius: 8.0, theta: 0.08, lambda_perp: 0.20, cutoff: 6}
+  note: >-
+    Radius variation inside the fixed regular-octagon realization keeps a/R
+    constant and changes microscopic hopping shape. It is therefore audited as
+    a shape/curvature-class variation, not silently treated as a pure continuum
+    curvature limit.
+
+operator_tests:
+  norm: spectral_2_norm
+  C0: analytic_hamiltonian_values_on_frozen_q_grid
+  C1: analytic_first_q_derivative
+  C2: analytic_second_q_derivative
+  derivative_tiers_licensed: true
+  derivative_license: finite_analytic_three_by_three_hamiltonian_with_uniform_fixed_basis
+  spectral_residuals:
+    - complete_spectrum_sup_norm
+    - target_bandwidth_absolute_error
+    - external_gap_absolute_error
+    - target_riesz_projector_operator_norm
+    - target_coherence_sup_error
+
+correction_fields:
+  y_lat:
+    formula: E_M_eff/t
+    manuscript_basis: equation_VIF_y_lat_and_Theorem_163
+  Y_R:
+    formula: d1(R)/lambda_parallel-d1(R_ref)/lambda_parallel
+    manuscript_basis: microscopic_geodesic_hopping_shape_expansion_and_fixed_tessellation_a_over_R_warning
+    lambda_parallel: 0.90
+  Y_Ktheta:
+    formula: (a/R)^2/theta^2-((a_ref/R_ref)^2/theta_ref^2)
+    manuscript_basis: equation_VIIC_gK
+  Y_profile:
+    formula: signed_lambda_perp/d1_difference_from_reference
+    manuscript_basis: Theorems_151_163_and_168_normalized_scattering_profile_field
+  cutoff:
+    role: numerical_truncation_field_tested_separately_not_fitted_as_physical_master_field
+  linear_corrected_master:
+    radius_angle_fields: [delta_y_lat, Y_R, Y_Ktheta]
+    tunneling_profile_fields: [delta_y_lat, Y_profile]
+    fit: real_linear_least_squares_of_each_Hermitian_operator_component_on_training_sets
+    holdout_locked: true
+
+acceptance:
+  numerical:
+    maximum_hermiticity_residual: 1.0e-10
+    maximum_analytic_derivative_check_error: 2.0e-6
+    minimum_target_tracking_overlap: 0.70
+  one_parameter:
+    maximum_C0: 0.15
+    maximum_C1: 0.20
+    maximum_C2: 0.30
+    maximum_projector: 0.20
+    all_channels_must_have_decreasing_near_reference_envelope: true
+  restricted_class:
+    reference_X_curve_exact_by_construction: true
+    shell_cutoff_C0_at_final_refinement: 0.15
+    shell_cutoff_decreasing_tail_envelope: true
+    fixed_shape_local_sequences_must_approach_zero: true
+  corrected_master:
+    maximum_holdout_C0: 0.15
+    maximum_holdout_C1: 0.20
+    maximum_holdout_C2: 0.30
+    minimum_median_C0_reduction_fraction: 0.50
+    no_holdout_C0_increase_factor_above: 1.05
+    near_reference_corrected_envelope_must_decrease: true
+  classification_precedence:
+    - FAIL_THEORY_if_exact_manuscript_claim_with_all_hypotheses_has_positive_floor
+    - PASS_ONE_PARAMETER_if_all_declared_channels_pass
+    - PASS_CORRECTED_MASTER_if_preregistered_correction_model_passes_holdout
+    - PASS_RESTRICTED_CLASS_if_only_fixed_class_or_local_submanifold_passes
+    - INCONCLUSIVE_otherwise
+  H0: one_parameter_collapse_across_all_declared_channels
+  H1: one_parameter_collapse_only_on_fixed_geometric_shape_submanifold
+  H2: preregistered_correction_fields_restore_radius_angle_and_profile_holdouts
+
+preservation:
+  old_S18_status: INCONCLUSIVE
+  old_NC08_status: FAIL_EXPECTED
+  old_results_are_never_relabelled: true

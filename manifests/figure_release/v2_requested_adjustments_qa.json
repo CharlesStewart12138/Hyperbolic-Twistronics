@@ -1,0 +1,664 @@
+{
+  "beautified_run_id": "0886c2b7a00df82c2860d45ff0cbb9f28c96e6b7e28a2194d7baaf225f479f9b",
+  "overall": "PASS",
+  "png_white_background": {
+    "1": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "10": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "11": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "12": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "13": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "14": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "15": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "16": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "17": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "18": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "2": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "3": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "4": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "5": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "6": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "7": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "8": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    },
+    "9": {
+      "corner_rgba": [
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          255,
+          255,
+          255,
+          255
+        ]
+      ],
+      "pass": true
+    }
+  },
+  "requested_removals": {
+    "figure_09_panel_f": {
+      "expected_panel_labels": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)",
+        "(e)"
+      ],
+      "forbidden_text": [
+        "(f)",
+        "PASS_CERTIFIED",
+        "physical/Hodge tail closure"
+      ],
+      "pass": true
+    },
+    "figure_11_panel_a_small_text": {
+      "forbidden_text": [
+        "D-10 saved spectral residuals"
+      ],
+      "pass": true
+    },
+    "figure_16_panel_d": {
+      "expected_panel_labels": [
+        "(a)",
+        "(b)",
+        "(c)"
+      ],
+      "forbidden_text": [
+        "(d)",
+        "PASS_RESTRICTED_CLASS",
+        "No FAIL_THEORY"
+      ],
+      "pass": true
+    }
+  },
+  "revision": "WHITE_BACKGROUND_V2",
+  "schema_version": 1,
+  "svg_white_background": {
+    "1": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "10": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "11": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "12": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "13": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "14": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "15": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "16": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "17": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "18": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "2": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "3": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "4": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "5": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "6": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "7": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "8": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    },
+    "9": {
+      "pass": true,
+      "previous_warm_background_absent": true,
+      "pure_white_present": true
+    }
+  },
+  "visual_review": {
+    "figure_09_individual_pdf_raster": "PASS",
+    "figure_11_individual_pdf_raster": "PASS",
+    "figure_16_individual_pdf_raster": "PASS",
+    "pdf_contact_sheets": "PASS_18_OF_18"
+  }
+}

@@ -1,0 +1,62 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+scope: R8-02_through_R8-05_numerical_estimators
+frozen_before_all_R8_spectral_outcomes: true
+cover_input:
+  run_id: 3fea2901f7ae29d44dc1517294dee678fac2b9e2fa7a8bf3bccff2bd6528fac5
+  manifest_sha256: fb5145f3b0d7e44e628b688b4280fdd0e2560ed6f906b4fb3892d13d88b374fb
+  certificate_sha256: 2001edbfcfd5618b862f4d275c230fcf467aed22b8200bd01a14dc01e55ea5d0
+  level_table_sha256: 41a95c3783ca79a8e5a8fe020e18e3a4e3489f856fe1258fc51479daf41cd54b
+operator:
+  normalized_adjacency: sum_of_eight_signed_generator_actions_divided_by_8
+  retained_sector: kernel_of_conditional_expectation_to_immediate_depth
+  projection_applied_before_and_after_every_matvec: true
+  symmetry_audit_tolerance: 1.0e-11
+edges:
+  method: scipy_eigsh_projected_matrix_free
+  eigenvalues_per_edge: 6
+  tolerance: 1.0e-10
+  maximum_iterations: 6000
+  deterministic_seed: 520308
+KPM:
+  polynomial_order: 96
+  random_vectors: 6
+  base_seed: 520800
+  random_vector: projected_Rademacher
+  jackson_kernel: true
+  raw_moments_saved_per_probe: true
+  density_grid_min: -0.995
+  density_grid_max: 0.995
+  density_grid_size: 1201
+  fixed_gaussian_broadening: 0.08
+  heat_trace_times: [0.5, 1.0, 2.0]
+reference:
+  rho_interval: [0.662477, 0.6628153757]
+  lower_edge_interval: [-0.6628153757, -0.662477]
+  upper_edge_interval: [0.662477, 0.6628153757]
+  bandwidth_interval: [1.324954, 1.3256307514]
+  bilayer_external_gap_interval: [0.6743692486, 0.675046]
+errors:
+  u_N: max_distance_to_reference_edge_midpoints_plus_half_interval_width
+  b_N: maximum_edge_excess_outside_closed_rho_upper_interval
+  truncation_N: 0.0
+  solver_N: maximum_saved_Ritz_residual
+  eta_N: u_N_plus_b_N_plus_truncation_N_plus_solver_N
+  actual_edge_error: maximum_distance_to_closed_reference_edge_intervals
+  actual_bandwidth_error: distance_to_closed_bandwidth_interval
+  actual_gap_error: distance_to_closed_gap_interval
+cross_tower:
+  matching: equal_dyadic_depth
+  depths: [7, 8, 9, 10]
+  metrics: [lower_edge, upper_edge, bandwidth, external_gap, heat_trace_t05, heat_trace_t10, heat_trace_t20, fixed_broadening_DOS_L1]
+  combined_budget: eta_left_plus_eta_right
+acceptance:
+  solver_residual_tolerance: 2.0e-8
+  no_pollution_tolerance: 2.0e-6
+  edge_error_le_eta: true
+  bandwidth_error_le_2eta: true
+  gap_error_le_2eta: true
+  within_tower_requires_three_nontrivial_refinement_steps: true
+  within_tower_requires_injectivity_radius_tail_increase: true
+  cross_tower_residuals_require_combined_budget_and_decreasing_tail_envelope: true
+  insufficient_scale_separation_status: INCONCLUSIVE

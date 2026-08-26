@@ -1,0 +1,101 @@
+{
+  "annotation_changes": {
+    "figure_11a": "saved spectral residual annotation removed"
+  },
+  "background": {
+    "axes": "#FFFFFF",
+    "figure": "#FFFFFF",
+    "legend": "#FFFFFF",
+    "panel_label_bbox": "#FFFFFF"
+  },
+  "font": {
+    "bold": "C:/Windows/Fonts/timesbd.ttf",
+    "bold_italic": "C:/Windows/Fonts/timesbi.ttf",
+    "family": "Times New Roman",
+    "italic": "C:/Windows/Fonts/timesi.ttf",
+    "math_engine": "matplotlib mathtext with the Times New Roman custom font set",
+    "regular": "C:/Windows/Fonts/times.ttf"
+  },
+  "frozen_before_render": true,
+  "layout_changes": {
+    "figure_16": "panel d removed",
+    "figure_9": "panel f removed"
+  },
+  "legend": {
+    "frame_width_pt": 0.55,
+    "obstruction_forbidden": true,
+    "thin_frame": true
+  },
+  "line": {
+    "main_width_pt": 1.0,
+    "multi_series_primary_style": "dash-dot",
+    "secondary_width_pt": 0.78,
+    "supporting_styles": [
+      "dashed",
+      "dotted",
+      "solid"
+    ]
+  },
+  "marker": {
+    "circle_marker_forbidden": true,
+    "primary": "*",
+    "size_pt": 5.2
+  },
+  "outputs": {
+    "formats": [
+      "png",
+      "svg",
+      "pdf"
+    ],
+    "png_dpi": 450,
+    "vector_pdf": true
+  },
+  "palette": {
+    "grid": "#D8C9BC",
+    "heatmap": "YlOrBr",
+    "ink": "#34261F",
+    "muted_ink": "#6B584C",
+    "paper": "#FFFFFF",
+    "series": [
+      "#8E4B32",
+      "#B66A3C",
+      "#9A6B3E",
+      "#7A4E42",
+      "#B07C64",
+      "#6F5A48"
+    ]
+  },
+  "revision": "white-background-v2",
+  "schema_version": 1,
+  "scientific_recomputation_permitted": false,
+  "subplot_frame": {
+    "all_four_spines": true,
+    "color": "#34261F",
+    "width_pt": 0.72
+  },
+  "titles": {
+    "figure_titles": {
+      "1": "Hyperbolic Moire-Length Consistency",
+      "10": "Vanishing-Broadening Spectral-Measure Hierarchy",
+      "11": "External HyperBloch and Circuit Reproduction",
+      "12": "Negative Controls and Expected Falsification",
+      "13": "Exact Sampled Magic Complexity",
+      "14": "Joint Incommensurate-Limit Falsification",
+      "15": "Operational Magic-Target Spectrum",
+      "16": "Restricted-Class Operator Collapse and Profile-Coordinate Correction",
+      "17": "Operational Magic Landscape",
+      "18": "Operator-Tangent Rank Structure of the Curvature-Related Sector",
+      "2": "Geometric and Dimensional Scaling Collapse",
+      "3": "Arithmetic Exponent and Radial Locking",
+      "4": "Square-Lattice No-Go and Hyperbolic Positive Root",
+      "5": "Full-Kernel Shell Closure and Root-Gap Certification",
+      "6": "Hodge-Response Structure and Exact Cancellation",
+      "7": "Symmetry Breaking and Multiorbital Robustness",
+      "8": "Weak Bulk Spectral Consistency Across Certified Non-Abelian Towers",
+      "9": "Balanced Full-Shell Error Hierarchy"
+    },
+    "forbidden_prefix": "Figure",
+    "questions_forbidden": true,
+    "style": "Nature/PRL noun phrases"
+  }
+}

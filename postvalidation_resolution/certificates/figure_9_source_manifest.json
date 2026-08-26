@@ -1,0 +1,14 @@
+{
+  "artifact_preregistration_sha256": "e28154bf77c53508bca137a752aff8125a80e6752189e01f222de5a2bab5476c",
+  "figure": 9,
+  "outputs": {
+    "figure_9_resolution.png": "6da6e5850915442559fb4ec5589e4f11569d0c41267423558a12cd15a4ccd4b4",
+    "figure_9_resolution.svg": "8c443ab497cc13a550f2f47c7b59b54856d405f91e2fac50e70c9f55ce5c0244"
+  },
+  "plot_source_sha256": "5fa9899f7c75bf4005be3d8fb3710f5129141ba94dcfdd73a434dfd4c954e69b",
+  "run_id": "f84e758e4a5ca4d0239a2e3518e2141874067525e1a8993afffbd24e779955a8",
+  "scientific_values_computed_in_plotting_code": false,
+  "source_data": {
+    "figure_9_balanced_errors.parquet": "74f65bba20f37aed60931bb925ebdc9b6ed2ac39cc9573ba97070ef0befc153c"
+  }
+}

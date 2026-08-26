@@ -1,0 +1,788 @@
+{
+  "anchor_files": {
+    "deep_resolution_status": {
+      "path": "deep_resolution/DEEP_RESOLUTION_STATUS.json",
+      "sha256": "9d108279c83d561f7d463cd1001aae7915fc44231d56e378d692cbd514aff100"
+    },
+    "original_figure_manifest": {
+      "path": "figures/complete_supplementary_suite/figure_manifest.json",
+      "sha256": "b15dc64b3a9f412e13ff2e61c0c37324716a3fa6b445f0410f180d887d20d025"
+    }
+  },
+  "beautified_run_id": "0886c2b7a00df82c2860d45ff0cbb9f28c96e6b7e28a2194d7baaf225f479f9b",
+  "excluded_classes": [
+    {
+      "class": "superseded duplicate figure numbers",
+      "reason": "replaced by the second deep extension"
+    },
+    {
+      "class": "failure diagnostics and recovery evidence",
+      "reason": "not formal paper figures"
+    },
+    {
+      "class": "implementation-failure plots",
+      "reason": "preserved as audit evidence only"
+    },
+    {
+      "class": "QA previews and rasterized review pages",
+      "reason": "not citable formal figures"
+    }
+  ],
+  "parent_beautified_run_id": "8cab5c5deac8622b1b8ce276c02f62e17dce857a06979d93d6849e7d175c440d",
+  "parent_beautified_status_sha256": "b2af2685023247db98365bd60157e4ad5d0391411401e4a2a505fb6e7d38ecfa",
+  "revision": "white-background-v2",
+  "revision_changes": [
+    "all figure and axes backgrounds changed from warm paper tint to pure white (#FFFFFF)",
+    "Figure 9 panel (f) removed; panels (d) and (e) rebalanced across the lower row",
+    "Figure 16 panel (d) removed; panel (c) centered across the lower row",
+    "Figure 11(a) small saved-residual annotation removed"
+  ],
+  "schema_version": 1,
+  "selected_figure_count": 18,
+  "selected_figures": [
+    {
+      "contains_subplots": true,
+      "figure_number": 1,
+      "main_text_figure": false,
+      "new_title": "Hyperbolic Moire-Length Consistency",
+      "plot_types": [
+        "curve",
+        "scatter"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "expected_hash_verified": true,
+          "file_count": 15,
+          "kind": "directory",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/moire_length.zarr",
+          "tree_inventory_sha256": "885c3761677ece08f46ad1e41a6965b89aa6e0f9cf46d877325a310b5b1e6e50"
+        },
+        {
+          "bytes": 3810,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/derived/moire_length_errors.parquet",
+          "sha256": "050ef3659bea300a9197a1a2f11a2bb496e60416de90aebea3cae6b9f316787b"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure01_hyperbolic_moire_length.png",
+      "source_figure_png_sha256": "9311e15c273679415f7aec03980c6d1efb3781435f1b105704280021edf0c808",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure01_hyperbolic_moire_length.svg",
+      "source_figure_svg_sha256": "5e5f3efd9b11b05300715ed20698168200c556abaa673b5e8a6b29ce1869c7a6",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 2,
+      "main_text_figure": false,
+      "new_title": "Geometric and Dimensional Scaling Collapse",
+      "plot_types": [
+        "curve",
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "expected_hash_verified": true,
+          "file_count": 37,
+          "kind": "directory",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/crossover.zarr",
+          "tree_inventory_sha256": "b3e4e753478b58b96c32251d128528caab0b1fc1d6f6ae8ad1e7d7af8ce03c05"
+        },
+        {
+          "expected_hash_verified": true,
+          "file_count": 21,
+          "kind": "directory",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/double_scaling.zarr",
+          "tree_inventory_sha256": "adadb6b68bf19e22c4b7f31e09e3d4b14523854cfe873f839e99300d51a8264e"
+        },
+        {
+          "expected_hash_verified": true,
+          "file_count": 13,
+          "kind": "directory",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/raw/dimensional_extension.zarr",
+          "tree_inventory_sha256": "87782d510b1fc24d616596a19d756b1feb67fd2fc765136beaa3a3109740e8f2"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure02_geometric_scaling_collapse.png",
+      "source_figure_png_sha256": "bc6b61ddf4e5ccdd95f7f59aaa0abb0b8c9d6073771c6bbf1616fe7053a78b02",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure02_geometric_scaling_collapse.svg",
+      "source_figure_svg_sha256": "4af246fc8ff35affe48360a164eedbb9080db7cb07da079146e1bbad7dcf5505",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 3
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 3,
+      "main_text_figure": false,
+      "new_title": "Arithmetic Exponent and Radial Locking",
+      "plot_types": [
+        "line",
+        "bar"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 4647,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/derived/arithmetic_exponent.parquet",
+          "sha256": "fe10b6be8ff0b89736ca80dd125580df4e2ba786f850a40531b8d1becbe3fead"
+        },
+        {
+          "bytes": 2964,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/5f785708371af9f1335a4e084146aa48e37b495c8f88737b551055c5cd8b3de3/derived/radial_locking_extrapolation.parquet",
+          "sha256": "e9c3616084d712f1ab2671d390bb8bc4ca8f4645d807d10e85e9841f57ae73c2"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure03_arithmetic_exponent_radial_locking.png",
+      "source_figure_png_sha256": "f34156ff1978c11bc6f2e243d14d8f4698c320daab172ea2ca8ad2423ea29f1a",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure03_arithmetic_exponent_radial_locking.svg",
+      "source_figure_svg_sha256": "68ccacd8e9053a60ceefaf29a491d68a87c9af78420bf1b20c464eb073c1ff2d",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 4,
+      "main_text_figure": false,
+      "new_title": "Square-Lattice No-Go and Hyperbolic Positive Root",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 7153,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/square_fivestate_exact.parquet",
+          "sha256": "3788630af81d200840d0ec3faa8ae330d50b2bf1d616e102d8a45aea9bdb45ea"
+        },
+        {
+          "bytes": 10647,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/character_root.parquet",
+          "sha256": "aed27197cf76342827fbcf572ff6cde5d1e8031084c44e5ec2aeb70d753f36d0"
+        },
+        {
+          "bytes": 4046,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/derived/character_root_summary.parquet",
+          "sha256": "2962189554b1c8c56326f9ef2358589a11fba59905138ecee9108dbcb7f16f5a"
+        },
+        {
+          "bytes": 461,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s02_square_no_go.json",
+          "sha256": "508593ea8f21e3356594b15bd3ec95c6f503dd572b5d4711a2623e2a44938764"
+        },
+        {
+          "bytes": 562,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s04_character_root.json",
+          "sha256": "edc9fb4f1201d363b73f79c23f81a61e5b23f9dc1e236404cb5deee479d7c725"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure04_square_nogo_hyperbolic_root.png",
+      "source_figure_png_sha256": "aff2260befa3c9a4c0f0aa440bc01adf6bde64e91e37c55fc547cc858573d57c",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure04_square_nogo_hyperbolic_root.svg",
+      "source_figure_svg_sha256": "a8e4537a53208fb4c2c707d3d2923c7db7fc9f946df82b7221cc1b48cee934d8",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 5,
+      "main_text_figure": false,
+      "new_title": "Full-Kernel Shell Closure and Root-Gap Certification",
+      "plot_types": [
+        "line",
+        "bar",
+        "interval"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 3147,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/derived/full_kernel_shells.parquet",
+          "sha256": "26ce60a2b19ee27f1c6a496d7ab86820ff9559461fac62f971f9563bedd92c7f"
+        },
+        {
+          "bytes": 4726,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/root_displacement.parquet",
+          "sha256": "3da99da4db76f37ebe8c8c0105012d8986d90d7191326b2edfab7dbfbbf6dbd9"
+        },
+        {
+          "bytes": 1369,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/schur_tail_certificate.json",
+          "sha256": "25c0dddc8d2681e50b66e8f46692c7d15a2de7ecde9069b94465a1e6627e2674"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure05_full_kernel_gap_validation.png",
+      "source_figure_png_sha256": "306d585f838b8cc12e8b39c87d4e6ba5c8437bd191b7762ae58c4f5b4a299b70",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure05_full_kernel_gap_validation.svg",
+      "source_figure_svg_sha256": "d5d6c7b74fde6682f541dee288a943dafd8748991ff797512865f114c1503416",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 6,
+      "main_text_figure": false,
+      "new_title": "Hodge-Response Structure and Exact Cancellation",
+      "plot_types": [
+        "line",
+        "bar"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "expected_hash_verified": true,
+          "file_count": 9,
+          "kind": "directory",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/hodge_tensor.zarr",
+          "tree_inventory_sha256": "fd6e4e41217d4ec8e0f24a82a90ef45557d0fbe008489ea22d0c73a75e1ef050"
+        },
+        {
+          "bytes": 225,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s09_hodge_basis.json",
+          "sha256": "a791b2190dbe83a910bc79638fc961f06bb84881f1a17eb926991b7b372b8adb"
+        },
+        {
+          "bytes": 391,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s11_hodge_tensor.json",
+          "sha256": "0ec274b4e88d9b626f26303c5e7d5d19d99fa6c1505f572cf2232a683ec4d0e0"
+        },
+        {
+          "bytes": 490,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/certificates/s12_complete_cancellation.json",
+          "sha256": "9bcd624b4d9c97871694da8fa1e09341efb593dafe0b5ea0d6c5494e94dd3ae9"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure06_hodge_cancellation.png",
+      "source_figure_png_sha256": "0ff91c4a534c14c58914025c3debe1ed52bcd9e27a3406c9d2ec33e06d506b58",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure06_hodge_cancellation.svg",
+      "source_figure_svg_sha256": "3b51c4aab0daac7d1874ac98b0bb20617a677bab3a80160856e14265ea8cbb4b",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 7,
+      "main_text_figure": false,
+      "new_title": "Symmetry Breaking and Multiorbital Robustness",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 9307,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/symmetry_breaking_scan.parquet",
+          "sha256": "39f1f28ded8db3352f4f5fa0e1a24810ac7fa6a23e00ed9319dd0200e6ff8bad"
+        },
+        {
+          "bytes": 10497,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b517afe774be43a1b885808807771069f4670585485bc48bbde3fb4c6f88e619/raw/multiorbital_robustness.parquet",
+          "sha256": "294ae424d235678e4d3bca3e6ebfc746d72a3e1907057bc9583933028e4ba7cc"
+        },
+        {
+          "bytes": 7112,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/derived/symmetry_vs_flatness.parquet",
+          "sha256": "788a55fae147e9247b6d2eed5fb0baac999fa276c395b015f1fbf25161238e7c"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure07_symmetry_robustness.png",
+      "source_figure_png_sha256": "952e3badee91607cbed3b8ab4c625f4f12849def2f6573a23d0bd3df3822963a",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure07_symmetry_robustness.svg",
+      "source_figure_svg_sha256": "4d9b6ffbcd775904a6d42b895a410698232cfc01df8ed5fa545936c3fd8e0774",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 3
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 8,
+      "main_text_figure": true,
+      "new_title": "Weak Bulk Spectral Consistency Across Certified Non-Abelian Towers",
+      "plot_types": [
+        "line",
+        "bar"
+      ],
+      "rerendered": true,
+      "scientific_scope": "PASS_WEAK_BULK for the retained projective sector; strong full-regular-spectrum no-pollution remains INCONCLUSIVE",
+      "selected_version": "second deep extension",
+      "selection_basis": "latest valid figure-number version; supersedes the original and first-extension versions where present",
+      "source_data": [
+        {
+          "bytes": 10290,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_10_vanishing_schedule.parquet",
+          "sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412"
+        },
+        {
+          "bytes": 21358,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_8_deep_cover_levels.parquet",
+          "sha256": "420b6f309f191b540ddef309af5d39f2c4d812f0c2e2b762973c7f527b21b6ee"
+        },
+        {
+          "bytes": 10049,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_8_matched_levels.parquet",
+          "sha256": "08d8c9211a0daf2764755037146369a960ba323fbfe380ef76865d57d8a77f1e"
+        }
+      ],
+      "source_figure_png": "deep_resolution/figures/figure08_deep_finite_cover_closure.png",
+      "source_figure_png_sha256": "2134cddbc3bf74244a8f9309a4e9bea37585d63301239db4cd3bf3945cc20696",
+      "source_figure_svg": "deep_resolution/figures/figure08_deep_finite_cover_closure.svg",
+      "source_figure_svg_sha256": "9ea7c8f689906594115dbe3013798b43edc55378e09ad3b15bf4c4679230d4ea",
+      "source_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+      "subplot_count": 4
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 9,
+      "main_text_figure": true,
+      "new_title": "Balanced Full-Shell Error Hierarchy",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "PASS_CERTIFIED for the balanced diagonal; C0/C1/C2 physical-tail closure remains INCONCLUSIVE",
+      "selected_version": "second deep extension",
+      "selection_basis": "latest valid figure-number version; supersedes the original and first-extension versions where present",
+      "source_data": [
+        {
+          "bytes": 15345,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_9_balanced_diagonal.parquet",
+          "sha256": "fe5fbc3555671a300358503ea56494819c7d9f09871aaa35649a4e80c785dde9"
+        }
+      ],
+      "source_figure_png": "deep_resolution/figures/figure09_balanced_full_shell.png",
+      "source_figure_png_sha256": "c365066a76098da989395e12b4f777a78096ef6b5e17ef02a5c675056fac784d",
+      "source_figure_svg": "deep_resolution/figures/figure09_balanced_full_shell.svg",
+      "source_figure_svg_sha256": "c957c7581db542c257f0dcde1125f9d4d0b057aa6a66d6d61a0019e3445b4873",
+      "source_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+      "subplot_count": 5
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 10,
+      "main_text_figure": true,
+      "new_title": "Vanishing-Broadening Spectral-Measure Hierarchy",
+      "plot_types": [
+        "line",
+        "bar"
+      ],
+      "rerendered": true,
+      "scientific_scope": "PASS_CONVERGED for weak CDF and the finite vanishing schedule; local unsmoothed/coherence DOS remains INCONCLUSIVE",
+      "selected_version": "second deep extension",
+      "selection_basis": "latest valid figure-number version; supersedes the original and first-extension versions where present",
+      "source_data": [
+        {
+          "bytes": 863438,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_10_KPM_SLQ_CDF.parquet",
+          "sha256": "35d7cb7e9dfddf2f63410c5d3f1479909e115c2dd968f93159541541c4be934a"
+        },
+        {
+          "bytes": 68017,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_10_holdout_coherence_density.parquet",
+          "sha256": "2d4141bb5c7b4bfe86ae0f26b9a11a940f688ada3c373f7f18e3aaa1e395c943"
+        },
+        {
+          "bytes": 10290,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_10_vanishing_schedule.parquet",
+          "sha256": "dfb72b0e4972a038c0c91227fec613f2d088969b193cd4389330eb1340114412"
+        }
+      ],
+      "source_figure_png": "deep_resolution/figures/figure10_vanishing_broadening_DOS.png",
+      "source_figure_png_sha256": "5a851e2ea55a3ab824186117380d3019b9e3b5963fbfcd2b251b484647ffb142",
+      "source_figure_svg": "deep_resolution/figures/figure10_vanishing_broadening_DOS.svg",
+      "source_figure_svg_sha256": "22f9a6b44933b8f3cb0c416c122940880bea99e75e3442f1fe556e9bbd5c2637",
+      "source_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+      "subplot_count": 4
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 11,
+      "main_text_figure": false,
+      "new_title": "External HyperBloch and Circuit Reproduction",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 15214,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/d15_publication_outputs/figure_ready_data/figure12_public_hyperbloch_dos.parquet",
+          "sha256": "e52eb5e17339daecbbc2681647b84ba5b49cf7dc2101643a66200d3b1c95d580"
+        },
+        {
+          "bytes": 9038,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/d10_reproduce_public_graphs.parquet",
+          "sha256": "4b95443f23b95ff6f88b019d6f93b9eb7935f8cc2cace578b3d73cfe2c6a0adb"
+        },
+        {
+          "bytes": 14061,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/d15_publication_outputs/figure_ready_data/figure12_circuit_reconstruction.parquet",
+          "sha256": "f82e1b0c9480ba5a8a11d3309d7e5627f76d3ca116ab3223618989213e62cce7"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure11_external_reproduction.png",
+      "source_figure_png_sha256": "b194cc9a2f5ce22237c6216741a6d3f61e0a59579e13a8bfd33e9ec85655d6d3",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure11_external_reproduction.svg",
+      "source_figure_svg_sha256": "abefec973330681e695e5f8c199f0bb4bec3e0139771258d8da00b46f1b7f153",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 2
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 12,
+      "main_text_figure": false,
+      "new_title": "Negative Controls and Expected Falsification",
+      "plot_types": [
+        "bar",
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "FAIL_EXPECTED controls remain explicit",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 2995,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/derived/reverse_falsification_residuals.parquet",
+          "sha256": "a7656b0ec88920f85f5d9cb9629574147debf4619e944e75b527e0911eca72cf"
+        },
+        {
+          "bytes": 2775,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/nc_03.parquet",
+          "sha256": "5d43ad45aa83d1e8f6e0076f7228d9aefd28a62b2cf75cf8d8f9606b120209a4"
+        },
+        {
+          "bytes": 2536,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/ed350b4ade947be9a310532f8fd8e643030e35205b74ea14bf01ca4c48844ec4/derived/nc_07.parquet",
+          "sha256": "08fd8af22e6302d1157002d03f5a3e5e6925ca635331fd047a96cd50e04f9f83"
+        },
+        {
+          "bytes": 24934,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/23ea5ca46de279646c795385cedbca38052478dd41f7b40d95dec44ca3c43fc2/validation_matrix.parquet",
+          "sha256": "7bd4348b25b6d44b66e2f888470022692e0067567b3301a47869d64161455cc6"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure12_negative_controls.png",
+      "source_figure_png_sha256": "1246f2b401a4cb8572a28dc9cec42f2290e7ed396e43c76ed1a45ac0ce8cc80a",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure12_negative_controls.svg",
+      "source_figure_svg_sha256": "ceef9c537979c5bdc405ff9de9c7b147ac7a792dcaec373ecd1958d9d98ac007",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 4
+    },
+    {
+      "contains_subplots": false,
+      "figure_number": 13,
+      "main_text_figure": false,
+      "new_title": "Exact Sampled Magic Complexity",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 8702,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/derived/magic_subsequence_sampling.parquet",
+          "sha256": "ea0af6b51d5ba03907b0c44238aa79006cbcfe53dc68e761534f50a97749b15b"
+        },
+        {
+          "bytes": 13115,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/derived/magic_complexity.parquet",
+          "sha256": "fb3a2b27323e3e00778f51fd9f8f0298f733999adbe12dbe70b1922ebcec7a2e"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure13_magic_complexity.png",
+      "source_figure_png_sha256": "9935414f745190cab30254a5030bfaf9d7c77aee9a4ffda8a1b4a933e6e1d8a4",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure13_magic_complexity.svg",
+      "source_figure_svg_sha256": "964b355adc924b600782ce09e772c0515b15f750b676d72b6abfb78a2dc34d7c",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 1
+    },
+    {
+      "contains_subplots": false,
+      "figure_number": 14,
+      "main_text_figure": false,
+      "new_title": "Joint Incommensurate-Limit Falsification",
+      "plot_types": [
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "bytes": 5683,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/derived/incommensurate_joint_limit.parquet",
+          "sha256": "90cc976fd3e4a17e7201c7adae3c9fa9381a2a355f5e06a49cee96bc63ff1193"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure14_joint_limit.png",
+      "source_figure_png_sha256": "1861e829e06d997116849a09678e60897ad3ea6a1e7670622918b7e41f61fa98",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure14_joint_limit.svg",
+      "source_figure_svg_sha256": "090bfd4bee645ac7a7dd48df35fd9a408981305432580019a3b045a02521f89c",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 1
+    },
+    {
+      "contains_subplots": false,
+      "figure_number": 15,
+      "main_text_figure": false,
+      "new_title": "Operational Magic-Target Spectrum",
+      "plot_types": [
+        "curve"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "expected_hash_verified": true,
+          "file_count": 14,
+          "kind": "directory",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/raw/operational_magic.zarr",
+          "tree_inventory_sha256": "253dc1bbe41b3af5342533e3385387318de15d74de8b2402417233b68fa12ffe"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure15_operational_spectrum.png",
+      "source_figure_png_sha256": "c6b37252128ab5a5f29bfbfb7f9a763ec9079b932912f6df6833d61fcc5e4fc7",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure15_operational_spectrum.svg",
+      "source_figure_svg_sha256": "726745d3b063644dbcde1f28e97253bb00b15cb24dacc1d8aa6b793e2ae74a65",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 1
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 16,
+      "main_text_figure": true,
+      "new_title": "Restricted-Class Operator Collapse and Profile-Coordinate Correction",
+      "plot_types": [
+        "bar",
+        "line"
+      ],
+      "rerendered": true,
+      "scientific_scope": "PASS_RESTRICTED_CLASS; no unrestricted curvature-universality claim",
+      "selected_version": "second deep extension",
+      "selection_basis": "latest valid figure-number version; supersedes the original and first-extension versions where present",
+      "source_data": [
+        {
+          "bytes": 4472,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_16_channel_summary.parquet",
+          "sha256": "acb555f71c090699572473e488f5a1c183c632a038075daa0547e1b0ab5c728e"
+        },
+        {
+          "bytes": 38380,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_16_hypothesis_holdout.parquet",
+          "sha256": "455ee6055481fcbeea8f923fa9f119883b251b1f8c3f61effe73164e8f93b7e2"
+        },
+        {
+          "bytes": 4380,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_16_old_radius_shape_field.parquet",
+          "sha256": "df43d0d181b3e96e7fcc174ac47d55ab8e87026e6c65e7f6433d85436dca8e59"
+        }
+      ],
+      "source_figure_png": "deep_resolution/figures/figure16_curvature_relevant_universality.png",
+      "source_figure_png_sha256": "050b266b4ac6321c923951efac093114617ae2923ff981cbb0cacb2a9eaf6092",
+      "source_figure_svg": "deep_resolution/figures/figure16_curvature_relevant_universality.svg",
+      "source_figure_svg_sha256": "8218cdb0901d0ef93552026963240cf7321619f01e111b1c27de98526f70da50",
+      "source_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+      "subplot_count": 3
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 17,
+      "main_text_figure": false,
+      "new_title": "Operational Magic Landscape",
+      "plot_types": [
+        "heatmap"
+      ],
+      "rerendered": true,
+      "scientific_scope": "unchanged from the frozen final-validation adjudication",
+      "selected_version": "original final validation",
+      "selection_basis": "latest still-valid formal version; no later extension supersedes this figure number",
+      "source_data": [
+        {
+          "expected_hash_verified": true,
+          "file_count": 27,
+          "kind": "directory",
+          "path": "results/b8722dc68f6c7ed04cc5d48023a0d7f52f1fe92153bb362cc57dc7144cdf17ad/raw/magic_landscape.zarr",
+          "tree_inventory_sha256": "0eaac9c3993ac1ba56883b839311a18975244a893614e861f1f165c8848a947a"
+        }
+      ],
+      "source_figure_png": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/png/figure17_magic_landscape.png",
+      "source_figure_png_sha256": "9d94da5b51b92beccbd66aa6d19e138db5337129d1b093e4bb06cc434cc9f1ba",
+      "source_figure_svg": "results/50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559/derived/figure_supplement/svg/figure17_magic_landscape.svg",
+      "source_figure_svg_sha256": "535b00693af480d37bc1b05874f826b93479e258e1d2a93a5e4064f78b2752d2",
+      "source_run_id": "50a7008683417437dd206bba88ae34d4d51d6742fbdc833220b0c7bba3c4e559",
+      "subplot_count": 3
+    },
+    {
+      "contains_subplots": true,
+      "figure_number": 18,
+      "main_text_figure": true,
+      "new_title": "Operator-Tangent Rank Structure of the Curvature-Related Sector",
+      "plot_types": [
+        "line",
+        "bar"
+      ],
+      "rerendered": true,
+      "scientific_scope": "local operator-rank evidence only; global curvature relevance remains INCONCLUSIVE",
+      "selected_version": "second deep extension",
+      "selection_basis": "latest valid figure-number version; supersedes the original and first-extension versions where present",
+      "source_data": [
+        {
+          "bytes": 3785,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_18_curvature_scaling.parquet",
+          "sha256": "183250eebf2c67942bfa30a18bf424fc83132748d89975c3818da462a6b266e3"
+        },
+        {
+          "bytes": 3567,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_18_hypothesis_summary.parquet",
+          "sha256": "c252f74ec02d494c85d5e9766944a56918ce24f91179b1b05a6769c7c38c9e1d"
+        },
+        {
+          "bytes": 2472,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/figure_18_singular_values.parquet",
+          "sha256": "ba338659669f179c38f8d8b9837e8252e6ea995eb12886b483fb35035b21e573"
+        },
+        {
+          "bytes": 1993,
+          "expected_hash_verified": true,
+          "kind": "file",
+          "path": "deep_resolution/figure_data/r16_block_rank.parquet",
+          "sha256": "be4958506fc117d33c2a4b405932b4d8b01283ed79c1ab91fc43ae3a81bb57b6"
+        }
+      ],
+      "source_figure_png": "deep_resolution/figures/figure18_curvature_coordinate_rank.png",
+      "source_figure_png_sha256": "e40590694896ca51b378500ba68e280483518a0795b47375ae9495211bbe9ee1",
+      "source_figure_svg": "deep_resolution/figures/figure18_curvature_coordinate_rank.svg",
+      "source_figure_svg_sha256": "ab219d863f3207deff87f35591ad15550c7f58fd70fa08f00e51472bb827e619",
+      "source_run_id": "61576c536b1444ea18851b9334e16a68f65ba9f0014796742183ca0a7636bb4e",
+      "subplot_count": 4
+    }
+  ],
+  "selection_policy": "latest still-valid formal paper figure for each number; diagnostics, recovery evidence, QA previews, and superseded versions excluded",
+  "superseded_versions": {
+    "10": [
+      "figures/complete_supplementary_suite",
+      "postvalidation_resolution/figures"
+    ],
+    "16": [
+      "figures/complete_supplementary_suite",
+      "postvalidation_resolution/figures"
+    ],
+    "8": [
+      "figures/complete_supplementary_suite",
+      "postvalidation_resolution/figures"
+    ],
+    "9": [
+      "figures/complete_supplementary_suite",
+      "postvalidation_resolution/figures"
+    ]
+  }
+}

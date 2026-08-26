@@ -1,0 +1,39 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+scope: R9-01_through_R9-05
+frozen_before_R9_outcomes: true
+R8_input:
+  run_id: 2efafd37540cb3de976adfcd2bd7f01d6802ff18277429a8088d87ab8335ae8b
+  manifest_sha256: 3c53eee526aaf900e6218c10b08136d21fa72315e656831f735cdc7511b005cb
+  certificate_sha256: caa6070e7c692d839e23a45245894b6ec2b53a3dbb4a43d099ebb0d039b80444
+  level_metrics_sha256: 48b94f3c6fb39a4604e5e59b4c554ca9dc5d0245e3add7fba3cdb84609d4b6e9
+balanced_diagonal:
+  group_by_tower: true
+  concatenate_towers: false
+  L_rule: max(1,floor(sqrt(injectivity_radius_integer)))
+  hopping_decay_q: 0.20
+  require_L_to_infinity: true
+  require_injectivity_radius_to_infinity: true
+  require_L_over_injectivity_radius_to_zero: true
+common_space:
+  surrogate: moment_Jacobi
+  dimension: L_plus_1
+  power_moments_from_saved_Chebyshev_moments: exact_polynomial_conversion
+  reference: deepest_level_of_same_tower
+  implicit_zero_padding: false
+error_components:
+  epsilon_core: u_N_plus_b_N
+  epsilon_physical_tail: q_power_L_plus_1_over_1_minus_q
+  epsilon_master_tail: q_rho_upper_power_L_plus_1_over_1_minus_q_rho_upper
+  epsilon_cover: actual_edge_error
+  epsilon_solver: solver_N
+  epsilon_transport: spectral_norm_of_equal_dimension_Jacobi_difference
+  epsilon_total: arithmetic_sum_of_six_components
+spectral_inheritance:
+  fixed_multiple: 4.0
+  projector_error: exact_zero_for_fixed_layer_even_bilayer_projector
+  C1_tail: sum_l_gt_L_l_q_power_l
+  C2_tail: sum_l_gt_L_l_squared_q_power_l
+acceptance:
+  pass_only_if_balanced_diagonal_conditions_and_total_error_tail_envelope_decrease_to_zero: true
+  finite_scale_without_L_growth_status: INCONCLUSIVE

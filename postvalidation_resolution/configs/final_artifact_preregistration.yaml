@@ -1,0 +1,31 @@
+schema_version: 1
+frozen_before_new_figure_ready_outcomes: true
+source_runs:
+  R8_cover: 3fea2901f7ae29d44dc1517294dee678fac2b9e2fa7a8bf3bccff2bd6528fac5
+  R8_spectral: 2efafd37540cb3de976adfcd2bd7f01d6802ff18277429a8088d87ab8335ae8b
+  R9: 6b0926de0cbe1eb92a937b9ff635db154ebc74c61a36cc1300a4cda54d860337
+  R10: 3f855ab062d1fe1a081b019e354d72561f24c6e0ad6268c5de731ff2953cdcc7
+  R16: fd8c15495c5990037ef93b299f0a6006de93746a4f11f54bd383a8b769cb8bf4
+figure_10_density_derivation:
+  selected_levels:
+    - {tower_id: dyadic_ramified, dyadic_depth: 10}
+    - {tower_id: dyadic_x_p7, dyadic_depth: 10}
+  energy_grid: inherit_R10_CDF_grid
+  kernel: normalized_Lorentzian
+  broadening: inherit_preregistered_eta_N_from_R10_error_budget
+  estimator: equal_average_of_six_independent_SLQ_probe_measures
+  stochastic_band: two_standard_errors_across_probes
+  deterministic_band: add_R10_reference_CDF_uncertainty_sup_as_conservative_density_display_band
+  coherence_observable: layer_even_bilayer_projector_with_plus_branch_weight_1_and_minus_branch_weight_0
+  interpretation: retained_plus_branch_density_equals_declared_coherence_weighted_measure_in_this_projected_sector
+plotting_rule: figures_read_only_frozen_figure_data_and_never_compute_scientific_results
+figure_style:
+  font_family: DejaVu Sans
+  dpi: 220
+  svg_and_png: true
+  panel_labels: uppercase_letters
+final_audit:
+  require_all_task_families_terminal: true
+  require_original_project_hashes: true
+  require_source_data_manifest_per_figure: true
+  preserve_inconclusive_and_fail_expected: true

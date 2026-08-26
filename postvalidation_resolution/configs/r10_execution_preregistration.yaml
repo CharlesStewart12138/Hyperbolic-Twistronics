@@ -1,0 +1,68 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+scope: R10-01_through_R10-09
+frozen_before_R10_outcomes: true
+R8_input:
+  run_id: 2efafd37540cb3de976adfcd2bd7f01d6802ff18277429a8088d87ab8335ae8b
+  manifest_sha256: 3c53eee526aaf900e6218c10b08136d21fa72315e656831f735cdc7511b005cb
+  level_metrics_sha256: 48b94f3c6fb39a4604e5e59b4c554ca9dc5d0245e3add7fba3cdb84609d4b6e9
+  KPM_moments: verify_each_path_against_level_metrics_hash_column
+KPM:
+  polynomial_order: 96
+  random_vectors: 6
+  seeds: inherit_verified_R8_raw_moment_files
+  jackson_kernel: true
+SLQ:
+  lanczos_steps: 64
+  random_vectors: 6
+  base_seed: 521601
+  per_level_seed_stride: 100
+  per_probe_seed_stride: 1
+  full_reorthogonalization: true
+  breakdown_tolerance: 1.0e-13
+reference:
+  selected_before_R10_outcomes: true
+  pure_tower_level: {tower_id: dyadic_ramified, dyadic_depth: 10}
+  mixed_tower_level: {tower_id: dyadic_x_p7, dyadic_depth: 10}
+  within_level_method_average: equal_KPM_SLQ_CDF_average
+  cross_tower_average: equal_weight
+  uncertainty: half_method_disagreement_plus_KPM_SE_plus_SLQ_SE
+CDF:
+  grid_min: -0.995
+  grid_max: 0.995
+  grid_size: 1201
+  kappa: sup_norm_to_frozen_reference_CDF
+regularity:
+  proposed_alpha: 0.5
+  primary_source:
+    title: Local limit theorem for symmetric random walks in Gromov-hyperbolic groups
+    author: Sebastien Gouëzel
+    arxiv: https://arxiv.org/abs/1209.3217
+  direct_result: return_probability_asymptotic_C_rho_power_n_n_power_minus_3_over_2
+  inference_under_audited_Tauberian_hypotheses: square_root_edge_behavior
+  uniform_Holder_certificate_required_for_PASS: true
+  local_limit_alone_does_not_automatically_supply_global_uniform_Holder_constant: true
+vanishing_broadening:
+  eta_N: (injectivity_radius_integer_plus_1)_power_minus_1_over_3
+  alpha: 0.5
+  no_posthoc_schedule_change: true
+  pilot_levels:
+    dyadic_ramified: [7, 8]
+    dyadic_x_p7: [3, 4, 5]
+  holdout_levels:
+    dyadic_ramified: [9, 10]
+    dyadic_x_p7: [7, 8, 9, 10]
+coherence:
+  observable: layer_even_bilayer_projector
+  plus_branch_weight: 1.0
+  minus_branch_weight: 0.0
+  exact_coherence_operator_error: 0.0
+  exact_projector_error_if_gap_positive: 0.0
+acceptance:
+  require_kappa_tail_envelope_to_zero: true
+  require_eta_tail_to_zero: true
+  require_kappa_over_eta_plus_eta_to_alpha_tail_to_zero: true
+  require_two_tower_holdout_reproduction: true
+  require_KPM_SLQ_agreement_within_combined_uncertainty: true
+  require_uniform_Holder_certificate: true
+  insufficient_finite_scale_status: INCONCLUSIVE

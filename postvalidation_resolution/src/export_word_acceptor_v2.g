@@ -1,0 +1,26 @@
+LoadPackage("kbmag");;
+outfile := GAPInfo.SystemEnvironment.POSTVALIDATION_WORD_ACCEPTOR;;
+F := FreeGroup("a","b","c","d");;
+a := F.1;; b := F.2;; c := F.3;; d := F.4;;
+G := F / [a*b^-1*c*d^-1*a^-1*b*c^-1*d];;
+R := KBMAGRewritingSystem(G);;
+ok := AutomaticStructure(R);;
+if not ok then Error("KBMAG automatic structure failed"); fi;
+wa := WordAcceptor(R);;
+table := DenseDTableFSA(wa);;
+out := OutputTextFile(outfile,false);;
+SetPrintFormattingStatus(out,false);;
+AppendTo(out,"GAP_VERSION=",GAPInfo.Version,"\n");
+AppendTo(out,"AUTOMATIC=true\n");
+AppendTo(out,"STATE_COUNT=",wa.states.size,"\n");
+AppendTo(out,"ALPHABET_SIZE=",wa.alphabet.size,"\n");
+AppendTo(out,"INITIAL=",JoinStringsWithSeparator(List(wa.initial,String),","),"\n");
+AppendTo(out,"ACCEPTING=",JoinStringsWithSeparator(List(wa.accepting,String),","),"\n");
+AppendTo(out,"ALPHABET=",JoinStringsWithSeparator(List(R!.alphabet,String),"|"),"\n");
+for state in [1..wa.states.size] do
+  AppendTo(out,"ROW=",state,"|",JoinStringsWithSeparator(List(table[state],String),","),"\n");
+od;
+CloseStream(out);;
+Print("AUTOMATIC=true\n");
+Print("STATE_COUNT=",wa.states.size,"\n");
+QUIT;

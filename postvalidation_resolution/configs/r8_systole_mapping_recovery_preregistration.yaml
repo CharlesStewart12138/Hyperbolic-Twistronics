@@ -1,0 +1,50 @@
+schema_version: 1
+phase: POSTVALIDATION_RESOLUTION
+recovery_scope: R8-01_exact_word_systole_mapping
+frozen_before:
+  - corrected_word_systoles
+  - corrected_injectivity_radii
+  - all_R8_spectral_outcomes
+invalid_predecessor_run_preserved:
+  run_id: 21b8f68592ae722b0f112754974e09cea7c38caa8b12bf75f9afc1a9276316ac
+  manifest_sha256: 73a6192664408dcc8f746ad41fbe6faaeef76739822f88f75924236998e16b61
+  certificate_sha256: 4499eb2782b7a076b14ab374215c2971f2e0aadeb0cff21fe8ee45397ee9d77a
+  admissible_table_sha256: f0c1ac4b72d3b7808f2467b2ff6e25a4095a6e43b58d65728cd48eb1171fe50e
+  frozen_status: PASS_CERTIFIED
+  extension_ledger_classification: SUPERSEDED_FAIL_IMPLEMENTATION
+  exact_bug: >-
+    KBMAG internal letters _g1,...,_g8 were incorrectly interpreted as
+    four positive generators followed by four inverses. The one-letter
+    transition audit shows inverse pairs (1,2),(3,4),(5,6),(7,8).
+reuse_by_hash_only:
+  valid_payloads:
+    - exact_marked_group_permutations
+    - exact_immediate_parent_reduction_maps
+    - quotient_orders
+    - nonabelian_commutator_witnesses
+  invalid_payloads_never_reused:
+    - word_systole_exact
+    - shortest_kernel_word
+    - injectivity_radius_integer
+    - injectivity_radius_word
+corrected_mapping_rule:
+  derive_inverse_indices_from_word_acceptor: true
+  derivation: >-
+    For each one-letter state reached from the initial state, the unique
+    forbidden next one-letter symbol is its inverse in the freely reduced
+    shortlex language.
+  require_fixed_point_free_involution: true
+  assign_generator_pairs_in_alphabet_order: [1, -1, 2, -2, 3, -3, 4, -4]
+  canonical_operator_order: [1, 2, 3, 4, -1, -2, -3, -4]
+  cancellation_regression_required: true
+systole_rule:
+  method: exact_BFS_product_KBMAG_shortlex_acceptor_and_finite_group_action
+  empty_word_excluded: true
+  maximum_product_states: 24000000
+  no_word_length_cutoff: true
+  injectivity_radius_integer: floor((word_systole_exact-1)/2)
+acceptance:
+  all_reused_action_hashes_must_match: true
+  every_admissible_level_requires_corrected_systole_certificate: true
+  at_least_one_tower_requires_four_levels: true
+  two_towers_with_three_levels_preferred: true
